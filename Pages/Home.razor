@@ -5,3 +5,55 @@
 <h1>Hello, world!</h1>
 
 Welcome to your new app.
+
+<div class="input-row">
+    <input type="text" class="small-input" id="b7" @bind="num.b7" />
+    <input type="text" class="small-input" id="b6" @bind="num.b6" />
+    <input type="text" class="small-input" id="b5" @bind="num.b5" />
+    <input type="text" class="small-input" id="b4" @bind="num.b4" />
+    <input type="text" class="small-input" id="b3" @bind="num.b3" />
+    <input type="text" class="small-input" id="b2" @bind="num.b2" />
+    <input type="text" class="small-input" id="b1" @bind="num.b1" />
+    <input type="text" class="small-input" id="b0" @bind="num.b0" />
+</div>
+
+<h4>Current Number Information:</h4>
+<p>Decimal: @num.base10</p>
+
+<button class="btn btn-primary" @onclick="Calculate">Submit</button>
+
+@code {
+    // Calculate binary into decimal
+    private void Calculate(){
+
+    }
+
+    // Define the Number class
+    private class Number
+    {
+        public int b7 { get; set; }
+        public int b6 { get; set; }
+        public int b5 { get; set; }
+        public int b4 { get; set; }
+        public int b3 { get; set; }
+        public int b2 { get; set; }
+        public int b1 { get; set; }
+        public int b0 { get; set; }
+
+        public int base10 { get; set; }
+    }
+
+    // Create an instance of Person and set initial values
+    private Number num = new Number
+        {
+            b7 = 0,
+            b6 = 0,
+            b5 = 0,
+            b4 = 0,
+            b3 = 0,
+            b2 = 0,
+            b1 = 0,
+            b0 = 0,
+            base10 = 0
+        };
+}
