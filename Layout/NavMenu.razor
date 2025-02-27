@@ -1,6 +1,20 @@
 ﻿
+<nav class="nav-container">
+    <ul class="nav-list">
+        <li class="nav-item dropdown">
+            <a href="#">☰ My Conversion Tutor ▼</a>
+            <ul class="dropdown-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/counter">Counter</a></li>
+                <li><a href="/other">Other</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
 
-@*Relies on JS toggle functionality- links in index.html *@
+
+@*
+@*Relies on JS toggle functionality- links in index.htm
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -28,10 +42,10 @@
 @code {
     // Any logic related to the navigation can go here
 }
-
-
+*@
 
 @*
+
 @inject NavigationManager NavManager
 <button class="btn btn-primary" @onclick="ToggleDropdown">☰ My Binary Quizzes</button>
 
