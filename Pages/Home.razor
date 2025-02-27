@@ -7,30 +7,51 @@
 Binary App Test
 
 <div class="input-row">
-    <input type="text" class="small-input" id="b7" @bind="num.b7" />
-    <input type="text" class="small-input" id="b6" @bind="num.b6" />
-    <input type="text" class="small-input" id="b5" @bind="num.b5" />
-    <input type="text" class="small-input" id="b4" @bind="num.b4" />
-    <input type="text" class="small-input" id="b3" @bind="num.b3" />
-    <input type="text" class="small-input" id="b2" @bind="num.b2" />
-    <input type="text" class="small-input" id="b1" @bind="num.b1" />
-    <input type="text" class="small-input" id="b0" @bind="num.b0" />
+    <input type="number" min="0" max="1" class="small-input" id="b15" @bind="num.b15" />
+    <input type="number" min="0" max="1" class="small-input" id="b14" @bind="num.b14" />
+    <input type="number" min="0" max="1" class="small-input" id="b13" @bind="num.b13" />
+    <input type="number" min="0" max="1" class="small-input" id="b12" @bind="num.b12" />
+    <input type="number" min="0" max="1" class="small-input" id="b11" @bind="num.b11" />
+    <input type="number" min="0" max="1" class="small-input" id="b10" @bind="num.b10" />
+    <input type="number" min="0" max="1" class="small-input" id="b9" @bind="num.b9" />
+    <input type="number" min="0" max="1" class="small-input" id="b8" @bind="num.b8" />
+    <input type="number" min="0" max="1" class="small-input" id="b7" @bind="num.b7" />
+    <input type="number" min="0" max="1" class="small-input" id="b6" @bind="num.b6" />
+    <input type="number" min="0" max="1" class="small-input" id="b5" @bind="num.b5" />
+    <input type="number" min="0" max="1" class="small-input" id="b4" @bind="num.b4" />
+    <input type="number" min="0" max="1" class="small-input" id="b3" @bind="num.b3" />
+    <input type="number" min="0" max="1" class="small-input" id="b2" @bind="num.b2" />
+    <input type="number" min="0" max="1" class="small-input" id="b1" @bind="num.b1" />
+    <input type="number" min="0" max="1" class="small-input" id="b0" @bind="num.b0" />
 </div>
-
-<h4>Current Number Information:</h4>
-<p>Decimal: @num.base10</p>
 
 <button class="btn btn-primary" @onclick="Calculate">Submit</button>
 
+<h3>Decimal: @num.base10</h3>
+
 @code {
+    //Update hints/labels
+    
+    
     // Calculate binary into decimal
     private void Calculate(){
+        num.base10 = 1*num.b0 + 2*num.b1 + 4*num.b2 + 8*num.b3 + 16*num.b4 + 32*num.b5 + 64*num.b6 + 128*num.b7
+        + 256*num.b8 + 512*num.b9 + 1024*num.b10 + 2048*num.b11 + 4096*num.b12 + 8192*num.b13 + 16384*num.b14 - 32768*num.b15;
+
 
     }
 
     // Define the Number class
     private class Number
     {
+        public int b15 { get; set; }
+        public int b14 { get; set; }
+        public int b13 { get; set; }
+        public int b12 { get; set; }
+        public int b11 { get; set; }
+        public int b10 { get; set; }
+        public int b9 { get; set; }
+        public int b8 { get; set; }
         public int b7 { get; set; }
         public int b6 { get; set; }
         public int b5 { get; set; }
@@ -46,6 +67,14 @@ Binary App Test
     // Create an instance of Person and set initial values
     private Number num = new Number
         {
+            b15 = 0,
+            b14 = 0,
+            b13 = 0,
+            b12 = 0,
+            b11 = 0,
+            b10 = 0,
+            b9 = 0,
+            b8 = 0,
             b7 = 0,
             b6 = 0,
             b5 = 0,
