@@ -1,21 +1,151 @@
-﻿@inherits LayoutComponentBase
+﻿@inject NavigationManager NavManager
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button @onclick="ToggleMenu" class="btn">☰ My Binary Quizzes</button>
+</nav>
+
+
+@if (IsMenuOpen)
+{
+    <nav class="menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/counter">Counter</a></li>
+            <li><a href="/other">Other</a></li>
+        </ul>
+    </nav>
+}
+
+@code {
+    private bool IsMenuOpen = false;
+
+    private void ToggleMenu()
+    {
+        IsMenuOpen = !IsMenuOpen;
+    }
+
+    protected override void OnInitialized()
+    {
+        NavManager.LocationChanged += (sender, args) => CloseMenu();
+    }
+
+    private void CloseMenu()
+    {
+        IsMenuOpen = false;
+        StateHasChanged();
+    }
+}
+
+
+
+@*
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">My Blazor App</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+    <!-- Toggler for mobile view -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+    
+    <!-- Collapsing Navbar content for mobile -->
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="">Home</a>
+            <!-- Regular Navbar links for large screens (desktop) -->
+            <li class="nav-item d-none d-md-block">
+                <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">Home</NavLink>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="counter">Counter</a>
+            <li class="nav-item d-none d-md-block">
+                <NavLink class="nav-link" href="/about">About</NavLink>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="weather">Weather</a>
+
+            <!-- Dropdown for mobile screens -->
+            <li class="nav-item dropdown d-md-none">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <NavLink class="dropdown-item" href="/services">Services</NavLink>
+                    <NavLink class="dropdown-item" href="/contact">Contact</NavLink>
+                    <NavLink class="dropdown-item" href="/faq">FAQ</NavLink>
+                </div>
             </li>
         </ul>
     </div>
 </nav>
+
+@code {
+    // You can add logic here if needed (for example, dynamic links or state)
+}
+*@
+
+@*Relies on JS toggle functionality- links in index.html *@
+
+@*
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">My Blazor App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <!-- Regular Nav Links -->
+            <li class="nav-item">
+                <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">Home</NavLink>
+            </li>
+            <li class="nav-item">
+                <NavLink class="nav-link" href="/counter">Counter</NavLink>
+            </li>
+            <li class="nav-item">
+                <NavLink class="nav-link" href="/other">Other</NavLink>
+            </li>
+
+            <!-- Dropdown Navigation Link -->
+            <!--<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <NavLink class="dropdown-item" href="/">Home</NavLink>
+                    <NavLink class="dropdown-item" href="/counter">Counter</NavLink>
+                    <NavLink class="dropdown-item" href="/other">Other</NavLink>
+                </div>
+            </li>-->
+        </ul>
+    </div>
+</nav>
+
+@code {
+    // Any logic related to the navigation can go here
+}
+
+*@
+
+@*Toggle-nav button on left of screen*@
+@*
+<button class="btn btn-primary" @onclick="ToggleDropdown">My Binary Quizzes</button>
+
+@if (isDropdownVisible)
+{
+    <ul class="list-group">
+        <li class="list-group-item">
+            <NavLink class="nav-link" href="/">Home</NavLink>
+        </li>
+        <li class="list-group-item">
+            <NavLink class="nav-link" href="/counter">Counter</NavLink>
+        </li>
+        <li class="list-group-item">
+            <NavLink class="nav-link" href="/weather">Weather</NavLink>
+        </li>
+    </ul>
+}
+
+@code {
+    private bool isDropdownVisible = false;
+
+    private void ToggleDropdown()
+    {
+        isDropdownVisible = !isDropdownVisible;
+    }
+}
+
+*@
