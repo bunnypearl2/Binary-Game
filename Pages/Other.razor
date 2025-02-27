@@ -1,0 +1,46 @@
+﻿@page "/other"
+
+<PageTitle>Other</PageTitle>
+
+
+<h3>Hello, User!</h3>
+
+
+@page "/enter-focus"
+
+<input id="input1" type="text" onkeydown="moveNext(event, 'input2')" />
+<input id="input2" type="text" onkeydown="moveNext(event, 'input3')" />
+<input id="input3" type="text" />
+
+@code {
+    [Inject] IJSRuntime JS { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("setupEnterKey");
+        }
+    }
+}
+
+
+
+@* Example functionality to have cursor active in a given text box after hitting submit*@
+@* See function in site.js file in wwwroot*@
+@*
+<input id="myInput" type="text" placeholder="Click the button" class="form-control" />
+<input id="myInput1" type="text" placeholder="Click the button" class="form-control" />
+
+<button @onclick="SetFocus">Focus Input</button>
+
+@code {
+    [Inject] IJSRuntime JS { get; set; }
+
+    private async Task SetFocus()
+    {
+        await JS.InvokeVoidAsync("focusInput", "myInput1"); /* Change "myInput" to the id of the text box you want to go to? */
+    }
+}
+*@
+

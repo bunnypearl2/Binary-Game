@@ -118,7 +118,8 @@ code {
     height: 60px;
 }
 
-.input-row{
+.input-row {
     font-size: 150%;
-    center
+    display: flex;
+    justify-content: center;
 }
