@@ -1,8 +1,58 @@
 ﻿@page "/counter"
-
+@inject IJSRuntime JS
 <PageTitle>Counter</PageTitle>
 
 <h1>Counter</h1>
+
+
+<InputText @bind-Value="First" @oninput="e => MoveToNext(e, 1, First)" id="input1" maxlength="1" />
+<InputText @bind-Value="Second" @oninput="e => MoveToNext(e, 2, Second)" id="input2" maxlength="1" />
+<InputText @bind-Value="Third" @oninput="e => MoveToNext(e, 3, Third)" id="input3" maxlength="1" />
+<InputText @bind-Value="Fourth" @oninput="e => MoveToNext(e, 4, Fourth)" id="input4" maxlength="1" />
+
+<p>Entered: @First @Second @Third @Fourth</p>
+
+@code {
+    private string First { get; set; } = "";
+    private string Second { get; set; } = "";
+    private string Third { get; set; } = "";
+    private string Fourth { get; set; } = "";
+
+    private async Task MoveToNext(ChangeEventArgs e, int index, string currentValue)
+    {
+        string input = e.Value?.ToString() ?? "";
+
+        // Ensure only one character is stored
+        if (input.Length > 1)
+        {
+            switch (index)
+            {
+                case 1: First = input.Substring(0, 1); break;
+                case 2: Second = input.Substring(0, 1); break;
+                case 3: Third = input.Substring(0, 1); break;
+                case 4: Fourth = input.Substring(0, 1); break;
+            }
+        }
+
+        // Move to the next field if it's not the last input
+        if (index < 4 && !string.IsNullOrEmpty(input))
+        {
+            await JS.InvokeVoidAsync("focusElement", $"input{index + 1}");
+        }
+
+        // Move back on Backspace if input is empty
+        else if (string.IsNullOrEmpty(input) && index > 1)
+        {
+            await JS.InvokeVoidAsync("focusElement", $"input{index - 1}");
+        }
+    }
+
+}
+
+
+
+
+@*
 
 <p role="status">Current count: @currentCount</p>
 
@@ -16,3 +66,4 @@
         currentCount++;
     }
 }
+*@

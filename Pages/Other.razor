@@ -1,10 +1,82 @@
-﻿@page "/other"
+﻿@inject IJSRuntime JS
+@page "/other"
+
+
 
 <PageTitle>Other</PageTitle>
 
 
 <h3>Hello, User!</h3>
+
+
+<h3>Click to Select Text in Input Box</h3>
+
+<input type="text" @ref="inputRef" @onclick="SelectText" placeholder="Click to select text" value="Hello, world!" />
+
+@code {
+    private ElementReference inputRef;
+
+    private async Task SelectText()
+    {
+        // Use JavaScript Interop to call the select() method
+        await JS.InvokeVoidAsync("selectText", inputRef);
+    }
+}
+
+
 @*
+
+<h3>JavaScript Interop Example</h3>
+
+<button @onclick="CallJs">Call JavaScript Function</button>
+
+@code {
+    private async Task CallJs()
+    {
+        await JS.InvokeVoidAsync("alert", "This is a JavaScript Alert from Blazor!");
+    }
+}
+
+
+@*
+<h3>Auto Tab Example</h3>
+
+<div>
+    @for (int i = 0; i < inputValues.Length; i++)
+    {
+        <input type="text" maxlength="1" @bind="inputValues[i]"
+               @oninput="@(e => MoveToNext(i))"
+               @ref="inputRefs[i]" />
+    }
+</div>
+
+@code {
+    private string[] inputValues = new string[4];  // Store input values
+    private ElementReference[] inputRefs = new ElementReference[4];  // Store input references
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Ensure that the first input gets focused when the component is rendered for the first time
+            await JS.InvokeVoidAsync("focusElement", inputRefs[0]);
+        }
+    }
+
+    private async Task MoveToNext(int index)
+    {
+        if (!string.IsNullOrEmpty(inputValues[index]) && index < inputRefs.Length - 1)
+        {
+            await JS.InvokeVoidAsync("focusElement", inputRefs[index + 1]); // Focus next input field
+            StateHasChanged();  // Trigger re-render manually if necessary
+        }
+    }
+}
+
+
+
+@*
+
 
 @page "/enter-focus"
 
