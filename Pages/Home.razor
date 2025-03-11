@@ -1,4 +1,4 @@
-﻿@page "/"
+@page "/"
 
 <PageTitle>Home</PageTitle>
 
@@ -23,22 +23,166 @@ Binary App Test
     <input type="number" min="0" max="1" class="small-input" id="b1" @bind="num.b1" />
     <input type="number" min="0" max="1" class="small-input" id="b0" @bind="num.b0" />
 </div>
+<br>
 
 <button class="btn btn-primary" @onclick="Calculate">Submit</button>
+<button class="btn btn-primary" @onclick="Clear">Clear</button>
 
 <h3>Decimal: @num.base10</h3>
+<h3>2's Compliment: @num.twosCompliment</h3>
+<h3>Hexadecimal: @num.base16</h3>
 
 @code {
     //Update hints/labels
-    
-    
+
+
     // Calculate binary into decimal
-    private void Calculate(){
-        num.base10 = 1*num.b0 + 2*num.b1 + 4*num.b2 + 8*num.b3 + 16*num.b4 + 32*num.b5 + 64*num.b6 + 128*num.b7
-        + 256*num.b8 + 512*num.b9 + 1024*num.b10 + 2048*num.b11 + 4096*num.b12 + 8192*num.b13 + 16384*num.b14 - 32768*num.b15;
+    private void Calculate()
+    {
+        num.base10 = 1 * num.b0 + 2 * num.b1 + 4 * num.b2 + 8 * num.b3 + 16 * num.b4 + 32 * num.b5 + 64 * num.b6 + 128 * num.b7
+        + 256 * num.b8 + 512 * num.b9 + 1024 * num.b10 + 2048 * num.b11 + 4096 * num.b12 + 8192 * num.b13 + 16384 * num.b14 + 32768 * num.b15;
 
+        num.twosCompliment = 1 * num.b0 + 2 * num.b1 + 4 * num.b2 + 8 * num.b3 + 16 * num.b4 + 32 * num.b5 + 64 * num.b6 + 128 * num.b7
+        + 256 * num.b8 + 512 * num.b9 + 1024 * num.b10 + 2048 * num.b11 + 4096 * num.b12 + 8192 * num.b13 + 16384 * num.b14 - 32768 * num.b15;
 
+        int hexDigit1 = 1 * num.b0 + 2 * num.b1 + 4 * num.b2 + 8 * num.b3;
+        string hexString1 = "0";
+
+        switch (hexDigit1)
+        {
+            case 10:
+                hexString1 = "A";
+                break;
+            case 11:
+                hexString1 = "B";
+                break;
+            case 12:
+                hexString1 = "C";
+                break;
+            case 13:
+                hexString1 = "D";
+                break;
+            case 14:
+                hexString1 = "E";
+                break;
+            case 15:
+                hexString1 = "F";
+                break;
+            default:
+                hexString1 = hexDigit1.ToString();
+                break;
+        }
+
+        int hexDigit2 = 1 * num.b4 + 2 * num.b5 + 4 * num.b6 + 8 * num.b7;
+        string hexString2 = "0";
+
+        switch (hexDigit2)
+        {
+            case 10:
+                hexString2 = "A";
+                break;
+            case 11:
+                hexString2 = "B";
+                break;
+            case 12:
+                hexString2 = "C";
+                break;
+            case 13:
+                hexString2 = "D";
+                break;
+            case 14:
+                hexString2 = "E";
+                break;
+            case 15:
+                hexString2 = "F";
+                break;
+            default:
+                hexString2 = hexDigit2.ToString();
+                break;
+        }
+
+        int hexDigit3 = 1 * num.b8 + 2 * num.b9 + 4 * num.b10 + 8 * num.b11;
+        string hexString3 = "0";
+
+        switch (hexDigit3)
+        {
+            case 10:
+                hexString3 = "A";
+                break;
+            case 11:
+                hexString3 = "B";
+                break;
+            case 12:
+                hexString3 = "C";
+                break;
+            case 13:
+                hexString3 = "D";
+                break;
+            case 14:
+                hexString3 = "E";
+                break;
+            case 15:
+                hexString3 = "F";
+                break;
+            default:
+                hexString3 = hexDigit3.ToString();
+                break;
+        }
+
+        int hexDigit4 = 1 * num.b12 + 2 * num.b13 + 4 * num.b14 + 8 * num.b15;
+        string hexString4 = "0";
+
+        switch (hexDigit4)
+        {
+            case 10:
+                hexString4 = "A";
+                break;
+            case 11:
+                hexString4 = "B";
+                break;
+            case 12:
+                hexString4 = "C";
+                break;
+            case 13:
+                hexString4 = "D";
+                break;
+            case 14:
+                hexString4 = "E";
+                break;
+            case 15:
+                hexString4 = "F";
+                break;
+            default:
+                hexString4 = hexDigit4.ToString();
+                break;
+        }
+
+        num.base16 = hexString4 + hexString3 + hexString2 + hexString1;
     }
+
+    private void Clear()
+    {
+        num.b0 = 0;
+        num.b1 = 0;
+        num.b2 = 0;
+        num.b3 = 0;
+        num.b4 = 0;
+        num.b5 = 0;
+        num.b6 = 0;
+        num.b7 = 0;
+        num.b8 = 0;
+        num.b9 = 0;
+        num.b10 = 0;
+        num.b11 = 0;
+        num.b12 = 0;
+        num.b13 = 0;
+        num.b14 = 0;
+        num.b15 = 0;
+        num.base10 = 0;
+        num.twosCompliment = 0;
+        num.base16 = "0000";
+    }
+
 
     // Define the Number class
     private class Number
@@ -61,6 +205,8 @@ Binary App Test
         public int b0 { get; set; }
 
         public int base10 { get; set; }
+        public int twosCompliment { get; set; }
+        public string base16 { get; set; }
     }
 
     // Create an instance of Person and set initial values
@@ -82,6 +228,8 @@ Binary App Test
             b2 = 0,
             b1 = 0,
             b0 = 0,
-            base10 = 0
+            base10 = 0,
+            twosCompliment = 0,
+            base16 = "0000"
         };
 }
