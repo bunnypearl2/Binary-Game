@@ -1,4 +1,6 @@
-﻿
+@inject IJSRuntime JSRuntime
+
+
 <nav class="nav-container">
     <ul class="nav-list">
         <li class="nav-item dropdown">
@@ -7,81 +9,48 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/counter">Counter</a></li>
                 <li><a href="/other">Other</a></li>
+                <li><a href="/test1">Test1</a></li>
             </ul>
         </li>
     </ul>
-</nav>
-
-
-@*
-@*Relies on JS toggle functionality- links in index.htm
-
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">My Blazor App</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <!-- Regular Nav Links -->
-            <li class="nav-item">
-                <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">Home</NavLink>
-            </li>
-            <li class="nav-item">
-                <NavLink class="nav-link" href="/counter">Counter</NavLink>
-            </li>
-            <li class="nav-item">
-                <NavLink class="nav-link" href="/other">Other</NavLink>
-            </li>
-
-        </ul>
-    </div>
+    <label class="toggle-container">
+        <input type="checkbox" value="@IsDarkMode" @onchange="ToggleTheme">
+        <span class="slider"></span>
+        <span class="toggle-label">@(IsDarkMode? "Dark Mode": "Light Mode")</span>
+    </label>
 </nav>
 
 @code {
-    // Any logic related to the navigation can go here
-}
-*@
+    private bool IsDarkMode = false;
 
-@*
-
-@inject NavigationManager NavManager
-<button class="btn btn-primary" @onclick="ToggleDropdown">☰ My Binary Quizzes</button>
-
-@if (isDropdownVisible)
-{
-    <ul class="list-group">
-        <li class="list-group-item">
-            <NavLink class="nav-link" href="/">Home</NavLink>
-        </li>
-        <li class="list-group-item">
-            <NavLink class="nav-link" href="/counter">Counter</NavLink>
-        </li>
-        <li class="list-group-item">
-            <NavLink class="nav-link" href="/other">Other</NavLink>
-        </li>
-    </ul>
-}
-
-@code {
-    private bool isDropdownVisible = false;
-
-    private void ToggleDropdown()
+    protected override async Task OnInitializedAsync()
     {
-        isDropdownVisible = !isDropdownVisible;
+        var storedValue = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "theme");
+
+        if (string.IsNullOrEmpty(storedValue))
+        {
+            // Default to Light Mode
+            IsDarkMode = false;
+        }
+        else
+        {
+            // Use saved theme from localStorage
+            IsDarkMode = storedValue == "dark";
+        }
+
+        await ApplyTheme();
     }
 
-     protected override void OnInitialized()
+    private async Task ToggleTheme(ChangeEventArgs e)
     {
-        NavManager.LocationChanged += (sender, args) => CloseMenu();
+        IsDarkMode = (bool)e.Value;
+        await JSRuntime.InvokeVoidAsync("localStorage.setItem", "theme", IsDarkMode ? "dark" : "light");
+        await ApplyTheme();
     }
 
-    private void CloseMenu()
+    private async Task ApplyTheme()
     {
-        isDropdownVisible = false;
-        StateHasChanged();
+        var themeClass = IsDarkMode ? "dark-mode" : "";
+        await JSRuntime.InvokeVoidAsync("applyTheme", themeClass);
     }
-}
-
-*@
+ }
