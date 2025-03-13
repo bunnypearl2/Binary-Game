@@ -1,28 +1,39 @@
-﻿@page "/counter"
+@page "/counter"
 @inject IJSRuntime JS
 <PageTitle>Counter</PageTitle>
 
 <h1>Counter</h1>
 
 
-<InputText @bind-Value="First" @oninput="e => MoveToNext(e, 1, First)" id="input1" maxlength="1" />
-<InputText @bind-Value="Second" @oninput="e => MoveToNext(e, 2, Second)" id="input2" maxlength="1" />
-<InputText @bind-Value="Third" @oninput="e => MoveToNext(e, 3, Third)" id="input3" maxlength="1" />
-<InputText @bind-Value="Fourth" @oninput="e => MoveToNext(e, 4, Fourth)" id="input4" maxlength="1" />
+
+<InputText @bind-Value="First" @oninput="e => MoveToNext(e, 1, First)" id="input1" maxlength="1" @onkeydown="@(e => HandleKeyNavigation(e, 1))" />
+<InputText @bind-Value="Second" @oninput="e => MoveToNext(e, 2, Second)" id="input2" maxlength="1" @onkeydown="@(e => HandleKeyNavigation(e, 2))" />
+<InputText @bind-Value="Third" @oninput="e => MoveToNext(e, 3, Third)" id="input3" maxlength="1" @onkeydown="@(e => HandleKeyNavigation(e, 3))" />
+<InputText @bind-Value="Fourth" @oninput="e => MoveToNext(e, 4, Fourth)" id="input4" maxlength="1" @onkeydown="@(e => HandleKeyNavigation(e, 4))" />
+
+<button id="submitButton" class="btn">Submit</button>
 
 <p>Entered: @First @Second @Third @Fourth</p>
 
 @code {
+
     private string First { get; set; } = "";
     private string Second { get; set; } = "";
     private string Third { get; set; } = "";
     private string Fourth { get; set; } = "";
 
+    public int length = 5; //CONSTANT
+    public bool inputChanged = false;
+    public string input = "";
+
+    // Method is entered on an INPUT change
     private async Task MoveToNext(ChangeEventArgs e, int index, string currentValue)
     {
-        string input = e.Value?.ToString() ?? "";
+        input = e.Value?.ToString() ?? "";
 
         // Ensure only one character is stored
+        // This handles edge case if someone pastes into box
+        // ADD FUNCTION THAT CAN HANDLE COPY-PASTE TO COPY INTO SUBSEQUENT BOXES?
         if (input.Length > 1)
         {
             switch (index)
@@ -35,11 +46,29 @@
         }
 
         // Move to the next field if it's not the last input
-        if (index < 4 && !string.IsNullOrEmpty(input))
+        if (index < length && !string.IsNullOrEmpty(input))
         {
             await JS.InvokeVoidAsync("focusElement", $"input{index + 1}");
         }
+        // Move to submit button
+        else if (index < length && !string.IsNullOrEmpty(input))
+        {
+            await JS.InvokeVoidAsync("focusElement", "submitButton"); // Move to Submit button
+        }
 
+
+    }
+
+    private async Task HandleKeyNavigation(KeyboardEventArgs e, int index)
+    {
+        if (e.Key == "ArrowLeft" && index > 0)
+        {
+            await JS.InvokeVoidAsync("focusElement", $"input{index - 1}"); // Move left
+        }
+        else if ((e.Key == "ArrowRight" || e.Key == "Enter") && index <= length)
+        {
+            await JS.InvokeVoidAsync("focusElement", $"input{index + 1}"); // Move right
+        }
         // Move back on Backspace if input is empty
         else if (string.IsNullOrEmpty(input) && index > 1)
         {
@@ -47,8 +76,55 @@
         }
     }
 
-}
+    private void SubmitForm()
+    {
+        Console.WriteLine("Form Submitted!");
+    }
 
+    // Define the Number class
+    private class Number
+    {
+        public int b15 { get; set; }
+        public int b14 { get; set; }
+        public int b13 { get; set; }
+        public int b12 { get; set; }
+        public int b11 { get; set; }
+        public int b10 { get; set; }
+        public int b9 { get; set; }
+        public int b8 { get; set; }
+        public int b7 { get; set; }
+        public int b6 { get; set; }
+        public int b5 { get; set; }
+        public int b4 { get; set; }
+        public int b3 { get; set; }
+        public int b2 { get; set; }
+        public int b1 { get; set; }
+        public int b0 { get; set; }
+
+        public int radix { get; set; }
+    }
+
+    // Create an instance of Person and set initial values
+    private Number num = new Number
+        {
+            b15 = 0,
+            b14 = 0,
+            b13 = 0,
+            b12 = 0,
+            b11 = 0,
+            b10 = 0,
+            b9 = 0,
+            b8 = 0,
+            b7 = 0,
+            b6 = 0,
+            b5 = 0,
+            b4 = 0,
+            b3 = 0,
+            b2 = 0,
+            b1 = 0,
+            b0 = 0,
+        };
+}
 
 
 
