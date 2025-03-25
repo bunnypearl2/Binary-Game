@@ -23,7 +23,8 @@
 
 @code {
     private bool IsDarkMode = false;
-
+    
+    @*Saves theme if reloaded, but the toggle doesn't adjust accordingly (i.e. goes back to off even if dark mode is on)
     protected override async Task OnInitializedAsync()
     {
         var storedValue = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "theme");
@@ -41,7 +42,7 @@
 
         await ApplyTheme();
     }
-
+    *@
     private async Task ToggleTheme(ChangeEventArgs e)
     {
         IsDarkMode = (bool)e.Value;
