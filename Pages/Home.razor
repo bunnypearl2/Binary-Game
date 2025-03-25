@@ -5,23 +5,74 @@
 
 Binary App Test
 
+
+
 <div class="input-row">
-    <input type="number" min="0" max="1" class="small-input" id="b15" @bind="num.b15" />
-    <input type="number" min="0" max="1" class="small-input" id="b14" @bind="num.b14" />
-    <input type="number" min="0" max="1" class="small-input" id="b13" @bind="num.b13" />
-    <input type="number" min="0" max="1" class="small-input" id="b12" @bind="num.b12" />
-    <input type="number" min="0" max="1" class="small-input" id="b11" @bind="num.b11" />
-    <input type="number" min="0" max="1" class="small-input" id="b10" @bind="num.b10" />
-    <input type="number" min="0" max="1" class="small-input" id="b9" @bind="num.b9" />
-    <input type="number" min="0" max="1" class="small-input" id="b8" @bind="num.b8" />
-    <input type="number" min="0" max="1" class="small-input" id="b7" @bind="num.b7" />
-    <input type="number" min="0" max="1" class="small-input" id="b6" @bind="num.b6" />
-    <input type="number" min="0" max="1" class="small-input" id="b5" @bind="num.b5" />
-    <input type="number" min="0" max="1" class="small-input" id="b4" @bind="num.b4" />
-    <input type="number" min="0" max="1" class="small-input" id="b3" @bind="num.b3" />
-    <input type="number" min="0" max="1" class="small-input" id="b2" @bind="num.b2" />
-    <input type="number" min="0" max="1" class="small-input" id="b1" @bind="num.b1" />
-    <input type="number" min="0" max="1" class="small-input" id="b0" @bind="num.b0" />
+
+    <Tooltip Class="d-inline-block" Title="@fifteenVal" role="button">
+    <button style="background-color:@bgcolor15" @onclick=ToggleB15>@num.b15</button>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@fourteenVal" role="button">
+    <button style="background-color:@bgcolor14" @onclick=ToggleB14>@num.b14</button>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@thirteenVal" role="button">
+    <button style="background-color:@bgcolor13" @onclick=ToggleB13>@num.b13</button>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@twelveVal" role="button">
+    <button style="background-color:@bgcolor12" @onclick=ToggleB12>@num.b12</button>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@elevenVal" role="button">
+    <button style="background-color:@bgcolor11" @onclick=ToggleB11>@num.b11</button>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@tenVal" role="button">
+    <button style="background-color:@bgcolor10" @onclick=ToggleB10>@num.b10</button>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@nineVal" role="button">
+    <button style="background-color:@bgcolor9" @onclick=ToggleB9>@num.b9</button>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@eightVal" role="button">
+    <button style="background-color:@bgcolor8" @onclick=ToggleB8>@num.b8</button>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@sevenVal" role="button">
+    <button style="background-color:@bgcolor7" @onclick=ToggleB7>@num.b7</button>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@sixVal" role="button">
+    <button style="background-color:@bgcolor6" @onclick=ToggleB6>@num.b6</button>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@fiveVal" role="button">
+    <button style="background-color:@bgcolor5" @onclick=ToggleB5>@num.b5</button>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@fourVal" role="button">
+    <button style="background-color:@bgcolor4" @onclick=ToggleB4>@num.b4</button>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@threeVal" role="button">
+    <button style="background-color:@bgcolor3" @onclick=ToggleB3>@num.b3</button>
+    </Tooltip>
+    
+    <Tooltip Class="d-inline-block" Title="@twoVal" role="button">
+    <button style="background-color:@bgcolor2" @onclick=ToggleB2>@num.b2</button>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@oneVal" role="button">
+    <button style="background-color:@bgcolor1" @onclick=ToggleB1>@num.b1</button>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title= "@zeroVal" role="button">
+        <button style="background-color:@bgcolor0" @onclick=ToggleB0>@num.b0</button>
+    </Tooltip>
+
 </div>
 <br>
 
@@ -32,7 +83,362 @@ Binary App Test
 <h3>2's Compliment: @num.twosCompliment</h3>
 <h3>Hexadecimal: @num.base16</h3>
 
+
+
 @code {
+
+    string buttonclass { get; set; } = "btn btn-primary"; // (starting value)
+
+    int currentCount = 0;
+    string bgcolor0 { get; set; } = "#eca24a";
+    string bgcolor1 { get; set; } = "#eca24a";
+    string bgcolor2 { get; set; } = "#eca24a";
+    string bgcolor3 { get; set; } = "#eca24a";
+    string bgcolor4 { get; set; } = "#eca24a";
+    string bgcolor5 { get; set; } = "#eca24a";
+    string bgcolor6 { get; set; } = "#eca24a";
+    string bgcolor7 { get; set; } = "#eca24a";
+    string bgcolor8 { get; set; } = "#eca24a";
+    string bgcolor9 { get; set; } = "#eca24a";
+    string bgcolor10 { get; set; } = "#eca24a";
+    string bgcolor11 { get; set; } = "#eca24a";
+    string bgcolor12 { get; set; } = "#eca24a";
+    string bgcolor13 { get; set; } = "#eca24a";
+    string bgcolor14 { get; set; } = "#eca24a";
+    string bgcolor15 { get; set; } = "#eca24a";
+
+    
+   
+    string zeroVal = "2<sup>0</sup>";
+    string oneVal = "2<sup>1</sup>";
+    string twoVal = "2<sup>2</sup>";
+    string threeVal = "2<sup>3</sup>";
+    string fourVal = "2<sup>4</sup>";
+    string fiveVal = "2<sup>5</sup>";
+    string sixVal = "2<sup>6</sup>";
+    string sevenVal = "2<sup>7</sup>";
+    string eightVal = "2<sup>8</sup>";
+    string nineVal = "2<sup>9</sup>";
+    string tenVal = "2<sup>10</sup>";
+    string elevenVal = "2<sup>11</sup>";
+    string twelveVal = "2<sup>12</sup>";
+    string thirteenVal = "2<sup>13</sup>";
+    string fourteenVal = "2<sup>14</sup>";
+    string fifteenVal = "2<sup>15</sup>";
+
+
+    void ToggleB0()
+    {
+
+        if (num.b0 == 0)
+        {
+            num.b0 = 1;
+            bgcolor0 = "#4ae1ec";
+
+        }
+        else if (num.b0 == 1)
+        {
+            num.b0 = 0;
+            bgcolor0 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+    }
+    void ToggleB1()
+    {
+
+
+        if (num.b1 == 0)
+        {
+            num.b1 = 1;
+            bgcolor1 = "#4ae1ec";
+
+        }
+        else if (num.b1 == 1)
+        {
+            num.b1 = 0;
+            bgcolor1 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+    }
+    void ToggleB2()
+    {
+
+        if (num.b2 == 0)
+        {
+            num.b2 = 1;
+            bgcolor2 = "#4ae1ec";
+
+        }
+        else if (num.b2 == 1)
+        {
+            num.b2 = 0;
+            bgcolor2 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+    }
+    void ToggleB3()
+    {
+
+        if (num.b3 == 0)
+        {
+            num.b3 = 1;
+            bgcolor3 = "#4ae1ec";
+
+        }
+        else if (num.b3 == 1)
+        {
+            num.b3 = 0;
+            bgcolor3 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+    }
+
+    void ToggleB4()
+    {
+
+        if (num.b4 == 0)
+        {
+            num.b4 = 1;
+            bgcolor4 = "#4ae1ec";
+
+        }
+        else if (num.b4 == 1)
+        {
+            num.b4 = 0;
+            bgcolor4 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+    }
+    void ToggleB5()
+    {
+
+        if (num.b5 == 0)
+        {
+            num.b5 = 1;
+            bgcolor5 = "#4ae1ec";
+
+        }
+        else if (num.b5 == 1)
+        {
+            num.b5 = 0;
+            bgcolor5 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+    }
+    void ToggleB6()
+    {
+
+        if (num.b6 == 0)
+        {
+            num.b6 = 1;
+            bgcolor6 = "#4ae1ec";
+
+        }
+        else if (num.b6 == 1)
+        {
+            num.b6 = 0;
+            bgcolor6 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+    }
+    void ToggleB7()
+    {
+
+        if (num.b7 == 0)
+        {
+            num.b7 = 1;
+            bgcolor7 = "#4ae1ec";
+
+        }
+        else if (num.b7 == 1)
+        {
+            num.b7 = 0;
+            bgcolor7 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+    }
+    void ToggleB8()
+    {
+
+        if (num.b8 == 0)
+        {
+            num.b8 = 1;
+            bgcolor8 = "#4ae1ec";
+
+        }
+        else if (num.b8 == 1)
+        {
+            num.b8 = 0;
+            bgcolor8 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+    }
+    void ToggleB9()
+    {
+
+        if (num.b9 == 0)
+        {
+            num.b9 = 1;
+            bgcolor9 = "#4ae1ec";
+
+        }
+        else if (num.b9 == 1)
+        {
+            num.b9 = 0;
+            bgcolor9 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+    }
+
+    void ToggleB10()
+    {
+
+        if (num.b10 == 0)
+        {
+            num.b10 = 1;
+            bgcolor10 = "#4ae1ec";
+
+        }
+        else if (num.b10 == 1)
+        {
+            num.b10 = 0;
+            bgcolor10 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+    }
+
+    void ToggleB11()
+    {
+
+        if (num.b11 == 0)
+        {
+            num.b11 = 1;
+            bgcolor11 = "#4ae1ec";
+
+        }
+        else if (num.b11 == 1)
+        {
+            num.b11 = 0;
+            bgcolor11 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+    }
+
+    void ToggleB12()
+    {
+
+        if (num.b12 == 0)
+        {
+            num.b12 = 1;
+            bgcolor12 = "#4ae1ec";
+
+        }
+        else if (num.b12 == 1)
+        {
+            num.b12 = 0;
+            bgcolor12 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+    }
+
+    void ToggleB13()
+    {
+
+        if (num.b13 == 0)
+        {
+            num.b13 = 1;
+            bgcolor13 = "#4ae1ec";
+
+        }
+        else if (num.b13 == 1)
+        {
+            num.b13 = 0;
+            bgcolor13 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+    }
+    void ToggleB14()
+    {
+
+        if (num.b14 == 0)
+        {
+            num.b14 = 1;
+            bgcolor14 = "#4ae1ec";
+
+        }
+        else if (num.b14 == 1)
+        {
+            num.b14 = 0;
+            bgcolor14 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+    }
+
+    void ToggleB15()
+    {
+
+        if (num.b15 == 0)
+        {
+            num.b15 = 1;
+            bgcolor15 = "#4ae1ec";
+
+        }
+        else if (num.b15 == 1)
+        {
+            num.b15 = 0;
+            bgcolor15 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+    }
+
     //Update hints/labels
 
 
