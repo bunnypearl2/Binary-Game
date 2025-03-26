@@ -1,76 +1,259 @@
-﻿@inject IJSRuntime JS
+@inject IJSRuntime JS
 @page "/other"
-
 
 
 <PageTitle>Other</PageTitle>
 
-
 <h3>Hello, User!</h3>
 
 
-<h3>Click to Select Text in Input Box</h3>
+@*INPUT SELECTION ROW*@
+<div class="row">
+    @***TOGGLE BUTTON***@ 
+    <div class="col-auto">
+        <style>
+            .toggle-on {
+            background-color: green;
+            color: white;
+            }
 
-<input type="text" @ref="inputRef" @onclick="SelectText" placeholder="Click to select text" value="Hello, world!" />
+            .toggle-off {
+            background-color: red;
+            color: white;
+            }
+        </style>
 
-@code {
-    private ElementReference inputRef;
+        <button @onclick="ToggleQuiz" class="@(isQuizzing ? "toggle-on" : "toggle-off")">
+            @(isQuizzing ? "QUIZ ON" : "QUIZ OFF")
+        </button>
 
-    private async Task SelectText()
-    {
-        // Use JavaScript Interop to call the select() method
-        await JS.InvokeVoidAsync("selectText", inputRef);
-    }
-}
+        <p>Status: @(isQuizzing ? "Active" : "Inactive")</p>
+    </div>
 
-
-@*
-
-<h3>JavaScript Interop Example</h3>
-
-<button @onclick="CallJs">Call JavaScript Function</button>
-
-@code {
-    private async Task CallJs()
-    {
-        await JS.InvokeVoidAsync("alert", "This is a JavaScript Alert from Blazor!");
-    }
-}
-
-
-@*
-<h3>Auto Tab Example</h3>
-
-<div>
-    @for (int i = 0; i < inputValues.Length; i++)
-    {
-        <input type="text" maxlength="1" @bind="inputValues[i]"
-               @oninput="@(e => MoveToNext(i))"
-               @ref="inputRefs[i]" />
-    }
+    @***MAIN DROPDOWN***@
+    <div class="col-auto">
+        <select @bind="inputRadix">
+            @foreach (var option in options)
+            {
+                <option value="@option">@option</option>
+            }
+        </select>
+        <p>Selected Base: @inputRadix</p>
+    </div>
 </div>
+<!-- End INPUT SELECTION ROW-->
+
+<!-- Begin body of page -->
+
+<table>
+    @for (int row = 0; row < numOfRows; row++)
+    {
+
+
+        <tr>
+            @for (int col = 0; col < numOfColumns; col++)
+            {
+                int i = row;
+                int j = col;
+                int index = i * numOfColumns + j; // Calculate the index based on row and column
+                <td>
+
+                    <input @ref="textBoxRefs[index]"
+                    value="@textValues[i, j]"
+                    @onclick="(e) => HandleInputClick(e, index)"
+                    @oninput="(e) => MoveNext(e, i , j, index)"
+                    @onkeyup="(e) => HandleKeyNavigation(e, i, j, index)"
+                    @onblur="(e) => FillWhitespace(index)"
+                    class="form-control text-center mx-1"
+                    maxlength="1"
+                    style="width: 50px; display: inline-block;" />
+                </td>
+
+            }
+
+            @{
+                int k = row;
+                <td class="col-auto">
+                    <select @bind="radixRow[k]">
+                        @foreach (var option in options)
+                        {
+                            <option value="@option">@option</option>
+                        }
+                    </select>
+                    <p>Selected Base: @radixRow[k]</p>
+                </td>
+
+                <td>
+
+                    <button @onclick="() => TwosComp(k)">2's Comp'</button>
+                </td>
+            }
+
+
+
+        </tr>
+    }
+</table>
+
+
+
 
 @code {
-    private string[] inputValues = new string[4];  // Store input values
-    private ElementReference[] inputRefs = new ElementReference[4];  // Store input references
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
+    // functionality for QUIZ toggle button
+    private bool isQuizzing = false;
+
+    private void ToggleQuiz()
     {
-        if (firstRender)
+        isQuizzing = !isQuizzing;
+
+        // if switched to on AND input box is empty, generate random number to assign to input box
+
+        // Loop through
+
+    }
+
+    private void GenerateRand()
+    {
+
+    }
+
+
+
+    public const int numOfColumns = 4; // Number of columns per row
+    public const int numOfRows = 4;    // Number of rows
+    public const int totalBoxes = numOfRows * numOfColumns; // Total boxes
+
+    private char?[,] textValues = new char?[numOfRows, numOfColumns]; // Text values in grid
+    private ElementReference[] textBoxRefs = new ElementReference[totalBoxes]; // Array to store references
+                                                                               //private bool[,] boxDisabled = new bool[numOfRows, numOfColumns]; // keeps track of disabled boxes
+
+
+    // FOR DROPDOWN BOXES
+    private int inputRadix = 2;
+    private int[] radixRow = new int[10]; // number of rows; stores selected radix for each row
+    private char[][] rowNum = new char[3][]; //jagged array, but could be 2D array?
+    private List<int> options = new() { 2, 8, 10, 16 };
+
+
+    // TWOS COMPLEMENT TOGGLE/BUTTON
+    private void TwosComp(int row)
+    {
+
+    }
+
+
+    // Initialize boxes to zero
+    // UPDATE ACCORDING TO DEFAULT RADIXES SELECTED
+    protected override void OnInitialized()
+    {
+        // Start with one row
+        for (int i = 0; i < numOfRows; i++)
         {
-            // Ensure that the first input gets focused when the component is rendered for the first time
-            await JS.InvokeVoidAsync("focusElement", inputRefs[0]);
+            for (int j = 0; j < numOfColumns; j++)
+                textValues[i, j] = '0';
+        }
+
+
+
+    }
+
+    // Method to gray out all textboxes
+    private async Task GrayOutTextboxes(ElementReference[] boxRefs)
+    {
+        await JS.InvokeVoidAsync("grayOutElements", boxRefs);
+    }
+
+    // Method to enable all textboxes
+    private async Task EnableTextboxes(ElementReference[] boxRefs)
+    {
+        await JS.InvokeVoidAsync("enableElements", boxRefs);
+    }
+
+    private async Task HandleInputClick(MouseEventArgs e, int index)
+    {
+        // Get the ElementReference from the dictionary based on the unique ID
+        if (index < totalBoxes)
+        {
+            // Use JavaScript Interop to select all text inside the input box
+            await JS.InvokeVoidAsync("selectText", textBoxRefs[index]);
         }
     }
 
-    private async Task MoveToNext(int index)
+    // HANDLES INPUT
+    private async Task MoveNext(ChangeEventArgs e, int row, int col, int index)
     {
-        if (!string.IsNullOrEmpty(inputValues[index]) && index < inputRefs.Length - 1)
+
+        string input = e.Value?.ToString() ?? "";
+        if (input != "")
         {
-            await JS.InvokeVoidAsync("focusElement", inputRefs[index + 1]); // Focus next input field
-            StateHasChanged();  // Trigger re-render manually if necessary
+            char inChar = char.Parse(input);
+
+            //if (char.IsLetterOrDigit(inChar))
+            // Check if the character is valid (e.g., letter or digit)
+           
+
+            textValues[row, col] = inChar; // Update the character
+
+            await AutoTab(row, col, index);
+                    
+        }
+        else
+
+        // COMPARE CHAR/DIGIT WITH ANS TO CHANGE COLOR OF TEXT
+
+
+        StateHasChanged();//update
+
+    }
+
+    // REPLACES BLANK BOXES WITH '0'
+    private async Task FillWhitespace(int index)
+    {
+        // Use JavaScript Interop to directly update the value if it's empty
+        await JS.InvokeVoidAsync("setInputToZeroIfEmpty", textBoxRefs[index]);
+    }
+
+    // HANDLES OTHER KEYS ENTERED FOR NAVIGATION    
+    private async Task HandleKeyNavigation(KeyboardEventArgs e, int row, int col, int index)
+    {
+        if (e.Key == "ArrowLeft" && index > 0)
+        {
+            await textBoxRefs[index - 1].FocusAsync();
+            //await JS.InvokeVoidAsync("focusElement", textBoxRefs[index - 1]); // Move left
+            await JS.InvokeVoidAsync("selectText", textBoxRefs[index - 1]);
+        }
+        else if ((e.Key == "ArrowRight" || e.Key == "Enter") && index < totalBoxes)
+        {
+            await textBoxRefs[index + 1].FocusAsync();
+            //await JS.InvokeVoidAsync("focusElement", textBoxRefs[index + 1]); // Move right
+            await JS.InvokeVoidAsync("selectText", textBoxRefs[index + 1]);
+        }
+        
+
+        
+
+    }
+
+
+
+    private async Task AutoTab(int row, int col, int index)
+    {
+
+
+        if (index < textBoxRefs.Length - 1 && textValues[row,col] != '\0') //i.e. less than numOfRows * numOfColumns - 1
+        {
+            await Task.Delay(50); // Small delay for UI update
+                                  //await textBoxRefs[index + 1].FocusAsync(); // Move focus
+            await JS.InvokeVoidAsync("focusElement", textBoxRefs[index + 1]); // Select text
+            await JS.InvokeVoidAsync("selectText", textBoxRefs[index + 1]); // Select text
         }
     }
+
+    
+    //
+
+
 }
 
 
@@ -96,6 +279,25 @@
     }
 }
 
+
+ /*
+    private Dictionary<string, ElementReference> inputRefs = new Dictionary<string, ElementReference>(); // Dictionary to store references
+    private string clickedId = ""; // Variable to store clicked input's unique ID
+
+    // Handle the click event and select all text in the clicked input
+    private async Task HandleInputClick(MouseEventArgs e, string uniqueId)
+        {
+        clickedId = uniqueId; // Set the clicked ID for display
+        Console.WriteLine($"Input clicked with unique ID: {clickedId}");
+
+        // Get the ElementReference from the dictionary based on the unique ID
+        if (inputRefs.TryGetValue(uniqueId, out var element))
+            {
+            // Use JavaScript Interop to select all text inside the input box
+            await JSRuntime.InvokeVoidAsync("selectText", element);
+    }
+    }
+    */
 
 
 @* Example functionality to have cursor active in a given text box after hitting submit*@
