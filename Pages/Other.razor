@@ -9,26 +9,19 @@
 
 @*INPUT SELECTION ROW*@
 <div class="row">
-    @***TOGGLE BUTTON***@ 
-    <div class="col-auto">
-        <style>
-            .toggle-on {
-            background-color: green;
-            color: white;
-            }
 
-            .toggle-off {
-            background-color: red;
-            color: white;
-            }
-        </style>
+    @***INPUT BOX***@
+    <EditForm Model="@formData" OnValidSubmit="HandleSubmit">
+        <div>
+            <label for="firstinput">Input (max 16 characters):</label>
+            <InputText id="firstinput" @bind-Value="formData.input" class="form-control" maxlength="16"/>
+        </div>
 
-        <button @onclick="ToggleQuiz" class="@(isQuizzing ? "toggle-on" : "toggle-off")">
-            @(isQuizzing ? "QUIZ ON" : "QUIZ OFF")
-        </button>
+        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+    </EditForm>
 
-        <p>Status: @(isQuizzing ? "Active" : "Inactive")</p>
-    </div>
+    <p>Submitted Name: @inputMain</p>
+    <p>@errorMessage</p>
 
     @***MAIN DROPDOWN***@
     <div class="col-auto">
@@ -41,7 +34,30 @@
         <p>Selected Base: @inputRadix</p>
     </div>
 </div>
+
+@***TOGGLE BUTTON***@ 
+<div class="col-auto">
+    <style>
+        .toggle-on {
+        background-color: green;
+        color: white;
+        }
+
+        .toggle-off {
+        background-color: red;
+        color: white;
+        }
+    </style>
+
+    <button @onclick="ToggleQuiz" class="@(isQuizzing ? "toggle-on" : "toggle-off")">
+        @(isQuizzing ? "QUIZ ON" : "QUIZ OFF")
+    </button>
+
+    <p>Status: @(isQuizzing ? "Active" : "Inactive")</p>
+</div>
 <!-- End INPUT SELECTION ROW-->
+
+
 
 <!-- Begin body of page -->
 
@@ -99,7 +115,68 @@
 
 
 @code {
+    // FOR MAIN INPUT BOX
+    private string inputMain { get; set; } = ""; // main input box variable
 
+
+    private FormModel formData = new FormModel();
+    private string errorMessage { get; set; } = "";
+
+    // 
+    public Dictionary<char,int> charDict = new Dictionary<char, int>
+{
+    { '1', 1 }, { '2', 2 }, { '3', 3 }, { '4', 4 }, { '5', 5 },
+    { '6', 6 }, { '7', 7 }, { '8', 8 }, { '9', 9 },
+    { 'A', 10 }, { 'B', 11 }, { 'C', 12 }, { 'D', 13 }, { 'E', 14 },
+    { 'F', 15 }, { 'G', 16 }, { 'H', 17 }, { 'I', 18 }, { 'J', 19 },
+    { 'K', 20 }, { 'L', 21 }, { 'M', 22 }, { 'N', 23 }, { 'O', 24 },
+    { 'P', 25 }, { 'Q', 26 }, { 'R', 27 }, { 'S', 28 }, { 'T', 29 },
+    { 'U', 30 }, { 'V', 31 }, { 'W', 32 }, { 'X', 33 }, { 'Y', 34 }, { 'Z', 35 }
+};
+
+    // Example: Lookup a character
+    //numberAlphabetDict['5']);  
+    //numberAlphabetDict['C']);  
+
+
+    // FOR DROPDOWN BOXES
+    private int inputRadix = 2;
+    private int[] radixRow = new int[10]; // number of rows; stores selected radix for each row
+    private char[][] rowNum = new char[3][]; //jagged array, but could be 2D array?
+    private List<int> options = new() { 2, 8, 10, 16 };
+
+
+    // FOR INDIVIDUAL INPUT BOXES
+    public const int numOfColumns = 16; // Number of columns per row
+    public const int numOfRows = 4;    // Number of rows
+    public const int totalBoxes = numOfRows * numOfColumns; // Total boxes
+
+    private char?[,] textValues = new char?[numOfRows, numOfColumns]; // Text values in grid
+    private ElementReference[] textBoxRefs = new ElementReference[totalBoxes]; // Array to store references
+     //private bool[,] boxDisabled = new bool[numOfRows, numOfColumns]; // keeps track of disabled boxes
+
+   
+
+    // FOR MAIN INPUT SUBMIT FORM - so submits on enter key
+    private class FormModel
+    {
+        public string input { get; set; } = "";
+    }
+
+    // Evaluate main input upon entry or hitting submit
+    private void HandleSubmit()
+    {
+        inputMain = formData.input.ToUpper();
+        inputMain = inputMain.PadLeft(16, '0');
+
+        // Check if input is valid
+
+
+
+        // If not valid, output error message
+
+    }
+    
     // functionality for QUIZ toggle button
     private bool isQuizzing = false;
 
@@ -120,20 +197,6 @@
 
 
 
-    public const int numOfColumns = 4; // Number of columns per row
-    public const int numOfRows = 4;    // Number of rows
-    public const int totalBoxes = numOfRows * numOfColumns; // Total boxes
-
-    private char?[,] textValues = new char?[numOfRows, numOfColumns]; // Text values in grid
-    private ElementReference[] textBoxRefs = new ElementReference[totalBoxes]; // Array to store references
-                                                                               //private bool[,] boxDisabled = new bool[numOfRows, numOfColumns]; // keeps track of disabled boxes
-
-
-    // FOR DROPDOWN BOXES
-    private int inputRadix = 2;
-    private int[] radixRow = new int[10]; // number of rows; stores selected radix for each row
-    private char[][] rowNum = new char[3][]; //jagged array, but could be 2D array?
-    private List<int> options = new() { 2, 8, 10, 16 };
 
 
     // TWOS COMPLEMENT TOGGLE/BUTTON
