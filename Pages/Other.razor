@@ -117,15 +117,19 @@
 @code {
     // FOR MAIN INPUT BOX
     private string inputMain { get; set; } = ""; // main input box variable
-
-
-    private FormModel formData = new FormModel();
     private string errorMessage { get; set; } = "";
+    private FormModel formData = new FormModel();
+
+    // FOR MAIN INPUT SUBMIT FORM - so submits on enter key
+    private class FormModel
+    {
+        public string input { get; set; } = "";
+    }
 
     // 
     public Dictionary<char,int> charDict = new Dictionary<char, int>
 {
-    { '1', 1 }, { '2', 2 }, { '3', 3 }, { '4', 4 }, { '5', 5 },
+    { '0', 0 }, { '1', 1 }, { '2', 2 }, { '3', 3 }, { '4', 4 }, { '5', 5 },
     { '6', 6 }, { '7', 7 }, { '8', 8 }, { '9', 9 },
     { 'A', 10 }, { 'B', 11 }, { 'C', 12 }, { 'D', 13 }, { 'E', 14 },
     { 'F', 15 }, { 'G', 16 }, { 'H', 17 }, { 'I', 18 }, { 'J', 19 },
@@ -133,10 +137,6 @@
     { 'P', 25 }, { 'Q', 26 }, { 'R', 27 }, { 'S', 28 }, { 'T', 29 },
     { 'U', 30 }, { 'V', 31 }, { 'W', 32 }, { 'X', 33 }, { 'Y', 34 }, { 'Z', 35 }
 };
-
-    // Example: Lookup a character
-    //numberAlphabetDict['5']);  
-    //numberAlphabetDict['C']);  
 
 
     // FOR DROPDOWN BOXES
@@ -153,24 +153,30 @@
 
     private char?[,] textValues = new char?[numOfRows, numOfColumns]; // Text values in grid
     private ElementReference[] textBoxRefs = new ElementReference[totalBoxes]; // Array to store references
-     //private bool[,] boxDisabled = new bool[numOfRows, numOfColumns]; // keeps track of disabled boxes
+                                                                               //private bool[,] boxDisabled = new bool[numOfRows, numOfColumns]; // keeps track of disabled boxes
 
-   
 
-    // FOR MAIN INPUT SUBMIT FORM - so submits on enter key
-    private class FormModel
-    {
-        public string input { get; set; } = "";
-    }
+
 
     // Evaluate main input upon entry or hitting submit
     private void HandleSubmit()
     {
+        errorMessage = "";
         inputMain = formData.input.ToUpper();
         inputMain = inputMain.PadLeft(16, '0');
 
         // Check if input is valid
 
+        // Loop through string to make sure each char is valid
+        foreach(char ch in inputMain)
+        {
+            //if valid character, plug char into dictionary to compare to radix value
+            if (!char.IsLetterOrDigit(ch) || charDict[ch] >= inputRadix)
+            {
+                errorMessage = "Input out of bounds of radix";
+                break;
+            }
+        }
 
 
         // If not valid, output error message
