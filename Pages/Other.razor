@@ -20,8 +20,10 @@
         <button type="submit" class="btn btn-primary mt-2">Submit</button>
     </EditForm>
 
-    <p>Submitted Name: @inputMain</p>
+    <p>Submitted Name: @inputString</p>
     <p>@errorMessage</p>
+    <p>Decimal Value: @inputDecimal</p>
+    <p>Twos Comp Decimal: @twosCompDecimal</p>
 
     @***MAIN DROPDOWN***@
     <div class="col-auto">
@@ -90,7 +92,7 @@
             @{
                 int k = row;
                 <td class="col-auto">
-                    <select @bind="radixRow[k]">
+                    <select @bind:get="GetDropdownValue(k)" @bind:set="newValue => RowCalculation(k, newValue)">
                         @foreach (var option in options)
                         {
                             <option value="@option">@option</option>
@@ -116,7 +118,10 @@
 
 @code {
     // FOR MAIN INPUT BOX
-    private string inputMain { get; set; } = ""; // main input box variable
+    private int inputRadix = 2;
+    private string inputString { get; set; } = ""; // main input box variable
+    private int inputDecimal = 0;
+    private int twosCompDecimal = 0;
     private string errorMessage { get; set; } = "";
     private FormModel formData = new FormModel();
 
@@ -124,6 +129,65 @@
     private class FormModel
     {
         public string input { get; set; } = "";
+    }
+
+    // Evaluate main input upon entry or hitting submit
+    private void HandleSubmit()
+    {
+        errorMessage = "";
+        inputString = formData.input.ToUpper();
+        inputString = inputString.PadLeft(16, '0');
+
+        // Check if input is valid
+
+        // Loop through string to make sure each char is valid
+        foreach (char ch in inputString)
+        {
+            //if valid character, plug char into dictionary to compare to radix value
+            if (!char.IsLetterOrDigit(ch) || charDict[ch] >= inputRadix)
+            {
+                errorMessage = "Input out of bounds of radix";
+                return;
+            }
+        }
+
+        // Calculate conversions
+        ToDecimal(); //update decimal value
+
+        // call function that's called by dropdown boxes
+
+    }
+
+    // CALCULATES DECIMAL FROM MAIN INPUT
+    private void ToDecimal()
+    {
+        //Use "inputRadix" and "inputString" to calculate decimal value "inputDecimal"
+        inputDecimal = 0; //reset inputDecimal
+        char[] inputArray = inputString.ToCharArray();
+        inputArray = inputArray.Reverse().ToArray();
+
+        for (int i = 0; i < inputArray.Length; i++)
+        {
+            inputDecimal += charDict[inputArray[i]] * (int)Math.Pow(inputRadix, i);
+        }
+
+        // Determin positive decimal value to represent twos complement
+        twosCompDecimal = 0; //reset twosCompDecimal
+        if (inputDecimal < 32768)
+        {
+            twosCompDecimal = 32768 - inputDecimal;// - (int)Math.Pow(2, 16);
+        }
+        else if (inputDecimal >= 32768)
+        {
+            twosCompDecimal = inputDecimal - 32768;
+        }
+        else //inputDecimal == 32768
+        {
+            twosCompDecimal = 32768;
+        }
+        
+
+
     }
 
     // 
@@ -140,11 +204,28 @@
 
 
     // FOR DROPDOWN BOXES
-    private int inputRadix = 2;
-    private int[] radixRow = new int[10]; // number of rows; stores selected radix for each row
+
+    private int[] radixRow = new int[4]; // number of rows; stores selected radix for each row
     private char[][] rowNum = new char[3][]; //jagged array, but could be 2D array?
     private List<int> options = new() { 2, 8, 10, 16 };
 
+    // UPDATE RADIX FOR DROPDOWN FOR A GIVEN ROW
+    private int GetDropdownValue(int index)
+    {
+        return radixRow[index];
+    }
+
+    // CALCULATE CONVERSION NEEDED FOR GIVEN DROPDOWN
+    private void RowCalculation(int rowNum, int selectedRadix)
+    {
+        radixRow[rowNum] = selectedRadix; //update radix for given row
+
+        // Update textbox values for row
+
+
+    }
+
+    
 
     // FOR INDIVIDUAL INPUT BOXES
     public const int numOfColumns = 16; // Number of columns per row
@@ -158,30 +239,7 @@
 
 
 
-    // Evaluate main input upon entry or hitting submit
-    private void HandleSubmit()
-    {
-        errorMessage = "";
-        inputMain = formData.input.ToUpper();
-        inputMain = inputMain.PadLeft(16, '0');
-
-        // Check if input is valid
-
-        // Loop through string to make sure each char is valid
-        foreach(char ch in inputMain)
-        {
-            //if valid character, plug char into dictionary to compare to radix value
-            if (!char.IsLetterOrDigit(ch) || charDict[ch] >= inputRadix)
-            {
-                errorMessage = "Input out of bounds of radix";
-                break;
-            }
-        }
-
-
-        // If not valid, output error message
-
-    }
+   
     
     // functionality for QUIZ toggle button
     private bool isQuizzing = false;
