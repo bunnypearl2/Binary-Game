@@ -11,10 +11,11 @@
 <div class="row">
 
     @***INPUT BOX***@
+    <div class="col-auto">
     <EditForm Model="@formData" OnValidSubmit="HandleSubmit">
         <div>
             <label for="firstinput">Input (max 16 characters):</label>
-            <InputText id="firstinput" @bind-Value="formData.input" class="form-control" maxlength="16"/>
+            <InputText id="firstinput" @bind-Value="formData.input" class="form-control" style="width: 16ch;" maxlength="16"/>
         </div>
 
         <button type="submit" class="btn btn-primary mt-2">Submit</button>
@@ -24,6 +25,7 @@
     <p>@errorMessage</p>
     <p>Decimal Value: @inputDecimal</p>
     <p>Twos Comp Decimal: @twosCompDecimal</p>
+    </div>
 
     @***MAIN DROPDOWN***@
     <div class="col-auto">
@@ -35,7 +37,7 @@
         </select>
         <p>Selected Base: @inputRadix</p>
     </div>
-</div>
+
 
 @***TOGGLE BUTTON***@ 
 <div class="col-auto">
@@ -56,6 +58,8 @@
     </button>
 
     <p>Status: @(isQuizzing ? "Active" : "Inactive")</p>
+</div>
+
 </div>
 <!-- End INPUT SELECTION ROW-->
 
