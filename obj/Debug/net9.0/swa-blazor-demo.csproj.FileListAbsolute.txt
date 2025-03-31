@@ -2181,3 +2181,6 @@ C:\Users\atoth\Source\Repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-
 C:\Users\atoth\Source\Repos\Binary-Game\obj\Debug\net9.0\compressed\5jzn1haw5d-mn0qc66076.gz
 C:\Users\atoth\Source\Repos\Binary-Game\obj\Debug\net9.0\compressed\iay1k4q5dj-qfwih3jtz0.gz
 C:\Users\atoth\Source\Repos\Binary-Game\obj\Debug\net9.0\compressed\cxfcz4e37m-n1qe29ymtq.gz
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\swa-blazor-demo.dll
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\refint\swa-blazor-demo.dll
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\swa-blazor-demo.pdb
