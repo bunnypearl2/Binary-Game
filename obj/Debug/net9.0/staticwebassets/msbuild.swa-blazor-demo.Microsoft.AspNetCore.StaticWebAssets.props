@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9ak2ab2xz1</Fingerprint>
-      <Integrity>z3btG9fQ3KCOapljvQDMMo/jBCGrR653dsXFHkM/orM=</Integrity>
+      <Fingerprint>luxao6psap</Fingerprint>
+      <Integrity>3Um0neJYRKgTdgycqIOSoEl2S1NQn3m2ILvhuJBeXKY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\app.css'))</OriginalItemSpec>
@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>n7014sucd9</Fingerprint>
-      <Integrity>UwsxUO+WUNFkUqlk9jXJeXvs9B8hNYGVqgKl0OMGfmc=</Integrity>
+      <Fingerprint>vjcns73hob</Fingerprint>
+      <Integrity>tdgzsJDDMp2T+Y7/W4Zzq4wI+kyhYA/rN67xRmGGxoM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>955w10b1r6</Fingerprint>
-      <Integrity>DXOHKffKY5QjOqBvwrxuFmRcYBGvLo3IWxElbBlowbg=</Integrity>
+      <Fingerprint>dhg8xuvy6u</Fingerprint>
+      <Integrity>j5FXdFpG/vOLkYdD2d3xy35h39AJtvAeKofJdNlvawY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</OriginalItemSpec>
@@ -930,8 +930,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ApplicationBundle</AssetTraitValue>
-      <Fingerprint>8032crjj7x</Fingerprint>
-      <Integrity>uEOcu4WeZZkeRQvISdNwB221RB89DnMfHMFUm4SVN90=</Integrity>
+      <Fingerprint>qqrvu83sh7</Fingerprint>
+      <Integrity>MswlFvPrMH8OruP3eoshZpPE5wTmwYO/8M05QCzVjcU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\swa-blazor-demo.styles.css'))</OriginalItemSpec>

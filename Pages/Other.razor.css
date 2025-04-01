@@ -1,0 +1,21 @@
+﻿/* For quizzing toggle */
+.quiz-on {
+    background-color: green;
+    color: white;
+}
+
+.quiz-off {
+    background-color: red;
+    color: white;
+}
+
+/* For Twos Complement toggle buttons */
+.toggle-on {
+    background-color: green;
+    color: white;
+}
+
+.toggle-off {
+    background-color: red;
+    color: white;
+}

@@ -124,10 +124,6 @@ code {
     justify-content: center;
 }
 
-.zoom-container {
-    transform: scale(1.2);
-    transform-origin: top left;
-}
 
 /* Light mode (Default) */
 body {
