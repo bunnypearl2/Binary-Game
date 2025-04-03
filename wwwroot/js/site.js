@@ -14,7 +14,7 @@
 //JS functions help for smoother input 
    
 function setInputToZeroIfEmpty(inputElement) {
-    if (!inputElement.value.trim()) {
+    if (inputElement.dataset.active === "true" && !inputElement.value.trim()) {
         inputElement.value = "0"; // Set to zero if the input is empty or whitespace
     }
 }

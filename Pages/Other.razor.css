@@ -11,11 +11,11 @@
 
 /* For Twos Complement toggle buttons */
 .toggle-on {
-    background-color: green;
+    background-color: orange;
     color: white;
 }
 
 .toggle-off {
-    background-color: red;
+    background-color: orangered;
     color: white;
 }
