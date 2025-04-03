@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xMODn3qd+Zc=",
+  "dgSpecHash": "BNL5iH7NCm8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\swa-blazor-demo.csproj",
+  "projectFilePath": "C:\\Users\\violi\\source\\repos\\Binary-Game\\swa-blazor-demo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\violi\\.nuget\\packages\\blazor.bootstrap\\3.3.1\\blazor.bootstrap.3.3.1.nupkg.sha512",
     "C:\\Users\\violi\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.0\\microsoft.aspnetcore.authorization.9.0.0.nupkg.sha512",

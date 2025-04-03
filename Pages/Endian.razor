@@ -1,26 +1,31 @@
 ﻿@page "/endian"
 
-<h3>Little and Big Endian</h3>
-<h3>Test: @dialogue[position]</h3>
+<img src="images/testCat.png" alt="Cat" width="200" height="200" />
+<h3>@characterName: @dialogue[position]</h3>
 <button class="btn btn-primary" @onclick="Advance">@buttonText</button>
 
 
 @code {
 	int position = 0;
-	String buttonText = "Advance";
-	string[] dialogue = { "Hello! Here's the difference between little and big endian!", "Its super simple you see!", "Little endian does this", "And big endian does that!", "Pretty neat right?" };
+	String buttonText = "Next";
+	String characterName = "??????";
+	string[] dialogue = { "Hello!", "My name is Endian!", "Here's the difference between big and little endian!", "Its super simple you see!", "In big endian, the most significant bit is on the left.", "In little endian, the most significant bit is on the right.", "Pretty neat right? Now let's check out some examples!" };
 
 	private void Advance()
 	{
 		position++;
-		if (position == 4)
+		if (position == 1)
+		{
+			characterName = "Endian";
+		}
+		if (position == 6)
 		{
 			buttonText = "Repeat";
 		}
-		if (position == 5)
+		if (position == 7)
 		{
 			position = 0;
-			buttonText = "Advance";
+			buttonText = "Next";
 		}
 	}
 }
