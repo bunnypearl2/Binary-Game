@@ -1,26 +1,27 @@
 @inject IJSRuntime JS
-@page "/convert"
+@page "/"
 
 
 <PageTitle>Converter</PageTitle>
 
-
+<h3></h3>
 
 @*INPUT SELECTION ROW*@
-<div class="row">
+<p>Input (max @numOfColumns characters)</p>
+
+<div class="row" style="display: flex; align-items: flex-start; gap: 10px;">
 
     @***INPUT BOX***@
     <div class="col-auto">
-        <EditForm Model="@formData" OnValidSubmit="HandleSubmit">
-            <div>
-                <label for="firstinput">Input (max @numOfColumns characters) <br />Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted</label>
-                <InputText id="firstinput" @bind-Value="formData.input" class="form-control" style="width: 16ch;" maxlength="16"/>
-            </div>
-
+        
+        <EditForm Model="@formData" OnValidSubmit="HandleSubmit" style="display: flex; gap: 5px;">
+            <InputText id="firstinput" @bind-Value="formData.input" class="form-control" style="width: 16ch;" maxlength="16" />
             <button type="submit" class="btn btn-primary mt-2">Submit</button>
         </EditForm>
+        <p>Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted<br /></p>
 
-        <p>Submitted Name: @inputString</p>
+
+        <p>Input value: @inputString</p>
         <p>@errorMessage</p>
         @* <p>Decimal Value: @inputDecimal</p> *@
         @* <p>Twos Comp Decimal: @twosCompDecimal</p> *@
@@ -28,7 +29,7 @@
     </div>
 
     @***MAIN DROPDOWN***@
-    <div class="col-auto">
+    <div class="col-auto" style="margin-left: 50px;">
         <select @onchange="UpdateDropdown">
             @foreach (var option in options)
             {
