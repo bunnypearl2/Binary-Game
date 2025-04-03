@@ -63,7 +63,7 @@
 
 
         <tr>
-            @for (int col = numOfColumns-1; col >= 0; col--)
+            @for (int col = 0; col < numOfColumns; col++)
             {
                 int i = row;
                 int j = col;
@@ -75,7 +75,7 @@
                     @onclick="(e) => HandleInputClick(e, index)"
                     @oninput="(e) => MoveNext(e, i , j, index)"
                     @onkeyup="(e) => HandleKeyNavigation(e, i, j, index)"
-                    
+
                     class="form-control text-center mx-1"
                     maxlength="1"
                     style="width: 50px; display: inline-block;" />
@@ -121,8 +121,8 @@
     private FormModel formData = new FormModel();
 
     // FOR INDIVIDUAL INPUT BOXES
-    public const int numOfColumns = 16; // Number of columns per row
-    public const int numOfRows = 4;    // Number of rows
+    public const int numOfColumns = 8; // Number of columns per row
+    public const int numOfRows = 2;    // Number of rows
     public const int totalBoxes = numOfRows * numOfColumns; // Total boxes
 
     // FOR TWOS COMP BUTTONS
@@ -154,15 +154,7 @@
     // UPDATE ACCORDING TO DEFAULT RADIXES SELECTED
     protected override void OnInitialized()
     {
-        // Initialize arrays before accessing them
-        RowCalculation(0, 2);
-        RowCalculation(1, 2);
-        RowCalculation(2, 16);
-        RowCalculation(3, 10);
 
-        isTwosComp[1] = true;
-
-        StateHasChanged();
 
         for (int i = 0; i < numOfRows; i++)
         {
@@ -188,6 +180,32 @@
             }
         }
 
+
+        // initialize row radices
+        for(int i = 0; i < numOfRows; i++)
+        {
+            if (i % 2 == 0)
+                rowRadix[i] = 2;
+            else
+                rowRadix[i] = 10;
+        }
+
+
+        // initialize twos comp (optional)
+        for(int i = 0; i < numOfRows; i++)
+        {
+            if (i % 4 == 0)
+                isTwosComp[i] = true;
+            else
+                isTwosComp[i] = false;
+        }
+       
+        // initialize submit box
+        formData.input = "0";
+        StateHasChanged(); // Update the UI after initialization
+        HandleSubmit();
+ 
+
     }
 
 
@@ -197,6 +215,7 @@
         public string input { get; set; } = "";
     }
 
+    // FOR MAIN DROPDOWN
     private void UpdateDropdown(ChangeEventArgs e)
     {
         inputRadix = Convert.ToInt32(e.Value);
@@ -286,7 +305,7 @@
 
         const string digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-        for(int i=0; i < numOfColumns; i++)
+        for(int i=numOfColumns-1; i >= 0; i--)
         {
             if (num > 0)
             {
@@ -329,7 +348,7 @@
         rowRadix[rowNum] = selectedRadix; //update radix for given row
 
         // Update textbox values for row
-
+        FromDecimal(isTwosComp[rowNum], selectedRadix, rowNum);
 
     }
 

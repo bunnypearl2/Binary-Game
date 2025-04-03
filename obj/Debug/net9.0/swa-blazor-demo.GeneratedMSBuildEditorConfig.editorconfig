@@ -1,8 +1,4 @@
 is_global = true
-build_property.EnableAotAnalyzer = 
-build_property.EnableSingleFileAnalyzer = 
-build_property.EnableTrimAnalyzer = false
-build_property.IncludeAllContentForSelfExtract = 
 build_property.TargetFramework = net9.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -13,17 +9,26 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = swa-blazor-demo
 build_property.RootNamespace = swa-blazor-demo
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\violi\source\repos\Binary-Game\
+=======
+build_property.ProjectDir = C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\
+>>>>>>> 34f1d11141784afd0bcbcd5f69dcfa644abef36a
 build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+<<<<<<< HEAD
 build_property.MSBuildProjectDirectory = C:\Users\violi\source\repos\Binary-Game
+=======
+build_property.MSBuildProjectDirectory = C:\Users\Ed\source\repos\bunnypearl2\Binary-Game
+>>>>>>> 34f1d11141784afd0bcbcd5f69dcfa644abef36a
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+<<<<<<< HEAD
 [C:/Users/violi/source/repos/Binary-Game/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -77,5 +82,60 @@ build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-5tifzdovup
 
 [C:/Users/violi/source/repos/Binary-Game/Pages/Other.razor]
+=======
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/ASCIIGame.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQVNDSUlHYW1lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/BinaryQuiz.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmluYXJ5UXVpei5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/CheatSheet.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hlYXRTaGVldC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/Endian.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5kaWFuLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/Test1.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdDEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/TwoCompTutorial.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHdvQ29tcFR1dG9yaWFsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ijd3ai39ga
+
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-5tifzdovup
+
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/Other.razor]
+>>>>>>> 34f1d11141784afd0bcbcd5f69dcfa644abef36a
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-jitqcm9u89
