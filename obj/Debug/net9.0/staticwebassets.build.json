@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VnAvlIaOTgro08fOL3xkLkFjj8CpWo7rMQ+MXKGS9e8=",
+  "Hash": "4jaabf+5eA4HbvCO+bdmirhx/Yc6n/K52Sx0yfnULnQ=",
   "Source": "swa-blazor-demo",
   "BasePath": "/",
   "Mode": "Root",
@@ -220,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "r2mdjf9c0q",
-      "Integrity": "A9A6XJiakaU6WWT65uSuv6zibazYUQQGe/WP3ejyTTU=",
+      "Fingerprint": "9vsddy5d5h",
+      "Integrity": "ZVgunzz1PtxmrqKMrlNcxnqJtW9XcW2Rg0VV73islZI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -1081,8 +1081,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "6y6ul6rw9s",
-      "Integrity": "rjs3e5RXoM89Yi5IKNHv3BpwK6V9C7J5drJFHa0lf+s=",
+      "Fingerprint": "zbb3reonqz",
+      "Integrity": "4XAN/zyu3xDB1ZcE2mIE3cA0Q04bDAB1o3/hYNIMfEk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\swa-blazor-demo.pdb"
@@ -1102,8 +1102,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "94sz0h864i",
-      "Integrity": "56LXk5jQcZ/SQgQ1JI2YNUgFuCA6VYkt+OfJN7qnt+U=",
+      "Fingerprint": "3gh4ecqoa3",
+      "Integrity": "U099yg7wTB90EIk72gN+WZyVnOxJ3ixEJHpMkslxTSg=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\webcil\\swa-blazor-demo.wasm"
@@ -5288,12 +5288,12 @@
       "OriginalItemSpec": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Net.WebClient.wasm"
     },
     {
-      "Identity": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-94sz0h864i.gz",
+      "Identity": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-3gh4ecqoa3.gz",
       "SourceId": "swa-blazor-demo",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/swa-blazor-demo#[.{fingerprint=94sz0h864i}]!.wasm.gz",
+      "RelativePath": "_framework/swa-blazor-demo#[.{fingerprint=3gh4ecqoa3}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5302,8 +5302,8 @@
       "RelatedAsset": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\swa-blazor-demo.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "8nssp8mxrb",
-      "Integrity": "/AY9RUDZKoCE0pWtKJ7wccEH6FMQPaKquOpRv6hJb+g=",
+      "Fingerprint": "x06kjvzabv",
+      "Integrity": "fyXsT6uU6bi1XexFq8dn7ojTINKJtMEico6qm18KELQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\swa-blazor-demo.wasm"
@@ -6359,7 +6359,7 @@
       "OriginalItemSpec": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\cxfcz4e37m-r2mdjf9c0q.gz",
+      "Identity": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\cxfcz4e37m-9vsddy5d5h.gz",
       "SourceId": "swa-blazor-demo",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\",
@@ -6373,8 +6373,8 @@
       "RelatedAsset": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "lvfrrwxehe",
-      "Integrity": "IZQtVaB1W4Ii/mEzTyWJ1MaJvenI0wwd13ek0XLYNXs=",
+      "Fingerprint": "exrkeh7a7q",
+      "Integrity": "npMusi/RxaGP3fAlDaf07DVSaQmECK8Lc55EtS1fN68=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -7094,12 +7094,12 @@
       "OriginalItemSpec": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Text.RegularExpressions.wasm"
     },
     {
-      "Identity": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-6y6ul6rw9s.gz",
+      "Identity": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-zbb3reonqz.gz",
       "SourceId": "swa-blazor-demo",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/swa-blazor-demo#[.{fingerprint=6y6ul6rw9s}]!.pdb.gz",
+      "RelativePath": "_framework/swa-blazor-demo#[.{fingerprint=zbb3reonqz}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7108,8 +7108,8 @@
       "RelatedAsset": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\swa-blazor-demo.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "z9dcdkau2b",
-      "Integrity": "yRT17oWa25ThKyQreQrxH6eQDMS2bWH1UaVKZDHQbrs=",
+      "Fingerprint": "fyirer59qn",
+      "Integrity": "t0Iri7SnTsc6uLPv27Z5w1kAH+VgSQMhF6Edpm6KMEM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\swa-blazor-demo.pdb"
@@ -12726,11 +12726,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"A9A6XJiakaU6WWT65uSuv6zibazYUQQGe/WP3ejyTTU=\""
+          "Value": "\"ZVgunzz1PtxmrqKMrlNcxnqJtW9XcW2Rg0VV73islZI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 01:14:21 GMT"
+          "Value": "Thu, 03 Apr 2025 01:27:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12740,18 +12740,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-A9A6XJiakaU6WWT65uSuv6zibazYUQQGe/WP3ejyTTU="
+          "Value": "sha256-ZVgunzz1PtxmrqKMrlNcxnqJtW9XcW2Rg0VV73islZI="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\cxfcz4e37m-r2mdjf9c0q.gz",
+      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\cxfcz4e37m-9vsddy5d5h.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000080528265"
+          "Quality": "0.000080541237"
         }
       ],
       "ResponseHeaders": [
@@ -12761,15 +12761,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12417"
+          "Value": "12415"
         },
         {
           "Name": "ETag",
-          "Value": "\"IZQtVaB1W4Ii/mEzTyWJ1MaJvenI0wwd13ek0XLYNXs=\""
+          "Value": "\"npMusi/RxaGP3fAlDaf07DVSaQmECK8Lc55EtS1fN68=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 01:08:37 GMT"
+          "Value": "Thu, 03 Apr 2025 01:20:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12789,19 +12789,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"A9A6XJiakaU6WWT65uSuv6zibazYUQQGe/WP3ejyTTU=\""
+          "Value": "W/\"ZVgunzz1PtxmrqKMrlNcxnqJtW9XcW2Rg0VV73islZI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-A9A6XJiakaU6WWT65uSuv6zibazYUQQGe/WP3ejyTTU="
+          "Value": "sha256-ZVgunzz1PtxmrqKMrlNcxnqJtW9XcW2Rg0VV73islZI="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\cxfcz4e37m-r2mdjf9c0q.gz",
+      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\cxfcz4e37m-9vsddy5d5h.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12810,7 +12810,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12417"
+          "Value": "12415"
         },
         {
           "Name": "Content-Type",
@@ -12818,11 +12818,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IZQtVaB1W4Ii/mEzTyWJ1MaJvenI0wwd13ek0XLYNXs=\""
+          "Value": "\"npMusi/RxaGP3fAlDaf07DVSaQmECK8Lc55EtS1fN68=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 01:08:37 GMT"
+          "Value": "Thu, 03 Apr 2025 01:20:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12840,7 +12840,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IZQtVaB1W4Ii/mEzTyWJ1MaJvenI0wwd13ek0XLYNXs="
+          "Value": "sha256-npMusi/RxaGP3fAlDaf07DVSaQmECK8Lc55EtS1fN68="
         }
       ]
     },
@@ -24604,168 +24604,7 @@
       ]
     },
     {
-      "Route": "_framework/swa-blazor-demo.6y6ul6rw9s.pdb",
-      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\swa-blazor-demo.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "52788"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rjs3e5RXoM89Yi5IKNHv3BpwK6V9C7J5drJFHa0lf+s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 01:14:21 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "6y6ul6rw9s"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/swa-blazor-demo.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-rjs3e5RXoM89Yi5IKNHv3BpwK6V9C7J5drJFHa0lf+s="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/swa-blazor-demo.6y6ul6rw9s.pdb",
-      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-6y6ul6rw9s.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000025493945"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "39224"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"yRT17oWa25ThKyQreQrxH6eQDMS2bWH1UaVKZDHQbrs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 01:14:21 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"rjs3e5RXoM89Yi5IKNHv3BpwK6V9C7J5drJFHa0lf+s=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "6y6ul6rw9s"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/swa-blazor-demo.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-rjs3e5RXoM89Yi5IKNHv3BpwK6V9C7J5drJFHa0lf+s="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/swa-blazor-demo.6y6ul6rw9s.pdb.gz",
-      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-6y6ul6rw9s.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "39224"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"yRT17oWa25ThKyQreQrxH6eQDMS2bWH1UaVKZDHQbrs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 01:14:21 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "6y6ul6rw9s"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/swa-blazor-demo.pdb.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-yRT17oWa25ThKyQreQrxH6eQDMS2bWH1UaVKZDHQbrs="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/swa-blazor-demo.94sz0h864i.wasm",
+      "Route": "_framework/swa-blazor-demo.3gh4ecqoa3.wasm",
       "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\swa-blazor-demo.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -24783,11 +24622,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"56LXk5jQcZ/SQgQ1JI2YNUgFuCA6VYkt+OfJN7qnt+U=\""
+          "Value": "\"U099yg7wTB90EIk72gN+WZyVnOxJ3ixEJHpMkslxTSg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 01:14:21 GMT"
+          "Value": "Thu, 03 Apr 2025 01:20:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24797,7 +24636,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "94sz0h864i"
+          "Value": "3gh4ecqoa3"
         },
         {
           "Name": "label",
@@ -24805,18 +24644,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-56LXk5jQcZ/SQgQ1JI2YNUgFuCA6VYkt+OfJN7qnt+U="
+          "Value": "sha256-U099yg7wTB90EIk72gN+WZyVnOxJ3ixEJHpMkslxTSg="
         }
       ]
     },
     {
-      "Route": "_framework/swa-blazor-demo.94sz0h864i.wasm",
-      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-94sz0h864i.gz",
+      "Route": "_framework/swa-blazor-demo.3gh4ecqoa3.wasm",
+      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-3gh4ecqoa3.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000041548945"
+          "Quality": "0.000041657988"
         }
       ],
       "ResponseHeaders": [
@@ -24826,15 +24665,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24067"
+          "Value": "24004"
         },
         {
           "Name": "ETag",
-          "Value": "\"/AY9RUDZKoCE0pWtKJ7wccEH6FMQPaKquOpRv6hJb+g=\""
+          "Value": "\"fyXsT6uU6bi1XexFq8dn7ojTINKJtMEico6qm18KELQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 01:14:21 GMT"
+          "Value": "Thu, 03 Apr 2025 01:20:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24854,13 +24693,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"56LXk5jQcZ/SQgQ1JI2YNUgFuCA6VYkt+OfJN7qnt+U=\""
+          "Value": "W/\"U099yg7wTB90EIk72gN+WZyVnOxJ3ixEJHpMkslxTSg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "94sz0h864i"
+          "Value": "3gh4ecqoa3"
         },
         {
           "Name": "label",
@@ -24868,13 +24707,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-56LXk5jQcZ/SQgQ1JI2YNUgFuCA6VYkt+OfJN7qnt+U="
+          "Value": "sha256-U099yg7wTB90EIk72gN+WZyVnOxJ3ixEJHpMkslxTSg="
         }
       ]
     },
     {
-      "Route": "_framework/swa-blazor-demo.94sz0h864i.wasm.gz",
-      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-94sz0h864i.gz",
+      "Route": "_framework/swa-blazor-demo.3gh4ecqoa3.wasm.gz",
+      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-3gh4ecqoa3.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -24883,7 +24722,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24067"
+          "Value": "24004"
         },
         {
           "Name": "Content-Type",
@@ -24891,11 +24730,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/AY9RUDZKoCE0pWtKJ7wccEH6FMQPaKquOpRv6hJb+g=\""
+          "Value": "\"fyXsT6uU6bi1XexFq8dn7ojTINKJtMEico6qm18KELQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 01:14:21 GMT"
+          "Value": "Thu, 03 Apr 2025 01:20:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24913,7 +24752,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "94sz0h864i"
+          "Value": "3gh4ecqoa3"
         },
         {
           "Name": "label",
@@ -24921,7 +24760,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/AY9RUDZKoCE0pWtKJ7wccEH6FMQPaKquOpRv6hJb+g="
+          "Value": "sha256-fyXsT6uU6bi1XexFq8dn7ojTINKJtMEico6qm18KELQ="
         }
       ]
     },
@@ -24936,7 +24775,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "52788"
+          "Value": "52692"
         },
         {
           "Name": "Content-Type",
@@ -24944,11 +24783,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rjs3e5RXoM89Yi5IKNHv3BpwK6V9C7J5drJFHa0lf+s=\""
+          "Value": "\"4XAN/zyu3xDB1ZcE2mIE3cA0Q04bDAB1o3/hYNIMfEk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 01:14:21 GMT"
+          "Value": "Thu, 03 Apr 2025 01:27:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24958,18 +24797,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rjs3e5RXoM89Yi5IKNHv3BpwK6V9C7J5drJFHa0lf+s="
+          "Value": "sha256-4XAN/zyu3xDB1ZcE2mIE3cA0Q04bDAB1o3/hYNIMfEk="
         }
       ]
     },
     {
       "Route": "_framework/swa-blazor-demo.pdb",
-      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-6y6ul6rw9s.gz",
+      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-zbb3reonqz.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000025493945"
+          "Quality": "0.000025550616"
         }
       ],
       "ResponseHeaders": [
@@ -24979,15 +24818,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "39224"
+          "Value": "39137"
         },
         {
           "Name": "ETag",
-          "Value": "\"yRT17oWa25ThKyQreQrxH6eQDMS2bWH1UaVKZDHQbrs=\""
+          "Value": "\"t0Iri7SnTsc6uLPv27Z5w1kAH+VgSQMhF6Edpm6KMEM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 01:14:21 GMT"
+          "Value": "Thu, 03 Apr 2025 01:27:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25007,19 +24846,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"rjs3e5RXoM89Yi5IKNHv3BpwK6V9C7J5drJFHa0lf+s=\""
+          "Value": "W/\"4XAN/zyu3xDB1ZcE2mIE3cA0Q04bDAB1o3/hYNIMfEk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rjs3e5RXoM89Yi5IKNHv3BpwK6V9C7J5drJFHa0lf+s="
+          "Value": "sha256-4XAN/zyu3xDB1ZcE2mIE3cA0Q04bDAB1o3/hYNIMfEk="
         }
       ]
     },
     {
       "Route": "_framework/swa-blazor-demo.pdb.gz",
-      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-6y6ul6rw9s.gz",
+      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-zbb3reonqz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -25028,7 +24867,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "39224"
+          "Value": "39137"
         },
         {
           "Name": "Content-Type",
@@ -25036,11 +24875,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"yRT17oWa25ThKyQreQrxH6eQDMS2bWH1UaVKZDHQbrs=\""
+          "Value": "\"t0Iri7SnTsc6uLPv27Z5w1kAH+VgSQMhF6Edpm6KMEM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 01:14:21 GMT"
+          "Value": "Thu, 03 Apr 2025 01:27:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25058,7 +24897,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-yRT17oWa25ThKyQreQrxH6eQDMS2bWH1UaVKZDHQbrs="
+          "Value": "sha256-t0Iri7SnTsc6uLPv27Z5w1kAH+VgSQMhF6Edpm6KMEM="
         }
       ]
     },
@@ -25081,11 +24920,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"56LXk5jQcZ/SQgQ1JI2YNUgFuCA6VYkt+OfJN7qnt+U=\""
+          "Value": "\"U099yg7wTB90EIk72gN+WZyVnOxJ3ixEJHpMkslxTSg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 01:14:21 GMT"
+          "Value": "Thu, 03 Apr 2025 01:20:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25095,18 +24934,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-56LXk5jQcZ/SQgQ1JI2YNUgFuCA6VYkt+OfJN7qnt+U="
+          "Value": "sha256-U099yg7wTB90EIk72gN+WZyVnOxJ3ixEJHpMkslxTSg="
         }
       ]
     },
     {
       "Route": "_framework/swa-blazor-demo.wasm",
-      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-94sz0h864i.gz",
+      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-3gh4ecqoa3.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000041548945"
+          "Quality": "0.000041657988"
         }
       ],
       "ResponseHeaders": [
@@ -25116,15 +24955,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24067"
+          "Value": "24004"
         },
         {
           "Name": "ETag",
-          "Value": "\"/AY9RUDZKoCE0pWtKJ7wccEH6FMQPaKquOpRv6hJb+g=\""
+          "Value": "\"fyXsT6uU6bi1XexFq8dn7ojTINKJtMEico6qm18KELQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 01:14:21 GMT"
+          "Value": "Thu, 03 Apr 2025 01:20:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25144,19 +24983,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"56LXk5jQcZ/SQgQ1JI2YNUgFuCA6VYkt+OfJN7qnt+U=\""
+          "Value": "W/\"U099yg7wTB90EIk72gN+WZyVnOxJ3ixEJHpMkslxTSg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-56LXk5jQcZ/SQgQ1JI2YNUgFuCA6VYkt+OfJN7qnt+U="
+          "Value": "sha256-U099yg7wTB90EIk72gN+WZyVnOxJ3ixEJHpMkslxTSg="
         }
       ]
     },
     {
       "Route": "_framework/swa-blazor-demo.wasm.gz",
-      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-94sz0h864i.gz",
+      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-3gh4ecqoa3.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -25165,7 +25004,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24067"
+          "Value": "24004"
         },
         {
           "Name": "Content-Type",
@@ -25173,11 +25012,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/AY9RUDZKoCE0pWtKJ7wccEH6FMQPaKquOpRv6hJb+g=\""
+          "Value": "\"fyXsT6uU6bi1XexFq8dn7ojTINKJtMEico6qm18KELQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 01:14:21 GMT"
+          "Value": "Thu, 03 Apr 2025 01:20:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25195,7 +25034,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/AY9RUDZKoCE0pWtKJ7wccEH6FMQPaKquOpRv6hJb+g="
+          "Value": "sha256-fyXsT6uU6bi1XexFq8dn7ojTINKJtMEico6qm18KELQ="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/swa-blazor-demo.zbb3reonqz.pdb",
+      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\swa-blazor-demo.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52692"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4XAN/zyu3xDB1ZcE2mIE3cA0Q04bDAB1o3/hYNIMfEk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 01:27:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zbb3reonqz"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/swa-blazor-demo.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4XAN/zyu3xDB1ZcE2mIE3cA0Q04bDAB1o3/hYNIMfEk="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/swa-blazor-demo.zbb3reonqz.pdb",
+      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-zbb3reonqz.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000025550616"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39137"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t0Iri7SnTsc6uLPv27Z5w1kAH+VgSQMhF6Edpm6KMEM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 01:27:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"4XAN/zyu3xDB1ZcE2mIE3cA0Q04bDAB1o3/hYNIMfEk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zbb3reonqz"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/swa-blazor-demo.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4XAN/zyu3xDB1ZcE2mIE3cA0Q04bDAB1o3/hYNIMfEk="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/swa-blazor-demo.zbb3reonqz.pdb.gz",
+      "AssetFile": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-zbb3reonqz.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39137"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t0Iri7SnTsc6uLPv27Z5w1kAH+VgSQMhF6Edpm6KMEM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 01:27:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zbb3reonqz"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/swa-blazor-demo.pdb.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-t0Iri7SnTsc6uLPv27Z5w1kAH+VgSQMhF6Edpm6KMEM="
         }
       ]
     },

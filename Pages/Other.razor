@@ -14,10 +14,8 @@
     <div class="col-auto">
         <EditForm Model="@formData" OnValidSubmit="HandleSubmit">
             <div>
-                <label for="firstinput">Input (max @numOfColumns characters)</label>
+                <label for="firstinput">Input (max @numOfColumns characters) <br />Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted</label>
                 <InputText id="firstinput" @bind-Value="formData.input" class="form-control" style="width: 16ch;" maxlength="16"/>
-                <label for="firstinput">Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted</label>
-                <label for="firstinput">For 16-bit signed binary,  above @(Math.Pow(2, numOfColumns) - 1) will not be accepted</label>
             </div>
 
             <button type="submit" class="btn btn-primary mt-2">Submit</button>
