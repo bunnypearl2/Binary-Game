@@ -1,0 +1,26 @@
+﻿@page "/endian"
+
+<h3>Little and Big Endian</h3>
+<h3>Test: @dialogue[position]</h3>
+<button class="btn btn-primary" @onclick="Advance">@buttonText</button>
+
+
+@code {
+	int position = 0;
+	String buttonText = "Advance";
+	string[] dialogue = { "Hello! Here's the difference between little and big endian!", "Its super simple you see!", "Little endian does this", "And big endian does that!", "Pretty neat right?" };
+
+	private void Advance()
+	{
+		position++;
+		if (position == 4)
+		{
+			buttonText = "Repeat";
+		}
+		if (position == 5)
+		{
+			position = 0;
+			buttonText = "Advance";
+		}
+	}
+}
