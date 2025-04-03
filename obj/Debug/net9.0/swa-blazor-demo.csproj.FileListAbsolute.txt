@@ -1140,8 +1140,6 @@ C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_frame
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Win32.Registry.ozmyxl3pzt.wasm
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\mscorlib.vt9pwshhot.wasm
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\netstandard.or41gtprh3.wasm
-C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.ka9koegdct.pdb
-C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.xxligkl949.wasm
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.AppContext.69xw87cqtg.wasm
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Buffers.m3enj6d62j.wasm
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Collections.Concurrent.7xcnvnvfe7.wasm
@@ -1330,7 +1328,6 @@ C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_frame
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Xml.ReaderWriter.7tqo9y1j7t.wasm.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Security.Cryptography.X509Certificates.m2ilqf86hj.wasm.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Net.WebClient.6zl2dfdj87.wasm.gz
-C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.xxligkl949.wasm.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Net.Ping.j6du5khfyp.wasm.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.IO.ujr9p4dm3m.wasm.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Security.Cryptography.qo6wt0x95a.wasm.gz
@@ -1394,7 +1391,6 @@ C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_frame
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Net.Primitives.rog0rqelo4.wasm.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\dotnet.runtime.js.map.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Text.RegularExpressions.j6wzkfckdc.wasm.gz
-C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.ka9koegdct.pdb.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.IO.FileSystem.Watcher.lohvs8m8cz.wasm.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Security.SecureString.c87gsi9tp6.wasm.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Drawing.rccadbk353.wasm.gz
@@ -1916,7 +1912,6 @@ C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\webcil\System.
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\webcil\swa-blazor-demo.wasm
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\scopedcss\Layout\MainLayout.razor.rz.scp.css
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\scopedcss\Layout\NavMenu.razor.rz.scp.css
-C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\scopedcss\Pages\Other.razor.rz.scp.css
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\scopedcss\bundle\swa-blazor-demo.styles.css
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\scopedcss\projectbundle\swa-blazor-demo.bundle.scp.css
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\blazor.build.boot-extension.json
@@ -1979,8 +1974,6 @@ C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\ouf
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\2b6w5lh1vi-iag0ou56lh.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\imx0hh2mpm-yiodnjoszm.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\eojifsclv0-7t9tbfaemk.gz
-C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\o8sylcbn1l-3n17hskhi3.gz
-C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\1dhw9fxden-qdfn9zhrns.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\xo4jy36jfx-8ia4ukhb4c.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\xkfumy2z8q-qe23mgxr71.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\gu59rtkw4j-flveird317.gz
@@ -2182,9 +2175,6 @@ C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\i1c
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\et2vro31lx-tjcz0u77k5.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\lufpdseh81-tptq2av103.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\7bt8quueek-lfu7j35m59.gz
-C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\5jzn1haw5d-xxligkl949.gz
-C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\iay1k4q5dj-ka9koegdct.gz
-C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\cxfcz4e37m-08s5v50fsq.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -2200,3 +2190,13 @@ C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\swa-blazor-dem
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\refint\swa-blazor-demo.dll
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\swa-blazor-demo.pdb
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\ref\swa-blazor-demo.dll
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.36m8uzx364.pdb
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.1s2gxxokxz.wasm
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.1s2gxxokxz.wasm.gz
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.36m8uzx364.pdb.gz
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\scopedcss\Pages\Converter.razor.rz.scp.css
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\o8sylcbn1l-3542g822u9.gz
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\1dhw9fxden-256sew2930.gz
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\5jzn1haw5d-1s2gxxokxz.gz
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\iay1k4q5dj-36m8uzx364.gz
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\cxfcz4e37m-lhtbocxfqw.gz

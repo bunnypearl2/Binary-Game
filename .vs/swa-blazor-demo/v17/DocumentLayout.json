@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\pages\\converter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\converter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,10 +33,6 @@
       "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:wwwroot\\images\\testcat.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -41,16 +45,12 @@
       "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\pages\\other.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\other.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\pages\\other.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\other.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\pages\\converter.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\converter.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\pages\\cheatsheet.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -100,43 +100,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Endian.razor",
-              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Endian.razor",
-              "RelativeDocumentMoniker": "Pages\\Endian.razor",
-              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Endian.razor",
-              "RelativeToolTip": "Pages\\Endian.razor",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAswA0AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T17:18:05.652Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
-              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "wwwroot\\js\\site.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-02T20:38:27.823Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Other.razor.css",
-              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Other.razor.css",
-              "RelativeDocumentMoniker": "Pages\\Other.razor.css",
-              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Other.razor.css",
-              "RelativeToolTip": "Pages\\Other.razor.css",
+              "Title": "Converter.razor.css",
+              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Converter.razor.css",
+              "RelativeDocumentMoniker": "Pages\\Converter.razor.css",
+              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Converter.razor.css",
+              "RelativeToolTip": "Pages\\Converter.razor.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-04-01T21:11:29.79Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "TwoCompTutorial.razor",
               "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\TwoCompTutorial.razor",
               "RelativeDocumentMoniker": "Pages\\TwoCompTutorial.razor",
@@ -184,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -197,7 +173,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T00:36:45.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Converter.razor",
+              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Converter.razor",
+              "RelativeDocumentMoniker": "Pages\\Converter.razor",
+              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Converter.razor",
+              "RelativeToolTip": "Pages\\Converter.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T19:57:07.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-02T20:38:27.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Endian.razor",
+              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Endian.razor",
+              "RelativeDocumentMoniker": "Pages\\Endian.razor",
+              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Endian.razor",
+              "RelativeToolTip": "Pages\\Endian.razor",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAswA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T17:18:05.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -209,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
@@ -221,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Pages\\Home.razor",
@@ -233,31 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Other.razor",
-              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Other.razor",
-              "RelativeDocumentMoniker": "Pages\\Other.razor",
-              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Other.razor",
-              "RelativeToolTip": "Pages\\Other.razor",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAUwE4AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T19:57:07.594Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "Layout\\NavMenu.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T00:36:45.918Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "testCat.png",
               "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\wwwroot\\images\\testCat.png",
               "RelativeDocumentMoniker": "wwwroot\\images\\testCat.png",
@@ -268,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "wwwroot\\index.html",
@@ -280,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",

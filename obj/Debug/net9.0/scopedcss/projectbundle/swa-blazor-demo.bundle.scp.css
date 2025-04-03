@@ -214,25 +214,25 @@ input:checked + .slider[b-5tifzdovup] {
     font-weight: bold;
     color: #333;
 }
-/* /Pages/Other.razor.rz.scp.css */
+/* /Pages/Converter.razor.rz.scp.css */
 /* For quizzing toggle */
-.quiz-on[b-jitqcm9u89] {
+.quiz-on[b-3zehk61zsz] {
     background-color: green;
     color: white;
 }
 
-.quiz-off[b-jitqcm9u89] {
+.quiz-off[b-3zehk61zsz] {
     background-color: red;
     color: white;
 }
 
 /* For Twos Complement toggle buttons */
-.toggle-on[b-jitqcm9u89] {
+.toggle-on[b-3zehk61zsz] {
     background-color: orange;
     color: white;
 }
 
-.toggle-off[b-jitqcm9u89] {
+.toggle-off[b-3zehk61zsz] {
     background-color: orangered;
     color: white;
 }
