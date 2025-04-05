@@ -35,6 +35,12 @@ window.selectText = (element) => {
     }
 };
 
+window.selectTextBox = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.select(); // Selects the text inside the input or textarea
+    }
+};
 
 // Function to gray out a range of elements (disable and change style)
 window.grayOutElements = (elements) => {

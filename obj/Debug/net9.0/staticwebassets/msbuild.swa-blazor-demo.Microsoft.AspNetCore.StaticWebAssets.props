@@ -102,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>kts6hmvh4w</Fingerprint>
-      <Integrity>mC+kkOmn5qmyQNKDeCFnwpjLk57hD7ETSmLr09gAAY4=</Integrity>
+      <Fingerprint>j3crfypy6a</Fingerprint>
+      <Integrity>/7woUN2BJmo5CoS2z8xlepdgj4xh358+t3+Z2ni2QEQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</OriginalItemSpec>
@@ -948,8 +948,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ApplicationBundle</AssetTraitValue>
-      <Fingerprint>3542g822u9</Fingerprint>
-      <Integrity>ia7SWVmu7Pf3W+llWi7OMtC/lYzuXc6mGv42Hw8QY9E=</Integrity>
+      <Fingerprint>brsfc1771i</Fingerprint>
+      <Integrity>qWBQRMUBOKbJCHr40pk8x2MTQeFVUuTE9YJEbypAfrY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\swa-blazor-demo.styles.css'))</OriginalItemSpec>

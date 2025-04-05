@@ -13,23 +13,21 @@
 
     @***INPUT BOX***@
     <div class="col-auto">
-        
-        <EditForm Model="@formData" OnValidSubmit="HandleSubmit" style="display: flex; gap: 5px;">
-            <InputText id="firstinput" @bind-Value="formData.input" class="form-control" style="width: 16ch;" maxlength="16" />
-            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+
+        <EditForm Model="@formData" OnValidSubmit="HandleSubmit" class="edit-form">
+            <InputText id="firstinput" onclick="selectTextBox" @bind-Value="formData.input" class="edit-input" maxlength="16" />
+            <button type="submit" class="edit-button">Submit</button>
         </EditForm>
-        <p>Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted<br /></p>
+        <p>Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted</p>
 
-
-        <p>Input value: @inputString</p>
-        <p>@errorMessage</p>
+        
         @* <p>Decimal Value: @inputDecimal</p> *@
         @* <p>Twos Comp Decimal: @twosCompDecimal</p> *@
         @* <p>@testMessage</p> *@
     </div>
 
     @***MAIN DROPDOWN***@
-    <div class="col-auto" style="margin-left: 50px;">
+    <div class="col-auto" style="margin-left: 20px;">
         <select @onchange="UpdateDropdown">
             @foreach (var option in options)
             {
@@ -53,7 +51,16 @@
 </div>
 <!-- End INPUT SELECTION ROW-->
 
+<div class="container">
+    <span>Input value: @(errorMessage != "" ? errorMessage : inputString) </span>
+<div class="trianglebutton-container">
+    
+    <button class="trianglebutton">&#9650; </button> <!-- Up triangle -->
+    <button class="trianglebutton">&#9660; </button> <!-- Down triangle -->
 
+</div>
+
+</div>
 
 <!-- Begin body of page -->
 
@@ -97,7 +104,7 @@
 
                 <td>
 
-                    <button @onclick="() => TwosComp(k)" class="@(isTwosComp[k] ? "toggle-on" : "toggle-off")">2's Comp'</button>
+                    <button @onclick="() => TwosComp(k)" class="@(isTwosComp[k] ? "toggle-on" : "toggle-off")">2's Complement</button>
                 </td>
             }
 
@@ -199,12 +206,12 @@
             else
                 isTwosComp[i] = false;
         }
-       
+
         // initialize submit box
         formData.input = "0";
         StateHasChanged(); // Update the UI after initialization
         HandleSubmit();
- 
+
 
     }
 
@@ -231,7 +238,7 @@
     {
         errorMessage = "";
         inputString = formData.input.ToUpper();
-        inputString = inputString.PadLeft(16, '0');
+        inputString = inputString.PadLeft(numOfColumns, '0');
 
         // Check if input is valid
 
@@ -264,10 +271,9 @@
 
 
             FromDecimal(isTwosComp[i], rowRadix[i], i);
-            //testMessage = isTwosComp[i] + " " + rowRadix[i] + " " + i;
         }
 
-        // If value given 
+        // If value given goes beyond positive limit
         if(inputDecimal >= (int)Math.Pow(2, numOfColumns-1))
         {
             errorMessage = "Value treated as negative (i.e. -" + ((int)Math.Pow(2, numOfColumns) - inputDecimal) + ") for " + numOfColumns +"-digit signed binary";
@@ -290,7 +296,10 @@
 
         // Determin positive decimal value to represent twos complement
         twosCompDecimal = 0; //reset twosCompDecimal
-        twosCompDecimal = Math.Abs((int)Math.Pow(2, numOfColumns) - inputDecimal);
+        if (inputDecimal != 0)
+            twosCompDecimal = Math.Abs((int)Math.Pow(2, numOfColumns) - inputDecimal);
+        else
+            twosCompDecimal = 0;
 
 
     }
@@ -362,13 +371,17 @@
     {
         isQuizzing = !isQuizzing;
 
-        // if switched to on AND input box is empty, generate random number to assign to input box
+        // if switched to on AND input box is empty,
         if(isQuizzing)
         {
-            // make Submit Answer button clickable
-            // bind text boxes to textBoxes[] instead of numAns[]
+            // If no row is selected to quiz on, make Submit Answer button clickable
+
+            // Loop through each row that is being quizzed
+            //  assign values in textBoxes[] to savedValues[]
+
+            // 
         }
-        else
+        else //quizzing is switched off
         {
             // bind text boxes to numAns[]
             //deactivate submit answer button
@@ -399,6 +412,14 @@
         await JS.InvokeVoidAsync("enableElements", boxRefs);
     }
 
+    // for main input box
+    private async Task SelectTextBox()
+    {
+        // Call the JavaScript function using JS Interop to select the text
+        await JS.InvokeVoidAsync("selectTextBox", "firstInput");
+    }
+
+    // for individual boxes created from array
     private async Task HandleInputClick(MouseEventArgs e, int index)
     {
         // Get the ElementReference from the dictionary based on the unique ID

@@ -228,11 +228,76 @@ input:checked + .slider[b-5tifzdovup] {
 
 /* For Twos Complement toggle buttons */
 .toggle-on[b-3zehk61zsz] {
-    background-color: orange;
+    background-color: darkorange;
     color: white;
 }
 
 .toggle-off[b-3zehk61zsz] {
-    background-color: orangered;
+    background-color: grey;
     color: white;
 }
+
+/* for main submission box */
+.edit-form[b-3zehk61zsz] {
+    display: flex;
+    align-items: center; /* Aligns input & button vertically */
+    gap: 30px; /* Adds space between them */
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.edit-input[b-3zehk61zsz] {
+    padding: 8px;
+    font-size: 16px;
+    flex: 1; /* Makes the input grow to fill space */
+    box-sizing: border-box;
+}
+
+.edit-button[b-3zehk61zsz] {
+    background-color: #007bff; /* Bootstrap-style blue */
+    color: white;
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+    .edit-button:hover[b-3zehk61zsz] {
+        background-color: #0056b3; /* Darker on hover */
+    }
+
+
+/* for increment and decrement buttons*/
+.container[b-3zehk61zsz] {
+    display: flex; /* Enables Flexbox layout */
+    align-items: center; /* Vertically align text and button in the center */
+    justify-content: flex-start; /* Keep elements to the left */
+    gap: 20px;
+    font-size: 24px;
+}
+
+
+.trianglebutton-container[b-3zehk61zsz] {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Adds space between buttons */
+}
+
+.trianglebutton[b-3zehk61zsz] {
+    
+    padding: 0; /* Remove padding */
+    width: 30px; /* Set width of the square */
+    height: 30px; /* Set height of the square (same as width for square shape) */
+    background-color: orange; /* Orange background color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Use flexbox for centering the content */
+    align-items: center; /* Vertically center the symbol */
+    justify-content: center; /* Horizontally center the symbol */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+    .trianglebutton:hover[b-3zehk61zsz] {
+        background-color: #ff8c00; /* Darker orange on hover */
+    }
