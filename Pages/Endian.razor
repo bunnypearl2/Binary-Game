@@ -1,15 +1,17 @@
 ﻿@page "/endian"
 
-<img src="images/testCat.png" alt="Cat" width="200" height="200" />
-<h3>@characterName: @dialogue[position]</h3>
-<button class="btn btn-primary" @onclick="Advance">@buttonText</button>
+<img hidden="@hideStatus" src="images/testCat.png" alt="Cat" width="200" height="200" />
+<h3 hidden="@hideStatus"> @characterName: @dialogue[position]</h3>
+<button hidden="@hideStatus" class="btn btn-primary" @onclick="Advance">@buttonText</button>
+<h3 hidden="@(!hideStatus)"> Tada!</h3>
 
 
 @code {
 	int position = 0;
 	String buttonText = "Next";
 	String characterName = "??????";
-	string[] dialogue = { "Hello!", "My name is Endian!", "Here's the difference between big and little endian!", "Its super simple you see!", "In big endian, the most significant bit is on the left.", "In little endian, the most significant bit is on the right.", "Pretty neat right? Now let's check out some examples!" };
+	bool hideStatus = false;
+	string[] dialogue = {"Hello!", "My name is Endian!", "Here's the difference between big and little endian!", "Its super simple you see!", "In big endian, the most significant bit is on the left.", "In little endian, the most significant bit is on the right.", "Pretty neat right? Now let's check out some examples!"};
 
 	private void Advance()
 	{
@@ -18,13 +20,10 @@
 		{
 			characterName = "Endian";
 		}
-		if (position == 6)
-		{
-			buttonText = "Repeat";
-		}
 		if (position == 7)
 		{
 			position = 0;
+			hideStatus = true;
 			buttonText = "Next";
 		}
 	}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\violi\\source\\repos\\Binary-Game\\swa-blazor-demo.csproj": {}
+    "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\swa-blazor-demo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\violi\\source\\repos\\Binary-Game\\swa-blazor-demo.csproj": {
+    "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\swa-blazor-demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\violi\\source\\repos\\Binary-Game\\swa-blazor-demo.csproj",
+        "projectUniqueName": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\swa-blazor-demo.csproj",
         "projectName": "swa-blazor-demo",
-        "projectPath": "C:\\Users\\violi\\source\\repos\\Binary-Game\\swa-blazor-demo.csproj",
+        "projectPath": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\swa-blazor-demo.csproj",
         "packagesPath": "C:\\Users\\violi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\violi\\source\\repos\\Binary-Game\\obj\\",
+        "outputPath": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

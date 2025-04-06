@@ -1,4 +1,6 @@
+C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\blazor.webassembly.js
+C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\BlazorBootstrap.8ia4ukhb4c.wasm
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\dotnet.js
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\dotnet.js.map
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\dotnet.native.1p93gcv9fh.js
@@ -8,8 +10,6 @@ C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\dotn
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat
-C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json
-C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\BlazorBootstrap.8ia4ukhb4c.wasm
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.qe23mgxr71.wasm
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Forms.thhw8cz9wu.wasm
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Components.flveird317.wasm
@@ -39,8 +39,6 @@ C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\Micr
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Win32.Registry.ozmyxl3pzt.wasm
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\mscorlib.vt9pwshhot.wasm
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\netstandard.or41gtprh3.wasm
-C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.ywpke0mowh.pdb
-C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.852snsfpce.wasm
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.AppContext.69xw87cqtg.wasm
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Buffers.m3enj6d62j.wasm
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Collections.Concurrent.7xcnvnvfe7.wasm
@@ -229,7 +227,6 @@ C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\Syst
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Xml.ReaderWriter.7tqo9y1j7t.wasm.gz
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Security.Cryptography.X509Certificates.m2ilqf86hj.wasm.gz
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Net.WebClient.6zl2dfdj87.wasm.gz
-C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.852snsfpce.wasm.gz
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Net.Ping.j6du5khfyp.wasm.gz
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.IO.ujr9p4dm3m.wasm.gz
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Security.Cryptography.qo6wt0x95a.wasm.gz
@@ -293,7 +290,6 @@ C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\Syst
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Net.Primitives.rog0rqelo4.wasm.gz
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\dotnet.runtime.js.map.gz
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Text.RegularExpressions.j6wzkfckdc.wasm.gz
-C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.ywpke0mowh.pdb.gz
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.IO.FileSystem.Watcher.lohvs8m8cz.wasm.gz
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Security.SecureString.c87gsi9tp6.wasm.gz
 C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\System.Drawing.rccadbk353.wasm.gz
@@ -1081,9 +1077,6 @@ C:\Users\violi\source\repos\Binary-Game\obj\Debug\net9.0\compressed\i1cpv9uumy-n
 C:\Users\violi\source\repos\Binary-Game\obj\Debug\net9.0\compressed\et2vro31lx-tjcz0u77k5.gz
 C:\Users\violi\source\repos\Binary-Game\obj\Debug\net9.0\compressed\lufpdseh81-tptq2av103.gz
 C:\Users\violi\source\repos\Binary-Game\obj\Debug\net9.0\compressed\7bt8quueek-lfu7j35m59.gz
-C:\Users\violi\source\repos\Binary-Game\obj\Debug\net9.0\compressed\5jzn1haw5d-852snsfpce.gz
-C:\Users\violi\source\repos\Binary-Game\obj\Debug\net9.0\compressed\iay1k4q5dj-ywpke0mowh.gz
-C:\Users\violi\source\repos\Binary-Game\obj\Debug\net9.0\compressed\cxfcz4e37m-eukn1f88s2.gz
 C:\Users\violi\source\repos\Binary-Game\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\violi\source\repos\Binary-Game\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\violi\source\repos\Binary-Game\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -1099,3 +1092,10 @@ C:\Users\violi\source\repos\Binary-Game\obj\Debug\net9.0\swa-blazor-demo.dll
 C:\Users\violi\source\repos\Binary-Game\obj\Debug\net9.0\refint\swa-blazor-demo.dll
 C:\Users\violi\source\repos\Binary-Game\obj\Debug\net9.0\swa-blazor-demo.pdb
 C:\Users\violi\source\repos\Binary-Game\obj\Debug\net9.0\ref\swa-blazor-demo.dll
+C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.evmetxwdw3.pdb
+C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.ebr5h7d6n7.wasm
+C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.ebr5h7d6n7.wasm.gz
+C:\Users\violi\source\repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.evmetxwdw3.pdb.gz
+C:\Users\violi\source\repos\Binary-Game\obj\Debug\net9.0\compressed\5jzn1haw5d-ebr5h7d6n7.gz
+C:\Users\violi\source\repos\Binary-Game\obj\Debug\net9.0\compressed\iay1k4q5dj-evmetxwdw3.gz
+C:\Users\violi\source\repos\Binary-Game\obj\Debug\net9.0\compressed\cxfcz4e37m-l1q4cwvsds.gz
