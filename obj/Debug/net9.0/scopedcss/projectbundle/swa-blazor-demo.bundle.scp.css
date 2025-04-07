@@ -215,33 +215,23 @@ input:checked + .slider[b-5tifzdovup] {
     color: #333;
 }
 /* /Pages/Converter.razor.rz.scp.css */
-/* For quizzing toggle */
-.quiz-on[b-3zehk61zsz] {
-    background-color: green;
-    color: white;
+/* For main input box*/
+.row[b-3zehk61zsz] {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
-.quiz-off[b-3zehk61zsz] {
-    background-color: red;
-    color: white;
+.col-auto[b-3zehk61zsz] {
+    display: flex; /* Ensure individual items are flex containers */
+    align-items: center; /* Center content vertically within each column */
 }
 
-/* For Twos Complement toggle buttons */
-.toggle-on[b-3zehk61zsz] {
-    background-color: darkorange;
-    color: white;
-}
-
-.toggle-off[b-3zehk61zsz] {
-    background-color: grey;
-    color: white;
-}
 
 /* for main submission box */
 .edit-form[b-3zehk61zsz] {
     display: flex;
-    align-items: center; /* Aligns input & button vertically */
-    gap: 30px; /* Adds space between them */
+    gap: 10px; /* Adds space between them */
     flex-wrap: nowrap; /* Prevent wrapping */
 }
 
@@ -269,23 +259,14 @@ input:checked + .slider[b-5tifzdovup] {
 
 
 /* for increment and decrement buttons*/
-.container[b-3zehk61zsz] {
-    display: flex; /* Enables Flexbox layout */
-    align-items: center; /* Vertically align text and button in the center */
-    justify-content: flex-start; /* Keep elements to the left */
-    gap: 20px;
-    font-size: 24px;
-}
 
 
-.trianglebutton-container[b-3zehk61zsz] {
+.vertical-container[b-3zehk61zsz] {
     display: flex;
     flex-direction: column; /* Stack buttons vertically */
-    gap: 10px; /* Adds space between buttons */
 }
 
 .trianglebutton[b-3zehk61zsz] {
-    
     padding: 0; /* Remove padding */
     width: 30px; /* Set width of the square */
     height: 30px; /* Set height of the square (same as width for square shape) */
@@ -301,3 +282,26 @@ input:checked + .slider[b-5tifzdovup] {
     .trianglebutton:hover[b-3zehk61zsz] {
         background-color: #ff8c00; /* Darker orange on hover */
     }
+
+/* For quizzing toggle */
+.quiz-on[b-3zehk61zsz] {
+    background-color: green;
+    color: white;
+}
+
+.quiz-off[b-3zehk61zsz] {
+    background-color: red;
+    color: white;
+}
+
+/* For Twos Complement toggle buttons */
+.toggle-on[b-3zehk61zsz] {
+    background-color: darkorange;
+    color: white;
+}
+
+.toggle-off[b-3zehk61zsz] {
+    background-color: grey;
+    color: white;
+}
+
