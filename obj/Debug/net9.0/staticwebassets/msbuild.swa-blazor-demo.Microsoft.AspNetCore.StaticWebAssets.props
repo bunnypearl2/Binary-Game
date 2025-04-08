@@ -948,8 +948,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ApplicationBundle</AssetTraitValue>
-      <Fingerprint>kfzfptbtqe</Fingerprint>
-      <Integrity>IJ41+6cXFjZJlX0zEI4tbqlua/3qfsn4a5pwOhFej14=</Integrity>
+      <Fingerprint>2h109876xe</Fingerprint>
+      <Integrity>ij8MDCrt1IrYm+euleIs/D+bi6z0FTtQr21mZqMR3Qc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\swa-blazor-demo.styles.css'))</OriginalItemSpec>

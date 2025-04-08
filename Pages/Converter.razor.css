@@ -43,7 +43,6 @@
 
 /* for increment and decrement buttons*/
 
-
 .vertical-container {
     display: flex;
     flex-direction: column; /* Stack buttons vertically */
@@ -65,6 +64,20 @@
     .trianglebutton:hover {
         background-color: #ff8c00; /* Darker orange on hover */
     }
+
+
+/*  For text boxes as input changes */
+.green-box {
+    background-color: #008f00; /* Fill color */
+    border: 2px solid #008000; /* Outline/border color */
+
+}
+
+.red-box {
+    background-color: #8f0000; /* Fill color */
+    border: 2px solid #800000; /* Outline/border color */
+}
+
 
 /* For quizzing toggle */
 .quiz-on {
