@@ -33,12 +33,5 @@
     "C:\\Users\\violi\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\9.0.3\\microsoft.net.sdk.webassembly.pack.9.0.3.nupkg.sha512",
     "C:\\Users\\violi\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\9.0.3\\microsoft.netcore.app.runtime.mono.browser-wasm.9.0.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

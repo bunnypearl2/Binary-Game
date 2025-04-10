@@ -1,9 +1,9 @@
 ﻿@page "/endian"
 
-<img hidden="@hideStatus" src="images/testCat.png" alt="Cat" width="200" height="200" />
-<h3 hidden="@hideStatus"> @characterName: @dialogue[position]</h3>
-<button hidden="@hideStatus" class="btn btn-primary" @onclick="Advance">@buttonText</button>
-<h3 hidden="@(!hideStatus)"> Tada!</h3>
+<img hidden="@hideStatus" src="images/testCat.png" alt="Cat" width="200" height="200" style="margin:auto;display:block">
+<h3 style="text-align:center;" hidden="@hideStatus"> @characterName: @dialogue[position]</h3>
+<button style="margin:auto;display:block" hidden="@hideStatus" class="btn btn-primary" @onclick="Advance">@buttonText</button>
+<h3 style="text-align:center;" hidden="@(!hideStatus)"> Tada!</h3>
 
 
 @code {
