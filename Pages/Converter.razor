@@ -7,50 +7,67 @@
 <h3></h3>
 
 @*INPUT SELECTION ROW*@
-<p>Input (max @numOfColumns characters)</p>
 
-<div class="row" style="display: flex; align-items: flex-start; gap: 10px;">
 
-    @***INPUT BOX***@
+<div class="row" style="height: 115px" >
+
     <div class="col-auto">
-
-        <EditForm Model="@formData" OnValidSubmit="HandleSubmit" class="edit-form">
-            <InputText id="firstinput" onclick="selectTextBox" @bind-Value="formData.input" class="edit-input" maxlength="16" />
-            <button type="submit" class="edit-button">Submit</button>
-        </EditForm>
-        <p>Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted</p>
-
-
-        @* <p>Decimal Value: @inputDecimal</p> *@
-        @* <p>Twos Comp Decimal: @twosCompDecimal</p> *@
-        @* <p>@testMessage</p> *@
+        <pre style="font-size: 24px">  My Converter     </pre>
     </div>
 
     @***MAIN DROPDOWN***@
-    <div class="col-auto" style="margin-left: 20px;">
+
+    <div class="col-auto">
+        
         <select @onchange="UpdateDropdown">
             @foreach (var option in options)
             {
                 <option value="@option">@option</option>
             }
         </select>
-        <p>Selected Base: @inputRadix</p>
+        
     </div>
 
+
+    @***INPUT BOX***@
+    <div class="col-auto">
+
+        @** increment/decrement buttons *@
+        <div class="col-auto">
+            <div class="vertical-container" style="gap: 10px">
+
+                <button class="trianglebutton" @onclick="Increment">&#9650; </button> <!-- Up triangle -->
+                <button class="trianglebutton" @onclick="Decrement">&#9660; </button> <!-- Down triangle -->
+
+            </div>
+        </div>
+
+        <EditForm Model="@formData" OnValidSubmit="HandleSubmit" class="row">
+            @* input  box *@
+            <div class="col-auto"><InputText id="firstinput" onclick="selectTextBox" @bind-Value="formData.input" style="font-size:26" maxlength="16" /></div>
+           
+            @* submit button*@
+            <div class="col-auto"><button type="submit" class="edit-button">Submit</button></div>
+            
+        </EditForm>
+
+
+        @* <p>Decimal Value: @inputDecimal</p> *@
+        @* <p>Twos Comp Decimal: @twosCompDecimal</p> *@
+         <p>@testMessage</p> 
+    </div>  
+
+    <div class="col-auto">
+        
+        <p style="color: red"> @errorMessage </p>
+    </div>
 
 </div>
 <!-- End INPUT SELECTION ROW-->
-
-<div class="container">
-    <span>Input value: @(errorMessage != "" ? errorMessage : inputString) </span>
-    <div class="trianglebutton-container">
-
-        <button class="trianglebutton" @onclick="Increment">&#9650; </button> <!-- Up triangle -->
-        <button class="trianglebutton" @onclick="Decrement">&#9660; </button> <!-- Down triangle -->
-
-    </div>
-
+<div class="col-auto">
+    <pre>Input (max @numOfColumns characters) - Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted  <br /></pre>
 </div>
+
 
 <!-- Begin body of page -->
 
@@ -72,6 +89,7 @@
                     @onclick="(e) => HandleInputClick(e, index)"
                     @oninput="(e) => MoveNext(e, i , j, index)"
                     @onkeyup="(e) => HandleKeyNavigation(e, i, j, index)"
+                    @onblur="(e) => FillWhitespace(index)"
                     readonly="@(!isQuizzing[i])"
                     class="form-control text-center mx-1"
                     maxlength="1"
@@ -175,7 +193,7 @@
             for (int j = 0; j < numOfColumns; j++)
             {
                 textValues[i][j] = '0';
-                savedValues[i][j] = '\0';
+                savedValues[i][j] = '0';
                 numAns[0][i][j] = '0';
                 numAns[1][i][j] = '0';
             }
@@ -262,7 +280,10 @@
         //  Update values for each row accordingly in textBoxes[,]
         for(int i=0; i < numOfRows; i++)
         {
-
+            for (int j = 0; j < numOfColumns; j++)
+            {
+                savedValues[i][j] = '0';
+            }
 
             FromDecimal(isTwosComp[i], rowRadix[i], i);
         }
@@ -308,12 +329,17 @@
 
         const string digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+        //If quizzing is off, update text boxes for given row
+        if (isQuizzing[row] == false)
+            textValues[row] = numAns[twosComp][radix];
+        else
+            textValues[row] = savedValues[row];
+
         for(int i=numOfColumns-1; i >= 0; i--)
         {
             if (num > 0)
             {
                 int remainder = num % radix;
-                testMessage = twosComp + " " + radix + " " + i;
                 numAns[twosComp][radix][i] = digits[remainder];
                 num /= radix;
             }
@@ -321,9 +347,8 @@
                 numAns[twosComp][radix][i] = '0';
         }
 
-        //If quizzing is off, update text boxes for given row
-        if(isQuizzing[row] == false)
-            textValues[row] = numAns[twosComp][radix];
+        
+
 
         StateHasChanged();
     }
@@ -421,11 +446,7 @@
             // If no row is selected to quiz on, make Submit Answer button clickable
 
             //  assign values in textValues[] to savedValues[]
-            for (int col = 0; col < numOfColumns; col++)
-            {
-                textValues[rowNum][col] = ' ';
-            }
-            // 
+            textValues[rowNum] = savedValues[rowNum];
         }
         else //quizzing is switched off
         {
@@ -525,7 +546,7 @@
             //await JS.InvokeVoidAsync("focusElement", textBoxRefs[index - 1]); // Move left
             await JS.InvokeVoidAsync("selectText", textBoxRefs[index - 1]);
         }
-        else if ((e.Key == "ArrowRight" || e.Key == "Enter") && index < totalBoxes)
+        else if ((e.Key == "ArrowRight" || e.Key == "Enter") && index < totalBoxes-1)
         {
             await textBoxRefs[index + 1].FocusAsync();
             //await JS.InvokeVoidAsync("focusElement", textBoxRefs[index + 1]); // Move right

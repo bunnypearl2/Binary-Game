@@ -624,9 +624,10 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-enKgCMkYmCpfEcmg6Annbmc40VZ/A6aYYSQjZfVn2cU="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"453"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022enKgCMkYmCpfEcmg6Annbmc40VZ/A6aYYSQjZfVn2cU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 03 Apr 2025 19:29:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="swa-blazor-demo.mcj7drasmh.styles.css">
+    <StaticWebAssetEndpoint Include="swa-blazor-demo.kfzfptbtqe.styles.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\swa-blazor-demo.styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3n17hskhi3"},{"Name":"integrity","Value":"sha256-DyWAU5GYEaZVA1Mzhe2YonsU1GleidlfUgqhpqnyjEY="},{"Name":"label","Value":"swa-blazor-demo.styles.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4944"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022DyWAU5GYEaZVA1Mzhe2YonsU1GleidlfUgqhpqnyjEY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 03 Apr 2025 19:26:53 GMT"},{"Name":"Link","Value":"\u003C_content/Blazor.Bootstrap/Blazor.Bootstrap.7t9tbfaemk.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
@@ -634,10 +635,15 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mcj7drasmh"},{"Name":"integrity","Value":"sha256-tnahTfMYAoRhZVrP8aBgF4liqTFfmznQCp0zBmFiBmE="},{"Name":"label","Value":"swa-blazor-demo.styles.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6966"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tnahTfMYAoRhZVrP8aBgF4liqTFfmznQCp0zBmFiBmE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Apr 2025 16:28:16 GMT"},{"Name":"Link","Value":"\u003C_content/Blazor.Bootstrap/Blazor.Bootstrap.7t9tbfaemk.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
 >>>>>>> 723fc5b7209c2d66ced718e08c8df71761c7fdeb
+=======
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kfzfptbtqe"},{"Name":"integrity","Value":"sha256-IJ41\u002B6cXFjZJlX0zEI4tbqlua/3qfsn4a5pwOhFej14="},{"Name":"label","Value":"swa-blazor-demo.styles.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6873"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022IJ41\u002B6cXFjZJlX0zEI4tbqlua/3qfsn4a5pwOhFej14=\u0022"},{"Name":"Last-Modified","Value":"Mon, 07 Apr 2025 20:49:29 GMT"},{"Name":"Link","Value":"\u003C_content/Blazor.Bootstrap/Blazor.Bootstrap.7t9tbfaemk.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
+>>>>>>> c80c69cabecb6aa90a7b6af50bfc200c6e3978a4
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="swa-blazor-demo.styles.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\swa-blazor-demo.styles.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DyWAU5GYEaZVA1Mzhe2YonsU1GleidlfUgqhpqnyjEY="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4944"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022DyWAU5GYEaZVA1Mzhe2YonsU1GleidlfUgqhpqnyjEY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 03 Apr 2025 19:26:53 GMT"},{"Name":"Link","Value":"\u003C_content/Blazor.Bootstrap/Blazor.Bootstrap.7t9tbfaemk.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
@@ -645,6 +651,10 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tnahTfMYAoRhZVrP8aBgF4liqTFfmznQCp0zBmFiBmE="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6966"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tnahTfMYAoRhZVrP8aBgF4liqTFfmznQCp0zBmFiBmE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 05 Apr 2025 16:28:16 GMT"},{"Name":"Link","Value":"\u003C_content/Blazor.Bootstrap/Blazor.Bootstrap.7t9tbfaemk.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
 >>>>>>> 723fc5b7209c2d66ced718e08c8df71761c7fdeb
+=======
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-IJ41\u002B6cXFjZJlX0zEI4tbqlua/3qfsn4a5pwOhFej14="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6873"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022IJ41\u002B6cXFjZJlX0zEI4tbqlua/3qfsn4a5pwOhFej14=\u0022"},{"Name":"Last-Modified","Value":"Mon, 07 Apr 2025 20:49:29 GMT"},{"Name":"Link","Value":"\u003C_content/Blazor.Bootstrap/Blazor.Bootstrap.7t9tbfaemk.bundle.scp.css\u003E; rel=\u0022preload\u0022; as=\u0022style\u0022"}]]]></ResponseHeaders>
+>>>>>>> c80c69cabecb6aa90a7b6af50bfc200c6e3978a4
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_framework/blazor.webassembly.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\_framework\blazor.webassembly.js'))</AssetFile>

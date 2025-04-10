@@ -125,6 +125,35 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
+=======
+              "Title": "Converter.razor",
+              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Converter.razor",
+              "RelativeDocumentMoniker": "Pages\\Converter.razor",
+              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Converter.razor",
+              "RelativeToolTip": "Pages\\Converter.razor",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAD0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-31T19:57:07.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Converter.razor.css",
+              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Converter.razor.css",
+              "RelativeDocumentMoniker": "Pages\\Converter.razor.css",
+              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Converter.razor.css",
+              "RelativeToolTip": "Pages\\Converter.razor.css",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADAAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-01T21:11:29.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+>>>>>>> c80c69cabecb6aa90a7b6af50bfc200c6e3978a4
               "Title": "CheatSheet.razor",
               "DocumentMoniker": "C:\\Users\\violi\\source\\repos\\Binary-Game\\Pages\\CheatSheet.razor",
               "RelativeDocumentMoniker": "Pages\\CheatSheet.razor",

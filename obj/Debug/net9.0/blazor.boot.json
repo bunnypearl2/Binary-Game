@@ -2,10 +2,14 @@
   "mainAssemblyName": "swa-blazor-demo",
   "resources": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "hash": "sha256-ty0cQyCGBkVkOJEpQXiMXT8IARuRReoTprQDKknLdDY=",
 =======
     "hash": "sha256-0PZ2slZcXtEEeid3y8tk6n23ZDuyy/nfuXUgNLOjwBM=",
 >>>>>>> 723fc5b7209c2d66ced718e08c8df71761c7fdeb
+=======
+    "hash": "sha256-j0pGFlilHnwHgOURstdd09IEewn2bs9kuz7VUOXStAc=",
+>>>>>>> c80c69cabecb6aa90a7b6af50bfc200c6e3978a4
     "fingerprinting": {
       "BlazorBootstrap.8ia4ukhb4c.wasm": "BlazorBootstrap.wasm",
       "Microsoft.AspNetCore.Authorization.qe23mgxr71.wasm": "Microsoft.AspNetCore.Authorization.wasm",
@@ -207,12 +211,17 @@
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "swa-blazor-demo.ebr5h7d6n7.wasm": "swa-blazor-demo.wasm",
       "swa-blazor-demo.evmetxwdw3.pdb": "swa-blazor-demo.pdb"
 =======
       "swa-blazor-demo.npbwkqspiw.wasm": "swa-blazor-demo.wasm",
       "swa-blazor-demo.6ls2v5pxzz.pdb": "swa-blazor-demo.pdb"
 >>>>>>> 723fc5b7209c2d66ced718e08c8df71761c7fdeb
+=======
+      "swa-blazor-demo.ek83ngbgac.wasm": "swa-blazor-demo.wasm",
+      "swa-blazor-demo.udrfz81d8t.pdb": "swa-blazor-demo.pdb"
+>>>>>>> c80c69cabecb6aa90a7b6af50bfc200c6e3978a4
     },
     "jsModuleNative": {
       "dotnet.native.1p93gcv9fh.js": "sha256-1UPiprzN3JhPftx3be7XEMaYlUN+chRF41CuttiWVtQ="
@@ -424,6 +433,7 @@
       "mscorlib.vt9pwshhot.wasm": "sha256-/aFxOaPc1iTNlJw0z4/RGEMD0nzl4qVE3SF4wMsLgp0=",
       "netstandard.or41gtprh3.wasm": "sha256-nD1KqAI5YYz+YohqHaZ5EmXi7Eq9Uy9sUknnI8sj1AM=",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "swa-blazor-demo.ebr5h7d6n7.wasm": "sha256-dmmRBffwsdm51XUZJgR4NqGo+joMx9YYCZlY8HmpzFg="
     },
     "pdb": {
@@ -434,6 +444,12 @@
     "pdb": {
       "swa-blazor-demo.6ls2v5pxzz.pdb": "sha256-xn+Qtefps8/laghHwl5QcjroPfWmLT+ACfZqztSh8C4="
 >>>>>>> 723fc5b7209c2d66ced718e08c8df71761c7fdeb
+=======
+      "swa-blazor-demo.ek83ngbgac.wasm": "sha256-HrWtPjt9i1l6TrIyMr6DNEMu9w8OXyXnhV3Y0khIDNo="
+    },
+    "pdb": {
+      "swa-blazor-demo.udrfz81d8t.pdb": "sha256-Yqt1ePdIUAgX2pj7rHYjQoFwfP0DDrLSCV68XDnzV/I="
+>>>>>>> c80c69cabecb6aa90a7b6af50bfc200c6e3978a4
     }
   },
   "cacheBootResources": true,

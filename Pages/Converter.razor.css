@@ -1,30 +1,20 @@
-﻿/* For quizzing toggle */
-.quiz-on {
-    background-color: green;
-    color: white;
+﻿/* For main input box*/
+.row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
-.quiz-off {
-    background-color: red;
-    color: white;
+.col-auto {
+    display: flex; /* Ensure individual items are flex containers */
+    align-items: center; /* Center content vertically within each column */
 }
 
-/* For Twos Complement toggle buttons */
-.toggle-on {
-    background-color: darkorange;
-    color: white;
-}
-
-.toggle-off {
-    background-color: grey;
-    color: white;
-}
 
 /* for main submission box */
 .edit-form {
     display: flex;
-    align-items: center; /* Aligns input & button vertically */
-    gap: 30px; /* Adds space between them */
+    gap: 10px; /* Adds space between them */
     flex-wrap: nowrap; /* Prevent wrapping */
 }
 
@@ -52,23 +42,14 @@
 
 
 /* for increment and decrement buttons*/
-.container {
-    display: flex; /* Enables Flexbox layout */
-    align-items: center; /* Vertically align text and button in the center */
-    justify-content: flex-start; /* Keep elements to the left */
-    gap: 20px;
-    font-size: 24px;
-}
 
 
-.trianglebutton-container {
+.vertical-container {
     display: flex;
     flex-direction: column; /* Stack buttons vertically */
-    gap: 10px; /* Adds space between buttons */
 }
 
 .trianglebutton {
-    
     padding: 0; /* Remove padding */
     width: 30px; /* Set width of the square */
     height: 30px; /* Set height of the square (same as width for square shape) */
@@ -84,3 +65,26 @@
     .trianglebutton:hover {
         background-color: #ff8c00; /* Darker orange on hover */
     }
+
+/* For quizzing toggle */
+.quiz-on {
+    background-color: green;
+    color: white;
+}
+
+.quiz-off {
+    background-color: red;
+    color: white;
+}
+
+/* For Twos Complement toggle buttons */
+.toggle-on {
+    background-color: darkorange;
+    color: white;
+}
+
+.toggle-off {
+    background-color: grey;
+    color: white;
+}
+
