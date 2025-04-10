@@ -85,7 +85,7 @@
                     @onclick="(e) => HandleInputClick(e, index)"
                     @oninput="(e) => MoveNext(e, i , j, index)"
                     @onkeyup="(e) => HandleKeyNavigation(e, i, j, index)"
-                    @onblur="(e) => FillWhitespace(i, j, index)"
+
                     readonly="@(!isQuizzing[i])"
                     class="form-control text-center mx-1 @GetColorClass(i, j)"
                     maxlength="1"
@@ -129,7 +129,7 @@
     }
 </table>
 
-
+@*@onblur="(e) => FillWhitespace(i, j, index)"*@
 
 
 @code {
@@ -479,6 +479,12 @@
         {
             // If no row is selected to quiz on, make Submit Answer button clickable
 
+            // set values to zero
+            for(int i =0; i < numOfColumns; i++)
+            {
+                savedValues[rowNum][i] = '0';
+            }
+
             //  assign values in savedValues[] to textValues[]
             Array.Copy(savedValues[rowNum], textValues[rowNum], numOfColumns);
 
@@ -512,13 +518,14 @@
         // Loop through row to check answers
         for (int i = 0; i < numOfColumns; i++)
         {
-            if (savedValues[rowNum][i] == numAns[isTwosComp[rowNum]][inputRadix][i])
+            if (savedValues[rowNum][i] == numAns[isTwosComp[rowNum]][rowRadix[rowNum]][i])
             {
-                boxColor[rowNum][i] = 1; // set to green
+                boxColor[rowNum][i] = 0; // set to clear
             }
             else
-                boxColor[rowNum][i] = 2; // set to red
+                boxColor[rowNum][i] = 2; // clear color
         }
+
     }
 
     // Functionality for color of box
@@ -569,33 +576,38 @@
                 textValues[row][col] = inChar; // Update the character
                 savedValues[row][col] = inChar;
                 await AutoTab(row, col, index);
+
+                // COMPARE CHAR/DIGIT WITH ANS TO CHANGE COLOR OF TEXT
+                if (textValues[row][col] == numAns[isTwosComp[row]][rowRadix[row]][col])
+                {
+                    boxColor[row][col] = 0; // set to clear
+                }
+                else
+                    boxColor[row][col] = 2; // set to clear
+             
             }
-            else
+            else // not acceptable character
             {
                 await AutoTab(row, col, index);
                 textValues[row][col] = '0'; // Update the character
                 savedValues[row][col] = '0';
 
+                boxColor[row][col] = 2; // set to red
             }
-
-
+      
 
         }
         else{
             textValues[row][col] = '0'; // Update the character
             savedValues[row][col] = '0';
+
+            boxColor[row][col] = 2; // red color
         }
 
         StateHasChanged();
 
 
-        // COMPARE CHAR/DIGIT WITH ANS TO CHANGE COLOR OF TEXT
-        if (savedValues[row][col] == numAns[isTwosComp[row]][rowRadix[row]][col])
-        {
-            boxColor[row][col] = 1; // set to green
-        }
-        else
-            boxColor[row][col] = 2; // set to red
+       
 
     }
 
@@ -644,8 +656,6 @@
         // Use JavaScript Interop to directly update the value if it's empty
         await JS.InvokeVoidAsync("setInputToZeroIfEmpty", textBoxRefs[index]);
 
-        textValues[row][col] = '0';
-        StateHasChanged();
     }
     
     
