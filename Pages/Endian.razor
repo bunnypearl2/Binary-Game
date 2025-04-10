@@ -1,30 +1,72 @@
 ﻿@page "/endian"
 
-<img hidden="@hideStatus" src="images/testCat.png" alt="Cat" width="200" height="200" style="margin:auto;display:block">
-<h3 style="text-align:center;" hidden="@hideStatus"> @characterName: @dialogue[position]</h3>
-<button style="margin:auto;display:block" hidden="@hideStatus" class="btn btn-primary" @onclick="Advance">@buttonText</button>
-<h3 style="text-align:center;" hidden="@(!hideStatus)"> Tada!</h3>
+<!DOCTYPE html>
+
+<html>
+<style>
+	.sideBySideDiv {
+	hidden= "@hideStatus";
+	width: 100%;
+	text-align: center;
+	align-content: center;
+	display: inline;
+	}
+</style>
+<body>
+	<img hidden="@hideStatus" src="images/testCat.png" alt="Cat" width="200" height="200" style="margin:auto;display:block">
+	<h3 style="text-align:center;" hidden="@hideStatus"> @characterName: @dialogue[arrayPosition]</h3>
+
+	<div class="sideBySideDiv">
+		<button style="margin:auto;display:block" class="btn btn-primary" @onclick="Advance">@buttonText</button>
+		<h3 @onload="getDialogueLength">@dialoguePosition/@dialogueLength</h3>
+	</div>
+
+	<h3 style="text-align:center;" hidden="@(!hideStatus)"> Go more in depth about binary here!</h3>
+
+</body>
+</html>
 
 
 @code {
-	int position = 0;
+	int arrayPosition = 0;
+	int dialoguePosition = 1;
+	int dialogueLength = 0;
 	String buttonText = "Next";
 	String characterName = "??????";
 	bool hideStatus = false;
-	string[] dialogue = {"Hello!", "My name is Endian!", "Here's the difference between big and little endian!", "Its super simple you see!", "In big endian, the most significant bit is on the left.", "In little endian, the most significant bit is on the right.", "Pretty neat right? Now let's check out some examples!"};
+	string[] dialogue = {"Hello!", "My name is Nibble!", "Here's the difference between big and little endian!", "Its super simple you see!", "In big endian, the most significant bit is on the left.", "In little endian, the most significant bit is on the right.", "Pretty neat right? Now let's check out some examples!"};
+
 
 	private void Advance()
 	{
-		position++;
-		if (position == 1)
+		arrayPosition++;
+		dialoguePosition++;
+
+		dialogueLength = dialogue.Length;
+
+		//buttonText = (arrayPosition + 1).ToString() + "/" + dialogueLength.ToString();
+		if (arrayPosition == 1)
 		{
-			characterName = "Endian";
+			characterName = "Nibble";
 		}
-		if (position == 7)
+		if (arrayPosition == dialogueLength)
 		{
-			position = 0;
+			arrayPosition = 0;
+			dialoguePosition = 1;
 			hideStatus = true;
-			buttonText = "Next";
+			//buttonText = "Next";
 		}
+	}
+
+	Task getDialogueLength()
+	{
+		dialogueLength = dialogue.Length;
+		return Task.CompletedTask;
+	}
+
+	protected override async Task OnInitializedAsync()
+	{
+		getDialogueLength();
+		await getDialogueLength();
 	}
 }
