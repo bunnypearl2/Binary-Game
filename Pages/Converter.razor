@@ -18,14 +18,14 @@
     @***MAIN DROPDOWN***@
 
     <div class="col-auto">
-        
+
         <select @onchange="UpdateDropdown">
             @foreach (var option in options)
             {
                 <option value="@option">@option</option>
             }
         </select>
-        
+
     </div>
 
 
@@ -45,20 +45,16 @@
         <EditForm Model="@formData" OnValidSubmit="HandleSubmit" class="row">
             @* input  box *@
             <div class="col-auto"><InputText id="firstinput" onclick="selectTextBox" @bind-Value="formData.input" style="font-size:26" maxlength="16" /></div>
-           
+
             @* submit button*@
             <div class="col-auto"><button type="submit" class="edit-button">Submit</button></div>
-            
+
         </EditForm>
 
-
-        @* <p>Decimal Value: @inputDecimal</p> *@
-        @* <p>Twos Comp Decimal: @twosCompDecimal</p> *@
-         <p>@testMessage</p> 
     </div>  
 
     <div class="col-auto">
-        
+
         <p style="color: red"> @errorMessage </p>
     </div>
 
@@ -89,11 +85,13 @@
                     @onclick="(e) => HandleInputClick(e, index)"
                     @oninput="(e) => MoveNext(e, i , j, index)"
                     @onkeyup="(e) => HandleKeyNavigation(e, i, j, index)"
-                    @onblur="(e) => FillWhitespace(index)"
+                    @onblur="(e) => FillWhitespace(i, j, index)"
                     readonly="@(!isQuizzing[i])"
-                    class="form-control text-center mx-1"
+                    class="form-control text-center mx-1 @GetColorClass(i, j)"
                     maxlength="1"
                     style="width: 50px; display: inline-block;" />
+
+                    <pre>  &#215;@rowRadix[i]<sup>@(numOfColumns-1 -j)  </sup> @(j!=numOfColumns-1? "+":"") </pre>
                 </td>
 
             }
@@ -112,12 +110,17 @@
 
                 <td>
 
-                    <button @onclick="() => TwosComp(k)" class="@(isTwosComp[k] ? "toggle-on" : "toggle-off")">2's Complement</button>
+                    <button @onclick="() => TwosComp(k)" class="@(isTwosComp[k]==1 ? "toggle-on" : "toggle-off")">2's Complement</button>
                 </td>
 
                 <td>
                     <button @onclick="() => ToggleQuiz(k)" class="@(isQuizzing[k] ? "quiz-on" : "quiz-off")">@(isQuizzing[k] ? "QUIZ ON" : "QUIZ OFF")</button>
                 </td>
+
+                <td>@(new string(numAns[0][inputRadix]))</td>
+                <td>@(new string(savedValues[0]))</td>
+                <td>@(new string(textValues[0]))</td>
+                <td>@inputDecimal</td>
             }
 
 
@@ -130,7 +133,7 @@
 
 
 @code {
-    string testMessage = "";
+
     // FOR MAIN INPUT BOX
     private int inputRadix = 2;
     private string inputString { get; set; } = ""; // main input box variable
@@ -145,18 +148,26 @@
     public const int totalBoxes = numOfRows * numOfColumns; // Total boxes
 
     // FOR TWOS COMP BUTTONS
-    private bool[] isTwosComp = new bool[numOfRows]; //stores state of twosComp button for each row
+    private int[] isTwosComp = new int[numOfRows]; //stores state of twosComp button for each row
 
     // FOR DROPDOWN BOXES
     private int[] rowRadix = new int[numOfRows]; // number of rows; stores selected radix for each row
     private char[][] rowNum = new char[3][]; //jagged array, but could be 2D array?
-                                             // Answers for text boxes
+    private List<int> options = new() { 2,8,10,16,3,4,5,6,7,9,11,12,13,14,15,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36 }; //options for dropdown boxes
+
+    // FOR ROWS OF INPUT BOXES
+    private ElementReference[] textBoxRefs = new ElementReference[totalBoxes]; // Array to store references - for more UI/interface control
     private char[][] textValues = new char[numOfRows][]; // Text values displayed in grid
-    private ElementReference[] textBoxRefs = new ElementReference[totalBoxes]; // Array to store references
     private char[][] savedValues = new char[numOfRows][]; // Saved input from user
     private char[][][] numAns = { new char[36][], new char[36][] }; // stores correct answers, including 2's Complement
 
-    private List<int> options = new() { 2, 8, 10, 16 }; //options for dropdown boxes
+
+    private bool[] isQuizzing = new bool[numOfRows];
+
+    private int[][] boxColor = new int[numOfRows][]; //set to either 0, 1, or 2 (default, green, red)
+    private string[] colorClass = { "", "green-box", "red-box" };
+
+
 
     public Dictionary<char, int> charDict = new Dictionary<char, int> //for converting from characters to integers
     {
@@ -179,6 +190,8 @@
         {
             textValues[i] = new char[numOfColumns];  // Initialize row
             savedValues[i] = new char[numOfColumns]; // Initialize row
+
+            boxColor[i] = new int[numOfColumns];
         }
 
         for (int n = 0; n < 36; n++) // numAns has 2 layers
@@ -192,7 +205,7 @@
         {
             for (int j = 0; j < numOfColumns; j++)
             {
-                textValues[i][j] = '0';
+
                 savedValues[i][j] = '0';
                 numAns[0][i][j] = '0';
                 numAns[1][i][j] = '0';
@@ -214,15 +227,18 @@
         for(int i = 0; i < numOfRows; i++)
         {
             if (i % 4 == 0)
-                isTwosComp[i] = true;
+                isTwosComp[i] = 1;
             else
-                isTwosComp[i] = false;
+                isTwosComp[i] = 0;
         }
 
         // initialize submit box
         formData.input = "0";
         StateHasChanged(); // Update the UI after initialization
         HandleSubmit();
+
+
+        // initialize boxColor[][]
 
 
     }
@@ -239,10 +255,11 @@
     {
         inputRadix = Convert.ToInt32(e.Value);
 
+        /*
         if(inputString != "")
-        {
+            {
             HandleSubmit(); // execute submit
-        }  
+        }  */
     }
 
     // Evaluate main input upon entry or hitting submit
@@ -280,10 +297,6 @@
         //  Update values for each row accordingly in textBoxes[,]
         for(int i=0; i < numOfRows; i++)
         {
-            for (int j = 0; j < numOfColumns; j++)
-            {
-                savedValues[i][j] = '0';
-            }
 
             FromDecimal(isTwosComp[i], rowRadix[i], i);
         }
@@ -320,34 +333,50 @@
     }
 
     //CALCULATES NUMBER FROM DECIMAL ACCORDING TO GIVEN BASE AND ROW NUMBER
-    private void FromDecimal(bool isTwosComp, int radix, int row)
+    private void FromDecimal(int isTwosComp, int radix, int row)
     {
 
-        int num = isTwosComp ? twosCompDecimal: inputDecimal;
-
-        int twosComp = isTwosComp? 1: 0; //0 if normal, 1 if complement
+        int num = isTwosComp == 1? twosCompDecimal : inputDecimal;
 
         const string digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-        //If quizzing is off, update text boxes for given row
-        if (isQuizzing[row] == false)
-            textValues[row] = numAns[twosComp][radix];
-        else
-            textValues[row] = savedValues[row];
 
         for(int i=numOfColumns-1; i >= 0; i--)
         {
             if (num > 0)
             {
                 int remainder = num % radix;
-                numAns[twosComp][radix][i] = digits[remainder];
+                numAns[isTwosComp][radix][i] = digits[remainder];
                 num /= radix;
             }
             else
-                numAns[twosComp][radix][i] = '0';
+                numAns[isTwosComp][radix][i] = '0';
+        }
+        StateHasChanged();
+
+        //If quizzing is off, update text boxes for given row
+        if (isQuizzing[row] == false)
+        {
+            int x = 0;
+            foreach(char value in numAns[isTwosComp][radix])
+            {
+                textValues[row][x++] = value;
+            }
+
+        }     
+        else
+        {
+            // reset values in row for user to change
+            for (int j = 0; j < numOfColumns; j++)
+            {
+                savedValues[row][j] = '0';
+                textValues[row][j] = '0';
+            }
+
+            // Set colors of boxes for row
+            CheckAnswers(row);
         }
 
-        
 
 
         StateHasChanged();
@@ -373,7 +402,9 @@
                 numAns[0][inputRadix][i] = '0';
         }
 
+
         formData.input = new string(numAns[0][inputRadix]);
+
         HandleSubmit();
 
     }
@@ -407,7 +438,11 @@
     // TWOS COMPLEMENT TOGGLE/BUTTON
     private void TwosComp(int row)
     {
-        isTwosComp[row] = !isTwosComp[row];
+        // flip value
+        if (isTwosComp[row] == 0)
+            isTwosComp[row] = 1;
+        else
+            isTwosComp[row] = 0;
 
         //Update answer for row
         FromDecimal(isTwosComp[row], rowRadix[row], row);
@@ -434,7 +469,6 @@
 
 
     // functionality for QUIZ toggle button
-    private bool[] isQuizzing = new bool[numOfRows];
 
     private void ToggleQuiz(int rowNum)
     {
@@ -445,8 +479,13 @@
         {
             // If no row is selected to quiz on, make Submit Answer button clickable
 
-            //  assign values in textValues[] to savedValues[]
-            textValues[rowNum] = savedValues[rowNum];
+            //  assign values in savedValues[] to textValues[]
+            Array.Copy(savedValues[rowNum], textValues[rowNum], numOfColumns);
+
+            // Check answers for row - update colors
+            CheckAnswers(rowNum);
+
+
         }
         else //quizzing is switched off
         {
@@ -454,13 +493,41 @@
             //deactivate submit answer button
 
             // bind text boxes to numAns[]
-            int twosComp = isTwosComp[rowNum] ? 1 : 0; //0 if normal, 1 if complement
-            textValues[rowNum] = numAns[twosComp][rowRadix[rowNum]];
-            StateHasChanged();
+            Array.Copy(numAns[isTwosComp[rowNum]][rowRadix[rowNum]], textValues[rowNum], numOfColumns);
+
+            // loop through row to change box color back to default
+            for (int i = 0; i < numOfColumns; i++)
+            {
+                boxColor[rowNum][i] = 0; // '0' corresponds to default
+            }
         }
-        // Loop through
+
+        StateHasChanged();
+
 
     }
+
+    private void CheckAnswers(int rowNum)
+    {
+        // Loop through row to check answers
+        for (int i = 0; i < numOfColumns; i++)
+        {
+            if (savedValues[rowNum][i] == numAns[isTwosComp[rowNum]][inputRadix][i])
+            {
+                boxColor[rowNum][i] = 1; // set to green
+            }
+            else
+                boxColor[rowNum][i] = 2; // set to red
+        }
+    }
+
+    // Functionality for color of box
+
+    private string GetColorClass(int row, int col)
+    {
+        return colorClass[boxColor[row][col]];
+    }
+
 
     private void GenerateRand()
     {
@@ -468,21 +535,6 @@
     }
 
 
-
-
-
-
-    // Method to gray out all textboxes
-    private async Task GrayOutTextboxes(ElementReference[] boxRefs)
-    {
-        await JS.InvokeVoidAsync("grayOutElements", boxRefs);
-    }
-
-    // Method to enable all textboxes
-    private async Task EnableTextboxes(ElementReference[] boxRefs)
-    {
-        await JS.InvokeVoidAsync("enableElements", boxRefs);
-    }
 
     // for main input box
     private async Task SelectTextBox()
@@ -511,36 +563,47 @@
         {
             char inChar = char.Parse(input);
 
-            //if (char.IsLetterOrDigit(inChar))
             // Check if the character is valid (e.g., letter or digit)
+            if (char.IsLetterOrDigit(inChar))
+            {
+                textValues[row][col] = inChar; // Update the character
+                savedValues[row][col] = inChar;
+                await AutoTab(row, col, index);
+            }
+            else
+            {
+                await AutoTab(row, col, index);
+                textValues[row][col] = '0'; // Update the character
+                savedValues[row][col] = '0';
+
+            }
 
 
-            textValues[row][col] = inChar; // Update the character
-            savedValues[row][col] = inChar;
 
-            await AutoTab(row, col, index);
-                    
         }
-        else
+        else{
+            textValues[row][col] = '0'; // Update the character
+            savedValues[row][col] = '0';
+        }
+
+        StateHasChanged();
+
 
         // COMPARE CHAR/DIGIT WITH ANS TO CHANGE COLOR OF TEXT
-
-
-        StateHasChanged();//update
+        if (savedValues[row][col] == numAns[isTwosComp[row]][rowRadix[row]][col])
+        {
+            boxColor[row][col] = 1; // set to green
+        }
+        else
+            boxColor[row][col] = 2; // set to red
 
     }
 
-    // REPLACES BLANK BOXES WITH '0'
-    private async Task FillWhitespace(int index)
-    {
-        // Use JavaScript Interop to directly update the value if it's empty
-        await JS.InvokeVoidAsync("setInputToZeroIfEmpty", textBoxRefs[index]);
-    }
 
     // HANDLES OTHER KEYS ENTERED FOR NAVIGATION    
     private async Task HandleKeyNavigation(KeyboardEventArgs e, int row, int col, int index)
     {
-        if (e.Key == "ArrowLeft" && index > 0)
+        if ((e.Key == "ArrowLeft" || e.Key == "Backspace") && index > 0)
         {
             await textBoxRefs[index - 1].FocusAsync();
             //await JS.InvokeVoidAsync("focusElement", textBoxRefs[index - 1]); // Move left
@@ -552,30 +615,40 @@
             //await JS.InvokeVoidAsync("focusElement", textBoxRefs[index + 1]); // Move right
             await JS.InvokeVoidAsync("selectText", textBoxRefs[index + 1]);
         }
-        
 
-        
+
 
     }
-
-
 
     private async Task AutoTab(int row, int col, int index)
     {
 
 
-        if (index < textBoxRefs.Length - 1 && textValues[row][col] != '\0') //i.e. less than numOfRows * numOfColumns - 1
+        if ((index + 1) % numOfColumns != 0 && textValues[row][col] != '\0') //i.e. not at end of row AND not backspace
         {
             await Task.Delay(50); // Small delay for UI update
                                   //await textBoxRefs[index + 1].FocusAsync(); // Move focus
             await JS.InvokeVoidAsync("focusElement", textBoxRefs[index + 1]); // Select text
             await JS.InvokeVoidAsync("selectText", textBoxRefs[index + 1]); // Select text
         }
+        else if ((index+1) % numOfColumns == 0) //end of row
+        {
+            await JS.InvokeVoidAsync("focusElement", textBoxRefs[index+1 - numOfColumns]); // Select text
+            await JS.InvokeVoidAsync("selectText", textBoxRefs[index+1 - numOfColumns]); // Select text
+        }
     }
 
-    
-    //
+    // REPLACES BLANK BOXES WITH '0'
+    private async Task FillWhitespace(int row, int col, int index)
+    {
+        // Use JavaScript Interop to directly update the value if it's empty
+        await JS.InvokeVoidAsync("setInputToZeroIfEmpty", textBoxRefs[index]);
 
+        textValues[row][col] = '0';
+        StateHasChanged();
+    }
+    
+    
 
 }
 
