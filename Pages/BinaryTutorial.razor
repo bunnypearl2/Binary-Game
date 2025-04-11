@@ -1,13 +1,12 @@
-@page "/home"
+@page "/binarytut"
 
 @inject IJSRuntime JS
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Intro to Binary</PageTitle>
 
 
-Binary App Test
-
-
+<h4>Unsigned Decimal: @num.base10</h4>
+<h4>Signed Decimal: @num.twosCompliment</h4>
 
 <div class="input-row">
 
@@ -134,13 +133,25 @@ Binary App Test
 
 
 <br>
-<p> Introduction to Binary:</p>
-<p> 0's and 1's are commonly used to represent the ON or OFF state of switches or transistors in computers.  Test switching the toggles above!</p>
-<p>  </p>
+<p> <strong>Introduction to Binary:</strong></p>
+<p> 0's and 1's are commonly used to represent the ON or OFF state of switches or transistors in computers.  In binary, these digits are referred to as bits. 
+    <strong>Try switching the bits above!</strong>
+</p>
+<p> In this example, there are 16 digit/bit places.  So there are 2<sup>16</sup> = 65536 possible combinations of 0's and 1's we can make. Similar to how Decimal (base 10) assigns 
+    greater value to progressive digit places - 1,10,100,1000,10000... (10<sup>0</sup>, 10<sup>1</sup>,10<sup>2</sup>,
+    10<sup>3</sup>,10<sup>4</sup>...),  Binary (base 2) can be regarded the same way - 1,2,4,8,16... (2<sup>0</sup>, 2<sup>1</sup>,2<sup>2</sup>,2<sup>3</sup>,2<sup>4</sup>).</p>
+<p> One special thing about binary representation is how it can be used to represent both positive and negative numbers.  With 16 digits, we can represent numbers 0 - 665535 (unsigned decimal)
+    or -32768 - 32767 (signed decimal).  
+    <p><u>Signed Decimal</u>: When the 2<sup>15</sup> bit is set to 1, every other bit set is added to the negative value of -32768. So the absolute value of the number goes down instead
+    of up.</p>
+</p>
+<p>EXAMPLE:  If you have bits 2<sup>12</sup>, 2<sup>6</sup>, and 2<sup>4</sup> each set to "1", the decimal representation would be (1)*2<sup>12</sup> + (1)*2<sup>6</sup> + (1)*2<sup>4</sup> = 
+    4096 + 64 + 16 = 4176</p>
+<p> Can you remember the powers of 2?  Feel free to reference the <a href="/cheatsheet">Cheat Sheet</a>!</p>
 
-<h3>Decimal: @num.base10</h3>
-<h3>2's Compliment: @num.twosCompliment</h3>
-<h3>Hexadecimal: @num.base16</h3>
+
+<!--
+<h3>Hexadecimal: @num.base16</h3>-->
 
 
 

@@ -1,19 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\violi\\source\\repos\\Binary-Game\\",
+  "WorkspaceRootPath": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\pages\\binarytutorial.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\binarytutorial.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\pages\\converter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\converter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\pages\\endian.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\endian.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\pages\\converter.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -24,10 +31,6 @@
       "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -36,10 +39,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Msbuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\pages\\endian.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\endian.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\wwwroot\\images\\testcat.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
@@ -68,18 +67,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\ed\\source\\repos\\bunnypearl2\\binary-game\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-=======
-      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\violi\\source\\repos\\binary-game\\pages\\endian.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\endian.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\violi\\source\\repos\\binary-game\\pages\\cheatsheet.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\cheatsheet.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\violi\\source\\repos\\binary-game\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
->>>>>>> 433ef3aad12ad6be176d88d282680a3cb07b9ee9
     }
   ],
   "DocumentGroupContainers": [
@@ -89,20 +76,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 10,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -112,86 +87,46 @@
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-<<<<<<< HEAD
+              "DocumentIndex": 1,
+              "Title": "BinaryTutorial.razor",
+              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\BinaryTutorial.razor",
+              "RelativeDocumentMoniker": "Pages\\BinaryTutorial.razor",
+              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\BinaryTutorial.razor",
+              "RelativeToolTip": "Pages\\BinaryTutorial.razor",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAJcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T23:55:33.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-=======
-              "DocumentIndex": 0,
-<<<<<<< HEAD
-              "Title": "Endian.razor",
-              "DocumentMoniker": "C:\\Users\\violi\\source\\repos\\Binary-Game\\Pages\\Endian.razor",
-              "RelativeDocumentMoniker": "Pages\\Endian.razor",
-              "ToolTip": "C:\\Users\\violi\\source\\repos\\Binary-Game\\Pages\\Endian.razor*",
-              "RelativeToolTip": "Pages\\Endian.razor*",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAwDUAAAAUAAAAAAAAAA==",
-=======
->>>>>>> 433ef3aad12ad6be176d88d282680a3cb07b9ee9
               "Title": "Converter.razor",
               "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Converter.razor",
               "RelativeDocumentMoniker": "Pages\\Converter.razor",
               "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Converter.razor",
               "RelativeToolTip": "Pages\\Converter.razor",
-<<<<<<< HEAD
               "ViewState": "AgIAAF0AAAAAAAAAAAAAAHcAAAANAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAADQCAAAAAAAAAAAAwEkCAAAqAAAAAAAAAA==",
->>>>>>> d198772b17f29d7d2f1e88b69768c6d52c4df477
->>>>>>> 433ef3aad12ad6be176d88d282680a3cb07b9ee9
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T17:18:05.652Z",
+              "WhenOpened": "2025-03-31T19:57:07.594Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CheatSheet.razor",
-              "DocumentMoniker": "C:\\Users\\violi\\source\\repos\\Binary-Game\\Pages\\CheatSheet.razor",
-              "RelativeDocumentMoniker": "Pages\\CheatSheet.razor",
-              "ToolTip": "C:\\Users\\violi\\source\\repos\\Binary-Game\\Pages\\CheatSheet.razor",
-              "RelativeToolTip": "Pages\\CheatSheet.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T00:03:57.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 0,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Home.razor",
-              "RelativeToolTip": "Pages\\Home.razor",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAAAI0AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-16T21:32:45.98Z",
-              "EditorCaption": ""
-=======
-              "DocumentIndex": 2,
-<<<<<<< HEAD
-=======
-              "Title": "Converter.razor.css",
-              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Converter.razor.css",
-              "RelativeDocumentMoniker": "Pages\\Converter.razor.css",
-              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Converter.razor.css",
-              "RelativeToolTip": "Pages\\Converter.razor.css",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-01T21:11:29.79Z"
->>>>>>> 433ef3aad12ad6be176d88d282680a3cb07b9ee9
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ASCIIGame.razor",
-              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\ASCIIGame.razor",
-              "RelativeDocumentMoniker": "Pages\\ASCIIGame.razor",
-              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\ASCIIGame.razor",
-              "RelativeToolTip": "Pages\\ASCIIGame.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T00:03:42.404Z"
             },
             {
               "$type": "Document",
@@ -203,11 +138,12 @@
               "RelativeToolTip": "Pages\\BinaryQuiz.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T00:03:30.253Z"
+              "WhenOpened": "2025-03-25T00:03:30.253Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -215,23 +151,25 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T23:12:31.395Z"
+              "WhenOpened": "2025-03-16T23:12:31.395Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Layout\\NavMenu.razor",
               "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Layout\\NavMenu.razor",
               "RelativeToolTip": "Layout\\NavMenu.razor",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T00:36:45.918Z"
+              "WhenOpened": "2025-03-25T00:36:45.918Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
@@ -244,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "app.css",
               "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\wwwroot\\css\\app.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\app.css",
@@ -252,11 +190,38 @@
               "RelativeToolTip": "wwwroot\\css\\app.css",
               "ViewState": "AgIAAGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-03T19:59:40.952Z"
+              "WhenOpened": "2025-04-03T19:59:40.952Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Endian.razor",
+              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Endian.razor",
+              "RelativeDocumentMoniker": "Pages\\Endian.razor",
+              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Endian.razor",
+              "RelativeToolTip": "Pages\\Endian.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T17:18:05.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ASCIIGame.razor",
+              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\ASCIIGame.razor",
+              "RelativeDocumentMoniker": "Pages\\ASCIIGame.razor",
+              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\ASCIIGame.razor",
+              "RelativeToolTip": "Pages\\ASCIIGame.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-25T00:03:42.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Converter.razor.css",
               "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Converter.razor.css",
               "RelativeDocumentMoniker": "Pages\\Converter.razor.css",
@@ -277,24 +242,12 @@
               "RelativeToolTip": "Pages\\TwoCompTutorial.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T00:04:31.07Z"
+              "WhenOpened": "2025-03-25T00:04:31.07Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 9,
-              "Title": "Endian.razor",
-              "DocumentMoniker": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Endian.razor",
-              "RelativeDocumentMoniker": "Pages\\Endian.razor",
-              "ToolTip": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\Pages\\Endian.razor",
-              "RelativeToolTip": "Pages\\Endian.razor",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAswA0AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T17:18:05.652Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -306,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
@@ -337,7 +290,8 @@
               "RelativeToolTip": "wwwroot\\index.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-24T20:37:47.985Z"
+              "WhenOpened": "2025-03-24T20:37:47.985Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -349,7 +303,8 @@
               "RelativeToolTip": ".gitignore",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG/SURBVDhPrZRNTgIxFMerDIaEhHgU97JxwUKGGaNeQJdyCY0XUBDWGhg4AB\u002BuvQk7OQCRFTP1fXWmMxUMCT94ee177eu/LVQdFK31kTSJ0WgEIa0SMJ2A6QTHcF9iicQqlYpa/6zv2\u002B2HD5nuEkWR/l4udRzHZBtjGzFor1YrPR6P9WKx0MNhpN96vTuZThyLJ1AJLK/iJFFxjBanBsXIozqkWq2qev1c1Wq19063e0ZBwBNP4JaQ6WRC/i8ajQb5wWBAvnxyghpOqQPkC8L5IEEQKjgxaqOTFsCd65tb6nmlkur1\u002BxwXCgX58KfT7QptwvCK52wrSLcJvtUKOABkQ6HFXwbGsmMRBkchzpjNphLZDSrEn5G1qnsp\u002BPEtheloXouRnXDTTjhb5tXmeyg0IgzuliHp\u002By0OANbiOCDXp1IYo3mMUxBT8/mMA/8QhGH6ZzC4Zwi5ZqoQB9M3h62I/\u002B/SAQpniBmtPvdQyGeYUdgyX8pl05eIBSxmTzQYEYbc42AuJQWLGJNQEcrJG4A4BTHneSW2sqfKOyybkxXMPbAvrx3IsyLzkPJFmUcWYtDntjG6lIvnp8cvKXNIlPoFvstpJRlQPIAAAAAASUVORK5CYII=",
-              "WhenOpened": "2025-03-31T20:23:18.788Z"
+              "WhenOpened": "2025-03-31T20:23:18.788Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -361,19 +316,8 @@
               "RelativeToolTip": "_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-16T23:09:34.758Z"
-=======
-              "DocumentIndex": 5,
->>>>>>> d198772b17f29d7d2f1e88b69768c6d52c4df477
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\violi\\source\\repos\\Binary-Game\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\violi\\source\\repos\\Binary-Game\\Pages\\Home.razor",
-              "RelativeToolTip": "Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-16T21:32:45.98Z"
->>>>>>> 433ef3aad12ad6be176d88d282680a3cb07b9ee9
+              "WhenOpened": "2025-03-16T23:09:34.758Z",
+              "EditorCaption": ""
             }
           ]
         }

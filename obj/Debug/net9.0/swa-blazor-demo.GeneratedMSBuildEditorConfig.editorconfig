@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmluYXJ5UXVpei5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/BinaryTutorial.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmluYXJ5VHV0b3JpYWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/CheatSheet.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hlYXRTaGVldC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,10 +50,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/Endian.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5kaWFuLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/Test1.razor]
