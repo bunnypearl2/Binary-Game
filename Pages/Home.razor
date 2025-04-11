@@ -1,5 +1,7 @@
 @page "/home"
 
+@inject IJSRuntime JS
+
 <PageTitle>Home</PageTitle>
 
 
@@ -10,74 +12,131 @@ Binary App Test
 <div class="input-row">
 
     <Tooltip Class="d-inline-block" Title="@fifteenVal" role="button">
-    <button style="background-color:@bgcolor15" @onclick=ToggleB15>@num.b15</button>
+        <button style="background-color:@bgcolor15" @onclick=ToggleB15>@num.b15</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">15</label>
+        </div>
     </Tooltip>
 
     <Tooltip Class="d-inline-block" Title="@fourteenVal" role="button">
-    <button style="background-color:@bgcolor14" @onclick=ToggleB14>@num.b14</button>
+        <button style="background-color:@bgcolor14" @onclick=ToggleB14>@num.b14</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">14</label>
+        </div>
     </Tooltip>
 
     <Tooltip Class="d-inline-block" Title="@thirteenVal" role="button">
-    <button style="background-color:@bgcolor13" @onclick=ToggleB13>@num.b13</button>
+        <button style="background-color:@bgcolor13" @onclick=ToggleB13>@num.b13</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">13</label>
+        </div>
     </Tooltip>
 
     <Tooltip Class="d-inline-block" Title="@twelveVal" role="button">
-    <button style="background-color:@bgcolor12" @onclick=ToggleB12>@num.b12</button>
+        <button style="background-color:@bgcolor12" @onclick=ToggleB12>@num.b12</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">12</label>
+        </div>
     </Tooltip>
 
     <Tooltip Class="d-inline-block" Title="@elevenVal" role="button">
-    <button style="background-color:@bgcolor11" @onclick=ToggleB11>@num.b11</button>
+        <button style="background-color:@bgcolor11" @onclick=ToggleB11>@num.b11</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">11</label>
+        </div>
     </Tooltip>
 
     <Tooltip Class="d-inline-block" Title="@tenVal" role="button">
-    <button style="background-color:@bgcolor10" @onclick=ToggleB10>@num.b10</button>
+        <button style="background-color:@bgcolor10" @onclick=ToggleB10>@num.b10</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">10</label>
+        </div>
     </Tooltip>
 
     <Tooltip Class="d-inline-block" Title="@nineVal" role="button">
-    <button style="background-color:@bgcolor9" @onclick=ToggleB9>@num.b9</button>
+        <button style="background-color:@bgcolor9" @onclick=ToggleB9>@num.b9</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">9</label>
+        </div>
     </Tooltip>
 
     <Tooltip Class="d-inline-block" Title="@eightVal" role="button">
-    <button style="background-color:@bgcolor8" @onclick=ToggleB8>@num.b8</button>
+        <button style="background-color:@bgcolor8" @onclick=ToggleB8>@num.b8</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">8</label>
+        </div>
     </Tooltip>
 
     <Tooltip Class="d-inline-block" Title="@sevenVal" role="button">
-    <button style="background-color:@bgcolor7" @onclick=ToggleB7>@num.b7</button>
+        <button style="background-color:@bgcolor7" @onclick=ToggleB7>@num.b7</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">7</label>
+        </div>
     </Tooltip>
 
     <Tooltip Class="d-inline-block" Title="@sixVal" role="button">
-    <button style="background-color:@bgcolor6" @onclick=ToggleB6>@num.b6</button>
+        <button style="background-color:@bgcolor6" @onclick=ToggleB6>@num.b6</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">6</label>
+        </div>
     </Tooltip>
 
     <Tooltip Class="d-inline-block" Title="@fiveVal" role="button">
-    <button style="background-color:@bgcolor5" @onclick=ToggleB5>@num.b5</button>
+        <button style="background-color:@bgcolor5" @onclick=ToggleB5>@num.b5</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">5</label>
+        </div>
     </Tooltip>
 
     <Tooltip Class="d-inline-block" Title="@fourVal" role="button">
-    <button style="background-color:@bgcolor4" @onclick=ToggleB4>@num.b4</button>
+        <button style="background-color:@bgcolor4" @onclick=ToggleB4>@num.b4</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">4</label>
+        </div>
     </Tooltip>
 
     <Tooltip Class="d-inline-block" Title="@threeVal" role="button">
-    <button style="background-color:@bgcolor3" @onclick=ToggleB3>@num.b3</button>
+        <button style="background-color:@bgcolor3" @onclick=ToggleB3>@num.b3</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">3</label>
+        </div>
     </Tooltip>
-    
+
     <Tooltip Class="d-inline-block" Title="@twoVal" role="button">
-    <button style="background-color:@bgcolor2" @onclick=ToggleB2>@num.b2</button>
+        <button style="background-color:@bgcolor2" @onclick=ToggleB2>@num.b2</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">2</label>
+        </div>
     </Tooltip>
 
     <Tooltip Class="d-inline-block" Title="@oneVal" role="button">
-    <button style="background-color:@bgcolor1" @onclick=ToggleB1>@num.b1</button>
+        <button style="background-color:@bgcolor1" @onclick=ToggleB1>@num.b1</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">1</label>
+        </div>
     </Tooltip>
 
     <Tooltip Class="d-inline-block" Title= "@zeroVal" role="button">
         <button style="background-color:@bgcolor0" @onclick=ToggleB0>@num.b0</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">0</label>
+        </div>
     </Tooltip>
 
-</div>
-<br>
+    <!--
+    <button class="btn btn-primary" @onclick="Calculate">Submit</button>-->
+    <button class="btn btn-primary ms-4" @onclick="Clear">Clear</button>
 
-<button class="btn btn-primary" @onclick="Calculate">Submit</button>
-<button class="btn btn-primary" @onclick="Clear">Clear</button>
+</div>
+
+
+
+
+
+<br>
+<p> Introduction to Binary:</p>
+<p> 0's and 1's are commonly used to represent the ON or OFF state of switches or transistors in computers.  Test switching the toggles above!</p>
+<p>  </p>
 
 <h3>Decimal: @num.base10</h3>
 <h3>2's Compliment: @num.twosCompliment</h3>
@@ -107,8 +166,26 @@ Binary App Test
     string bgcolor14 { get; set; } = "#eca24a";
     string bgcolor15 { get; set; } = "#eca24a";
 
-    
-   
+
+     /*
+     MarkupString zeroVal = new MarkupString("2<sup>0</sup>");
+     MarkupString oneVal = new MarkupString("2<sup>1</sup>");
+     MarkupString twoVal = new MarkupString("2<sup>2</sup>");
+     MarkupString threeVal = new MarkupString("2<sup>3</sup>");
+     MarkupString fourVal = new MarkupString("2<sup>4</sup>");
+     MarkupString fiveVal = new MarkupString("2<sup>5</sup>");
+     MarkupString sixVal = new MarkupString("2<sup>6</sup>");
+     MarkupString sevenVal = new MarkupString("2<sup>7</sup>");
+     MarkupString eightVal = new MarkupString("2<sup>8</sup>");
+     MarkupString nineVal = new MarkupString("2<sup>9</sup>");
+     MarkupString tenVal = new MarkupString("2<sup>10</sup>");
+     MarkupString elevenVal = new MarkupString("2<sup>11</sup>");
+     MarkupString twelveVal = new MarkupString("2<sup>12</sup>");
+     MarkupString thirteenVal = new MarkupString("2<sup>13</sup>");
+     MarkupString fourteenVal = new MarkupString("2<sup>14</sup>");
+     MarkupString fifteenVal = new MarkupString("2<sup>15</sup>");
+     */
+
     string zeroVal = "2<sup>0</sup>";
     string oneVal = "2<sup>1</sup>";
     string twoVal = "2<sup>2</sup>";
@@ -125,6 +202,8 @@ Binary App Test
     string thirteenVal = "2<sup>13</sup>";
     string fourteenVal = "2<sup>14</sup>";
     string fifteenVal = "2<sup>15</sup>";
+
+
 
 
     void ToggleB0()
@@ -145,6 +224,7 @@ Binary App Test
 
         //buttonclass = "btn btn-secondary";
         StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
     }
     void ToggleB1()
     {
@@ -165,6 +245,7 @@ Binary App Test
 
         //buttonclass = "btn btn-secondary";
         StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
     }
     void ToggleB2()
     {
@@ -184,6 +265,7 @@ Binary App Test
 
         //buttonclass = "btn btn-secondary";
         StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
     }
     void ToggleB3()
     {
@@ -203,6 +285,7 @@ Binary App Test
 
         //buttonclass = "btn btn-secondary";
         StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
     }
 
     void ToggleB4()
@@ -223,6 +306,7 @@ Binary App Test
 
         //buttonclass = "btn btn-secondary";
         StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
     }
     void ToggleB5()
     {
@@ -242,6 +326,7 @@ Binary App Test
 
         //buttonclass = "btn btn-secondary";
         StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
     }
     void ToggleB6()
     {
@@ -261,6 +346,7 @@ Binary App Test
 
         //buttonclass = "btn btn-secondary";
         StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
     }
     void ToggleB7()
     {
@@ -280,6 +366,7 @@ Binary App Test
 
         //buttonclass = "btn btn-secondary";
         StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
     }
     void ToggleB8()
     {
@@ -299,6 +386,7 @@ Binary App Test
 
         //buttonclass = "btn btn-secondary";
         StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
     }
     void ToggleB9()
     {
@@ -318,6 +406,7 @@ Binary App Test
 
         //buttonclass = "btn btn-secondary";
         StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
     }
 
     void ToggleB10()
@@ -338,6 +427,7 @@ Binary App Test
 
         //buttonclass = "btn btn-secondary";
         StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
     }
 
     void ToggleB11()
@@ -358,6 +448,7 @@ Binary App Test
 
         //buttonclass = "btn btn-secondary";
         StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
     }
 
     void ToggleB12()
@@ -378,6 +469,7 @@ Binary App Test
 
         //buttonclass = "btn btn-secondary";
         StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
     }
 
     void ToggleB13()
@@ -398,6 +490,7 @@ Binary App Test
 
         //buttonclass = "btn btn-secondary";
         StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
     }
     void ToggleB14()
     {
@@ -417,6 +510,7 @@ Binary App Test
 
         //buttonclass = "btn btn-secondary";
         StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
     }
 
     void ToggleB15()
@@ -437,6 +531,7 @@ Binary App Test
 
         //buttonclass = "btn btn-secondary";
         StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
     }
 
     //Update hints/labels
@@ -587,6 +682,32 @@ Binary App Test
         num.base10 = 0;
         num.twosCompliment = 0;
         num.base16 = "0000";
+
+        // reset color
+        for(int i = 0; i < 16; i++)
+        {
+            string color = "#eca24a";
+            switch (i)
+            {
+                case 0: bgcolor0 = color; break;
+                case 1: bgcolor1 = color; break;
+                case 2: bgcolor2 = color; break;
+                case 3: bgcolor3 = color; break;
+                case 4: bgcolor4 = color; break;
+                case 5: bgcolor5 = color; break;
+                case 6: bgcolor6 = color; break;
+                case 7: bgcolor7 = color; break;
+                case 8: bgcolor8 = color; break;
+                case 9: bgcolor9 = color; break;
+                case 10: bgcolor10 = color; break;
+                case 11: bgcolor11 = color; break;
+                case 12: bgcolor12 = color; break;
+                case 13: bgcolor13 = color; break;
+                case 14: bgcolor14 = color; break;
+                case 15: bgcolor15 = color; break;
+            }
+
+        }
     }
 
 
@@ -638,4 +759,14 @@ Binary App Test
             twosCompliment = 0,
             base16 = "0000"
         };
+
+
+    // allows superscripts to be recognized in strings for tooltips
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("initializeHtmlTooltips");
+        }
+    }
 }

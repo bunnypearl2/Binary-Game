@@ -3293,9 +3293,18 @@ C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\refint\swa-bla
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\swa-blazor-demo.pdb
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\ref\swa-blazor-demo.dll
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\scopedcss\Pages\Converter.razor.rz.scp.css
-C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\t5iabn6855-j3crfypy6a.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\o8sylcbn1l-2h109876xe.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\1dhw9fxden-dgihzlnlbv.gz
+<<<<<<< HEAD
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\t5iabn6855-c53woympxv.gz
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.aw643okkse.pdb
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.6teoh4d44a.wasm
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.6teoh4d44a.wasm.gz
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.aw643okkse.pdb.gz
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\5jzn1haw5d-6teoh4d44a.gz
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\iay1k4q5dj-aw643okkse.gz
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\cxfcz4e37m-p7ljvm6zef.gz
+=======
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.nk9a18uifs.pdb
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.5bfuvjp9m3.wasm
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.5bfuvjp9m3.wasm.gz
@@ -3304,3 +3313,4 @@ C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\5jz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\iay1k4q5dj-nk9a18uifs.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\cxfcz4e37m-mlmuoan7r1.gz
 >>>>>>> d198772b17f29d7d2f1e88b69768c6d52c4df477
+>>>>>>> 433ef3aad12ad6be176d88d282680a3cb07b9ee9

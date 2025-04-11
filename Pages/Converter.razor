@@ -12,14 +12,16 @@
 <div class="row" style="height: 115px" >
 
     <div class="col-auto">
-        <pre style="font-size: 24px">  My Converter     </pre>
-    </div>
 
+    <p style="font-size: 24px">  My Converter     </p>
+    
+    </div>
     @***MAIN DROPDOWN***@
 
-    <div class="col-auto">
-
-        <select @onchange="UpdateDropdown">
+    
+    <div class="col-auto" >
+        <label id="maindropdown">Base/Radix:</label>
+        <select id=maindropdown @onchange="UpdateDropdown">
             @foreach (var option in options)
             {
                 <option value="@option">@option</option>
@@ -61,7 +63,7 @@
 </div>
 <!-- End INPUT SELECTION ROW-->
 <div class="col-auto">
-    <pre>Input (max @numOfColumns characters) - Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted  <br /></pre>
+    <p>Input (max @numOfColumns characters) - Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted  <br /></p>
 </div>
 
 
@@ -91,36 +93,26 @@
                     maxlength="1"
                     style="width: 50px; display: inline-block;" />
 
-                    <pre>  &#215;@rowRadix[i]<sup>@(numOfColumns-1 -j)  </sup> @(j!=numOfColumns-1? "+":"") </pre>
+                    <p>  &#215;@rowRadix[i]<sup>@(numOfColumns-1 -j)  </sup> @(j!=numOfColumns-1? "+":"") </p>
                 </td>
 
             }
 
             @{
                 int k = row;
-                <td class="col-auto">
+                <td class="col-auto" style="gap: 10px">
                     <select @bind:get="GetDropdownValue(k)" @bind:set="newValue => RowCalculation(k, newValue)">
                         @foreach (var option in options)
                         {
                             <option value="@option">@option</option>
                         }
                     </select>
-                    <p>Selected Base: @rowRadix[k]</p>
-                </td>
-
-                <td>
 
                     <button @onclick="() => TwosComp(k)" class="@(isTwosComp[k]==1 ? "toggle-on" : "toggle-off")">2's Complement</button>
-                </td>
 
-                <td>
                     <button @onclick="() => ToggleQuiz(k)" class="@(isQuizzing[k] ? "quiz-on" : "quiz-off")">@(isQuizzing[k] ? "QUIZ ON" : "QUIZ OFF")</button>
                 </td>
 
-                <td>@(new string(numAns[0][inputRadix]))</td>
-                <td>@(new string(savedValues[0]))</td>
-                <td>@(new string(textValues[0]))</td>
-                <td>@inputDecimal</td>
             }
 
 

@@ -2,10 +2,14 @@
   "mainAssemblyName": "swa-blazor-demo",
   "resources": {
 <<<<<<< HEAD
+    "hash": "sha256-xroNXbSa7egNJlzSn9HvRY+9gHF40X888vz6k8YtD10=",
+=======
+<<<<<<< HEAD
     "hash": "sha256-rJsuD7LKe0MLmyvbD0X9jmo7m0r2+/Q019cTHEd+UX0=",
 =======
     "hash": "sha256-6lzpYiu0bNIVJp7Ks8jmVUn+H0Tqg3Cq1Qurbas1UB4=",
 >>>>>>> d198772b17f29d7d2f1e88b69768c6d52c4df477
+>>>>>>> 433ef3aad12ad6be176d88d282680a3cb07b9ee9
     "fingerprinting": {
       "BlazorBootstrap.8ia4ukhb4c.wasm": "BlazorBootstrap.wasm",
       "Microsoft.AspNetCore.Authorization.qe23mgxr71.wasm": "Microsoft.AspNetCore.Authorization.wasm",
@@ -207,12 +211,17 @@
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
 <<<<<<< HEAD
+      "swa-blazor-demo.6teoh4d44a.wasm": "swa-blazor-demo.wasm",
+      "swa-blazor-demo.aw643okkse.pdb": "swa-blazor-demo.pdb"
+=======
+<<<<<<< HEAD
       "swa-blazor-demo.fh7k8dmlzg.wasm": "swa-blazor-demo.wasm",
       "swa-blazor-demo.xej7j14mkj.pdb": "swa-blazor-demo.pdb"
 =======
       "swa-blazor-demo.5bfuvjp9m3.wasm": "swa-blazor-demo.wasm",
       "swa-blazor-demo.nk9a18uifs.pdb": "swa-blazor-demo.pdb"
 >>>>>>> d198772b17f29d7d2f1e88b69768c6d52c4df477
+>>>>>>> 433ef3aad12ad6be176d88d282680a3cb07b9ee9
     },
     "jsModuleNative": {
       "dotnet.native.1p93gcv9fh.js": "sha256-1UPiprzN3JhPftx3be7XEMaYlUN+chRF41CuttiWVtQ="
@@ -424,6 +433,12 @@
       "mscorlib.vt9pwshhot.wasm": "sha256-/aFxOaPc1iTNlJw0z4/RGEMD0nzl4qVE3SF4wMsLgp0=",
       "netstandard.or41gtprh3.wasm": "sha256-nD1KqAI5YYz+YohqHaZ5EmXi7Eq9Uy9sUknnI8sj1AM=",
 <<<<<<< HEAD
+      "swa-blazor-demo.6teoh4d44a.wasm": "sha256-+nFoSeF0VhkcVMXUKUklzFGKY5RLp1VTlXoxX0byJCU="
+    },
+    "pdb": {
+      "swa-blazor-demo.aw643okkse.pdb": "sha256-6n69YrzheOZn/A0PSTh1eJs/KzkrkOOQ72ydtCQFtwQ="
+=======
+<<<<<<< HEAD
       "swa-blazor-demo.fh7k8dmlzg.wasm": "sha256-416fCYHayUcR64Y83MrtydnNmw/HcaA93hpRIumXj0U="
     },
     "pdb": {
@@ -434,6 +449,7 @@
     "pdb": {
       "swa-blazor-demo.nk9a18uifs.pdb": "sha256-92/puHjFzCZ+QjH5+QAdBd+xGpC7kJ3okFLYktZ14DU="
 >>>>>>> d198772b17f29d7d2f1e88b69768c6d52c4df477
+>>>>>>> 433ef3aad12ad6be176d88d282680a3cb07b9ee9
     }
   },
   "cacheBootResources": true,
