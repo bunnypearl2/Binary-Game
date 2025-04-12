@@ -1,34 +1,72 @@
 @inject IJSRuntime JS
-@page "/"
+@page "/converter"
 
 
 <PageTitle>Converter</PageTitle>
 
 <h3></h3>
 
+
+<div class="paragraph" style="display: flex; align-items: flex-start; justify-content: space-between;">
+    <p style="font-size: 24px; margin: 0; white-space: nowrap"> "Cover all the Bases!"</p>
+    <span style="font-size: 14px; margin-left: 40px;">
+        Enter a number in the first input box.  Indicate which base system you are using in the dropdown. <br />
+        Customize QUIZ ON/QUIZ OFF toggles for each row to test your knowledge converting between different base systems. <br /> 
+        When quizzing for a given row, fill in the appropriate digits to clear the <span style="color: red;">red</span>!
+    </span>
+    <div class="col-auto" style="gap: 30px; margin-left: auto; padding-right: 60px; background-color: lightcoral; box-sizing: border-box;">
+
+
+        <div>
+            <label class="form-label" for="digits"># of digits:</label>
+            <select id="digits" @onchange="UpdateDropdown">
+                @foreach (var option in options)
+                {
+                    <option value="@option">@option</option>
+                }
+            </select>
+        </div>
+
+         <div>
+            <label class="form-label" for="rows"># of rows:</label>
+            <select class="col-auto" id="rows" @onchange="UpdateDropdown">
+                @foreach (var option in options)
+                {
+                    <option value="@option">@option</option>
+                }
+            </select>
+        </div>
+
+    </div>
+</div>
+
+
+<!--
+<div class="paragraph">
+    <p style="font-size: 24px">  "Cover all the Bases!"    </p>
+    <p>Enter, increment, or generate a random number in the first input box.  Indicate which base system you are using in the dropdown.  </p>
+    Customize each row to test your knowledge converting to different base systems.  When quizzing for a given row, fill in the appropriate digits to clear the red!
+</div>-->
+
 @*INPUT SELECTION ROW*@
 
 
 <div class="row" style="height: 115px" >
 
-    <div class="col-auto">
-
-    <p style="font-size: 24px">  My Converter     </p>
     
-    </div>
     @***MAIN DROPDOWN***@
 
-    
-    <div class="col-auto" >
-        <label id="maindropdown">Base/Radix:</label>
-        <select id=maindropdown @onchange="UpdateDropdown">
+
+
+    <label class="col-auto" for="maindropdown">Base/Radix:</label>
+    <select class="col-auto" id="maindropdown" @onchange="UpdateDropdown">
             @foreach (var option in options)
             {
                 <option value="@option">@option</option>
             }
-        </select>
+    </select>
 
-    </div>
+    
 
 
     @***INPUT BOX***@
@@ -46,21 +84,30 @@
 
         <EditForm Model="@formData" OnValidSubmit="HandleSubmit" class="row">
             @* input  box *@
-            <div class="col-auto"><InputText id="firstinput" onclick="selectTextBox" @bind-Value="formData.input" style="font-size:26" maxlength="16" /></div>
+            <div class="col-auto"><InputText id="firstinput" onclick="selectTextBox" @bind-Value="formData.input" style="font-size:26; text-transform: uppercase" maxlength="16" /></div>
 
             @* submit button*@
             <div class="col-auto"><button type="submit" class="edit-button">Submit</button></div>
 
         </EditForm>
 
-    </div>  
+    </div>
+
+    <div class="col-auto">
+        <button @onclick="GenerateRand" class="edit-button">Random Number</button>
+
+    </div>
 
     <div class="col-auto">
 
         <p style="color: red"> @errorMessage </p>
     </div>
 
+  
+    
+
 </div>
+
 <!-- End INPUT SELECTION ROW-->
 <div class="col-auto">
     <p>Input (max @numOfColumns characters) - Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted  <br /></p>
@@ -91,9 +138,9 @@
                     readonly="@(!isQuizzing[i])"
                     class="form-control text-center mx-1 @GetColorClass(i, j)"
                     maxlength="1"
-                    style="width: 50px; display: inline-block;" />
+                    style="width: 50px; display: inline-block" />
 
-                    <p>  &#215;@rowRadix[i]<sup>@(numOfColumns-1 -j)  </sup> @(j!=numOfColumns-1? "+":"") </p>
+                    <p>  &nbsp;&nbsp;&#215; @rowRadix[i]<sup>@(numOfColumns - 1 - j)  </sup> &nbsp; @(j != numOfColumns - 1 ? "+" : "") </p>
                 </td>
 
             }
@@ -557,7 +604,7 @@
     private async Task MoveNext(ChangeEventArgs e, int row, int col, int index)
     {
 
-        string input = e.Value?.ToString() ?? "";
+        string input = e.Value?.ToString()?.ToUpper() ?? "";
         if (input != "")
         {
             char inChar = char.Parse(input);

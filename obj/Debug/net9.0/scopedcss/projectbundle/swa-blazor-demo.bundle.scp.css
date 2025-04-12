@@ -215,6 +215,27 @@ input:checked + .slider[b-5tifzdovup] {
     color: #333;
 }
 /* /Pages/Converter.razor.rz.scp.css */
+/* For begininngin paragraph text*/
+.paragraph[b-3zehk61zsz] {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box; /* makes padding not affect total width */
+}
+
+p[b-3zehk61zsz] {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* for labels*/
+.form-label[b-3zehk61zsz] {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold; /* optional */
+}
+
+
 /* For main input box*/
 .row[b-3zehk61zsz] {
     display: flex;

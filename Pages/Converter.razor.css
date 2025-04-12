@@ -1,4 +1,25 @@
-﻿/* For main input box*/
+﻿/* For begininngin paragraph text*/
+.paragraph {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box; /* makes padding not affect total width */
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* for labels*/
+.form-label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold; /* optional */
+}
+
+
+/* For main input box*/
 .row {
     display: flex;
     align-items: center;

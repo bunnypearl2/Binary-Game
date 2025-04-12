@@ -52,16 +52,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5kaWFuLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/Test1.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdDEucmF6b3I=
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/TwoCompTutorial.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHdvQ29tcFR1dG9yaWFsLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/_Imports.razor]
