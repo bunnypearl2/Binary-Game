@@ -1,0 +1,783 @@
+@page "/binarytut"
+
+@inject IJSRuntime JS
+
+<PageTitle>Intro to Binary</PageTitle>
+
+
+<h4>Unsigned Decimal: @num.base10</h4>
+<h4>Signed Decimal: @num.twosCompliment</h4>
+
+<div class="input-row">
+
+    <Tooltip Class="d-inline-block" Title="@fifteenVal" role="button">
+        <button style="background-color:@bgcolor15" @onclick=ToggleB15>@num.b15</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">15</label>
+        </div>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@fourteenVal" role="button">
+        <button style="background-color:@bgcolor14" @onclick=ToggleB14>@num.b14</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">14</label>
+        </div>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@thirteenVal" role="button">
+        <button style="background-color:@bgcolor13" @onclick=ToggleB13>@num.b13</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">13</label>
+        </div>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@twelveVal" role="button">
+        <button style="background-color:@bgcolor12" @onclick=ToggleB12>@num.b12</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">12</label>
+        </div>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@elevenVal" role="button">
+        <button style="background-color:@bgcolor11" @onclick=ToggleB11>@num.b11</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">11</label>
+        </div>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@tenVal" role="button">
+        <button style="background-color:@bgcolor10" @onclick=ToggleB10>@num.b10</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">10</label>
+        </div>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@nineVal" role="button">
+        <button style="background-color:@bgcolor9" @onclick=ToggleB9>@num.b9</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">9</label>
+        </div>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@eightVal" role="button">
+        <button style="background-color:@bgcolor8" @onclick=ToggleB8>@num.b8</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">8</label>
+        </div>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@sevenVal" role="button">
+        <button style="background-color:@bgcolor7" @onclick=ToggleB7>@num.b7</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">7</label>
+        </div>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@sixVal" role="button">
+        <button style="background-color:@bgcolor6" @onclick=ToggleB6>@num.b6</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">6</label>
+        </div>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@fiveVal" role="button">
+        <button style="background-color:@bgcolor5" @onclick=ToggleB5>@num.b5</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">5</label>
+        </div>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@fourVal" role="button">
+        <button style="background-color:@bgcolor4" @onclick=ToggleB4>@num.b4</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">4</label>
+        </div>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@threeVal" role="button">
+        <button style="background-color:@bgcolor3" @onclick=ToggleB3>@num.b3</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">3</label>
+        </div>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@twoVal" role="button">
+        <button style="background-color:@bgcolor2" @onclick=ToggleB2>@num.b2</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">2</label>
+        </div>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title="@oneVal" role="button">
+        <button style="background-color:@bgcolor1" @onclick=ToggleB1>@num.b1</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">1</label>
+        </div>
+    </Tooltip>
+
+    <Tooltip Class="d-inline-block" Title= "@zeroVal" role="button">
+        <button style="background-color:@bgcolor0" @onclick=ToggleB0>@num.b0</button>
+        <div class="mt-1 text-center w-100" style="font-size: 14px">
+            <label class="d-block">0</label>
+        </div>
+    </Tooltip>
+
+    <!--
+    <button class="btn btn-primary" @onclick="Calculate">Submit</button>-->
+    <button class="btn btn-primary ms-4" @onclick="Clear">Clear</button>
+
+</div>
+
+
+
+
+
+<br>
+<p> <strong>Introduction to Binary:</strong></p>
+<p> 0's and 1's are commonly used to represent the ON or OFF state of switches or transistors in computers.  In binary, these digits are referred to as bits. 
+    <strong>Try switching the bits above!</strong>
+</p>
+<p> In this example, there are 16 digit/bit places.  So there are 2<sup>16</sup> = 65536 possible combinations of 0's and 1's we can make. Similar to how Decimal (base 10) assigns 
+    greater value to progressive digit places - 1,10,100,1000,10000... (10<sup>0</sup>, 10<sup>1</sup>,10<sup>2</sup>,
+    10<sup>3</sup>,10<sup>4</sup>...),  Binary (base 2) can be regarded the same way - 1,2,4,8,16... (2<sup>0</sup>, 2<sup>1</sup>,2<sup>2</sup>,2<sup>3</sup>,2<sup>4</sup>).</p>
+<p> One special thing about binary representation is how it can be used to represent both positive and negative numbers.  With 16 digits, we can represent numbers 0 - 665535 (unsigned decimal)
+    or -32768 - 32767 (signed decimal).  
+    <p><u>Signed Decimal</u>: When the 2<sup>15</sup> bit is set to 1, every other bit set is added to the negative value of -32768. So the absolute value of the number goes down instead
+    of up.</p>
+</p>
+<p>EXAMPLE:  If you have bits 2<sup>12</sup>, 2<sup>6</sup>, and 2<sup>4</sup> each set to "1", the decimal representation would be (1)*2<sup>12</sup> + (1)*2<sup>6</sup> + (1)*2<sup>4</sup> = 
+    4096 + 64 + 16 = 4176</p>
+<p> Can you remember the powers of 2?  Feel free to reference the <a href="/cheatsheet">Cheat Sheet</a>!</p>
+
+
+<!--
+<h3>Hexadecimal: @num.base16</h3>-->
+
+
+
+@code {
+
+    string buttonclass { get; set; } = "btn btn-primary"; // (starting value)
+
+    int currentCount = 0;
+    string bgcolor0 { get; set; } = "#eca24a";
+    string bgcolor1 { get; set; } = "#eca24a";
+    string bgcolor2 { get; set; } = "#eca24a";
+    string bgcolor3 { get; set; } = "#eca24a";
+    string bgcolor4 { get; set; } = "#eca24a";
+    string bgcolor5 { get; set; } = "#eca24a";
+    string bgcolor6 { get; set; } = "#eca24a";
+    string bgcolor7 { get; set; } = "#eca24a";
+    string bgcolor8 { get; set; } = "#eca24a";
+    string bgcolor9 { get; set; } = "#eca24a";
+    string bgcolor10 { get; set; } = "#eca24a";
+    string bgcolor11 { get; set; } = "#eca24a";
+    string bgcolor12 { get; set; } = "#eca24a";
+    string bgcolor13 { get; set; } = "#eca24a";
+    string bgcolor14 { get; set; } = "#eca24a";
+    string bgcolor15 { get; set; } = "#eca24a";
+
+
+     /*
+     MarkupString zeroVal = new MarkupString("2<sup>0</sup>");
+     MarkupString oneVal = new MarkupString("2<sup>1</sup>");
+     MarkupString twoVal = new MarkupString("2<sup>2</sup>");
+     MarkupString threeVal = new MarkupString("2<sup>3</sup>");
+     MarkupString fourVal = new MarkupString("2<sup>4</sup>");
+     MarkupString fiveVal = new MarkupString("2<sup>5</sup>");
+     MarkupString sixVal = new MarkupString("2<sup>6</sup>");
+     MarkupString sevenVal = new MarkupString("2<sup>7</sup>");
+     MarkupString eightVal = new MarkupString("2<sup>8</sup>");
+     MarkupString nineVal = new MarkupString("2<sup>9</sup>");
+     MarkupString tenVal = new MarkupString("2<sup>10</sup>");
+     MarkupString elevenVal = new MarkupString("2<sup>11</sup>");
+     MarkupString twelveVal = new MarkupString("2<sup>12</sup>");
+     MarkupString thirteenVal = new MarkupString("2<sup>13</sup>");
+     MarkupString fourteenVal = new MarkupString("2<sup>14</sup>");
+     MarkupString fifteenVal = new MarkupString("2<sup>15</sup>");
+     */
+
+    string zeroVal = "2<sup>0</sup>";
+    string oneVal = "2<sup>1</sup>";
+    string twoVal = "2<sup>2</sup>";
+    string threeVal = "2<sup>3</sup>";
+    string fourVal = "2<sup>4</sup>";
+    string fiveVal = "2<sup>5</sup>";
+    string sixVal = "2<sup>6</sup>";
+    string sevenVal = "2<sup>7</sup>";
+    string eightVal = "2<sup>8</sup>";
+    string nineVal = "2<sup>9</sup>";
+    string tenVal = "2<sup>10</sup>";
+    string elevenVal = "2<sup>11</sup>";
+    string twelveVal = "2<sup>12</sup>";
+    string thirteenVal = "2<sup>13</sup>";
+    string fourteenVal = "2<sup>14</sup>";
+    string fifteenVal = "2<sup>15</sup>";
+
+
+
+
+    void ToggleB0()
+    {
+
+        if (num.b0 == 0)
+        {
+            num.b0 = 1;
+            bgcolor0 = "#4ae1ec";
+
+        }
+        else if (num.b0 == 1)
+        {
+            num.b0 = 0;
+            bgcolor0 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
+    }
+    void ToggleB1()
+    {
+
+
+        if (num.b1 == 0)
+        {
+            num.b1 = 1;
+            bgcolor1 = "#4ae1ec";
+
+        }
+        else if (num.b1 == 1)
+        {
+            num.b1 = 0;
+            bgcolor1 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
+    }
+    void ToggleB2()
+    {
+
+        if (num.b2 == 0)
+        {
+            num.b2 = 1;
+            bgcolor2 = "#4ae1ec";
+
+        }
+        else if (num.b2 == 1)
+        {
+            num.b2 = 0;
+            bgcolor2 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
+    }
+    void ToggleB3()
+    {
+
+        if (num.b3 == 0)
+        {
+            num.b3 = 1;
+            bgcolor3 = "#4ae1ec";
+
+        }
+        else if (num.b3 == 1)
+        {
+            num.b3 = 0;
+            bgcolor3 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
+    }
+
+    void ToggleB4()
+    { 
+
+        if (num.b4 == 0)
+        {
+            num.b4 = 1;
+            bgcolor4 = "#4ae1ec";
+
+        }
+        else if (num.b4 == 1)
+        {
+            num.b4 = 0;
+            bgcolor4 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
+    }
+    void ToggleB5()
+    {
+
+        if (num.b5 == 0)
+        {
+            num.b5 = 1;
+            bgcolor5 = "#4ae1ec";
+
+        }
+        else if (num.b5 == 1)
+        {
+            num.b5 = 0;
+            bgcolor5 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
+    }
+    void ToggleB6()
+    {
+
+        if (num.b6 == 0)
+        {
+            num.b6 = 1;
+            bgcolor6 = "#4ae1ec";
+
+        }
+        else if (num.b6 == 1)
+        {
+            num.b6 = 0;
+            bgcolor6 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
+    }
+    void ToggleB7()
+    {
+
+        if (num.b7 == 0)
+        {
+            num.b7 = 1;
+            bgcolor7 = "#4ae1ec";
+
+        }
+        else if (num.b7 == 1)
+        {
+            num.b7 = 0;
+            bgcolor7 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
+    }
+    void ToggleB8()
+    {
+
+        if (num.b8 == 0)
+        {
+            num.b8 = 1;
+            bgcolor8 = "#4ae1ec";
+
+        }
+        else if (num.b8 == 1)
+        {
+            num.b8 = 0;
+            bgcolor8 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
+    }
+    void ToggleB9()
+    {
+
+        if (num.b9 == 0)
+        {
+            num.b9 = 1;
+            bgcolor9 = "#4ae1ec";
+
+        }
+        else if (num.b9 == 1)
+        {
+            num.b9 = 0;
+            bgcolor9 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
+    }
+
+    void ToggleB10()
+    {
+
+        if (num.b10 == 0)
+        {
+            num.b10 = 1;
+            bgcolor10 = "#4ae1ec";
+
+        }
+        else if (num.b10 == 1)
+        {
+            num.b10 = 0;
+            bgcolor10 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
+    }
+
+    void ToggleB11()
+    {
+
+        if (num.b11 == 0)
+        {
+            num.b11 = 1;
+            bgcolor11 = "#4ae1ec";
+
+        }
+        else if (num.b11 == 1)
+        {
+            num.b11 = 0;
+            bgcolor11 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
+    }
+
+    void ToggleB12()
+    {
+
+        if (num.b12 == 0)
+        {
+            num.b12 = 1;
+            bgcolor12 = "#4ae1ec";
+
+        }
+        else if (num.b12 == 1)
+        {
+            num.b12 = 0;
+            bgcolor12 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
+    }
+
+    void ToggleB13()
+    {
+
+        if (num.b13 == 0)
+        {
+            num.b13 = 1;
+            bgcolor13 = "#4ae1ec";
+
+        }
+        else if (num.b13 == 1)
+        {
+            num.b13 = 0;
+            bgcolor13 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
+    }
+    void ToggleB14()
+    {
+
+        if (num.b14 == 0)
+        {
+            num.b14 = 1;
+            bgcolor14 = "#4ae1ec";
+
+        }
+        else if (num.b14 == 1)
+        {
+            num.b14 = 0;
+            bgcolor14 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
+    }
+
+    void ToggleB15()
+    {
+
+        if (num.b15 == 0)
+        {
+            num.b15 = 1;
+            bgcolor15 = "#4ae1ec";
+
+        }
+        else if (num.b15 == 1)
+        {
+            num.b15 = 0;
+            bgcolor15 = "#eca24a";
+        }
+
+
+        //buttonclass = "btn btn-secondary";
+        StateHasChanged();  // may not be required, but I'm at work right now, so can't check
+        Calculate();
+    }
+
+    //Update hints/labels
+
+
+    // Calculate binary into decimal
+    private void Calculate()
+    {
+        num.base10 = 1 * num.b0 + 2 * num.b1 + 4 * num.b2 + 8 * num.b3 + 16 * num.b4 + 32 * num.b5 + 64 * num.b6 + 128 * num.b7
+        + 256 * num.b8 + 512 * num.b9 + 1024 * num.b10 + 2048 * num.b11 + 4096 * num.b12 + 8192 * num.b13 + 16384 * num.b14 + 32768 * num.b15;
+
+        num.twosCompliment = 1 * num.b0 + 2 * num.b1 + 4 * num.b2 + 8 * num.b3 + 16 * num.b4 + 32 * num.b5 + 64 * num.b6 + 128 * num.b7
+        + 256 * num.b8 + 512 * num.b9 + 1024 * num.b10 + 2048 * num.b11 + 4096 * num.b12 + 8192 * num.b13 + 16384 * num.b14 - 32768 * num.b15;
+
+        int hexDigit1 = 1 * num.b0 + 2 * num.b1 + 4 * num.b2 + 8 * num.b3;
+        string hexString1 = "0";
+
+        switch (hexDigit1)
+        {
+            case 10:
+                hexString1 = "A";
+                break;
+            case 11:
+                hexString1 = "B";
+                break;
+            case 12:
+                hexString1 = "C";
+                break;
+            case 13:
+                hexString1 = "D";
+                break;
+            case 14:
+                hexString1 = "E";
+                break;
+            case 15:
+                hexString1 = "F";
+                break;
+            default:
+                hexString1 = hexDigit1.ToString();
+                break;
+        }
+
+        int hexDigit2 = 1 * num.b4 + 2 * num.b5 + 4 * num.b6 + 8 * num.b7;
+        string hexString2 = "0";
+
+        switch (hexDigit2)
+        {
+            case 10:
+                hexString2 = "A";
+                break;
+            case 11:
+                hexString2 = "B";
+                break;
+            case 12:
+                hexString2 = "C";
+                break;
+            case 13:
+                hexString2 = "D";
+                break;
+            case 14:
+                hexString2 = "E";
+                break;
+            case 15:
+                hexString2 = "F";
+                break;
+            default:
+                hexString2 = hexDigit2.ToString();
+                break;
+        }
+
+        int hexDigit3 = 1 * num.b8 + 2 * num.b9 + 4 * num.b10 + 8 * num.b11;
+        string hexString3 = "0";
+
+        switch (hexDigit3)
+        {
+            case 10:
+                hexString3 = "A";
+                break;
+            case 11:
+                hexString3 = "B";
+                break;
+            case 12:
+                hexString3 = "C";
+                break;
+            case 13:
+                hexString3 = "D";
+                break;
+            case 14:
+                hexString3 = "E";
+                break;
+            case 15:
+                hexString3 = "F";
+                break;
+            default:
+                hexString3 = hexDigit3.ToString();
+                break;
+        }
+
+        int hexDigit4 = 1 * num.b12 + 2 * num.b13 + 4 * num.b14 + 8 * num.b15;
+        string hexString4 = "0";
+
+        switch (hexDigit4)
+        {
+            case 10:
+                hexString4 = "A";
+                break;
+            case 11:
+                hexString4 = "B";
+                break;
+            case 12:
+                hexString4 = "C";
+                break;
+            case 13:
+                hexString4 = "D";
+                break;
+            case 14:
+                hexString4 = "E";
+                break;
+            case 15:
+                hexString4 = "F";
+                break;
+            default:
+                hexString4 = hexDigit4.ToString();
+                break;
+        }
+
+        num.base16 = hexString4 + hexString3 + hexString2 + hexString1;
+    }
+
+    private void Clear()
+    {
+        num.b0 = 0;
+        num.b1 = 0;
+        num.b2 = 0;
+        num.b3 = 0;
+        num.b4 = 0;
+        num.b5 = 0;
+        num.b6 = 0;
+        num.b7 = 0;
+        num.b8 = 0;
+        num.b9 = 0;
+        num.b10 = 0;
+        num.b11 = 0;
+        num.b12 = 0;
+        num.b13 = 0;
+        num.b14 = 0;
+        num.b15 = 0;
+        num.base10 = 0;
+        num.twosCompliment = 0;
+        num.base16 = "0000";
+
+        // reset color
+        for(int i = 0; i < 16; i++)
+        {
+            string color = "#eca24a";
+            switch (i)
+            {
+                case 0: bgcolor0 = color; break;
+                case 1: bgcolor1 = color; break;
+                case 2: bgcolor2 = color; break;
+                case 3: bgcolor3 = color; break;
+                case 4: bgcolor4 = color; break;
+                case 5: bgcolor5 = color; break;
+                case 6: bgcolor6 = color; break;
+                case 7: bgcolor7 = color; break;
+                case 8: bgcolor8 = color; break;
+                case 9: bgcolor9 = color; break;
+                case 10: bgcolor10 = color; break;
+                case 11: bgcolor11 = color; break;
+                case 12: bgcolor12 = color; break;
+                case 13: bgcolor13 = color; break;
+                case 14: bgcolor14 = color; break;
+                case 15: bgcolor15 = color; break;
+            }
+
+        }
+    }
+
+
+    // Define the Number class
+    private class Number
+    {
+        public int b15 { get; set; }
+        public int b14 { get; set; }
+        public int b13 { get; set; }
+        public int b12 { get; set; }
+        public int b11 { get; set; }
+        public int b10 { get; set; }
+        public int b9 { get; set; }
+        public int b8 { get; set; }
+        public int b7 { get; set; }
+        public int b6 { get; set; }
+        public int b5 { get; set; }
+        public int b4 { get; set; }
+        public int b3 { get; set; }
+        public int b2 { get; set; }
+        public int b1 { get; set; }
+        public int b0 { get; set; }
+
+        public int base10 { get; set; }
+        public int twosCompliment { get; set; }
+        public string base16 { get; set; }
+    }
+
+    // Create an instance of Person and set initial values
+    private Number num = new Number
+        {
+            b15 = 0,
+            b14 = 0,
+            b13 = 0,
+            b12 = 0,
+            b11 = 0,
+            b10 = 0,
+            b9 = 0,
+            b8 = 0,
+            b7 = 0,
+            b6 = 0,
+            b5 = 0,
+            b4 = 0,
+            b3 = 0,
+            b2 = 0,
+            b1 = 0,
+            b0 = 0,
+            base10 = 0,
+            twosCompliment = 0,
+            base16 = "0000"
+        };
+
+
+    // allows superscripts to be recognized in strings for tooltips
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("initializeHtmlTooltips");
+        }
+    }
+}

@@ -1,32 +1,72 @@
 @inject IJSRuntime JS
-@page "/"
+@page "/converter"
 
 
 <PageTitle>Converter</PageTitle>
 
 <h3></h3>
 
+
+<div class="paragraph" style="display: flex; align-items: flex-start; justify-content: space-between;">
+    <p style="font-size: 24px; margin: 0; white-space: nowrap"> "Cover all the Bases!"</p>
+    <span style="font-size: 14px; margin-left: 40px;">
+        Enter a number in the first input box.  Indicate which base system you are using in the dropdown. <br />
+        Customize QUIZ ON/QUIZ OFF toggles for each row to test your knowledge converting between different base systems. <br /> 
+        When quizzing for a given row, fill in the appropriate digits to clear the <span style="color: red;">red</span>!
+    </span>
+    <div class="col-auto" style="gap: 30px; margin-left: auto; padding-right: 60px; background-color: lightcoral; box-sizing: border-box;">
+
+
+        <div>
+            <label class="form-label" for="digits"># of digits:</label>
+            <select id="digits" @onchange="UpdateDropdown">
+                @foreach (var option in options)
+                {
+                    <option value="@option">@option</option>
+                }
+            </select>
+        </div>
+
+        <div>
+            <label class="form-label" for="rows"># of rows:</label>
+            <select class="col-auto" id="rows" @onchange="UpdateDropdown">
+                @foreach (var option in options)
+                {
+                    <option value="@option">@option</option>
+                }
+            </select>
+        </div>
+
+    </div>
+</div>
+
+
+<!--
+<div class="paragraph">
+<p style="font-size: 24px">  "Cover all the Bases!"    </p>
+<p>Enter, increment, or generate a random number in the first input box.  Indicate which base system you are using in the dropdown.  </p>
+Customize each row to test your knowledge converting to different base systems.  When quizzing for a given row, fill in the appropriate digits to clear the red!
+</div>-->
+
 @*INPUT SELECTION ROW*@
 
 
 <div class="row" style="height: 115px" >
 
-    <div class="col-auto">
-        <pre style="font-size: 24px">  My Converter     </pre>
-    </div>
 
     @***MAIN DROPDOWN***@
 
-    <div class="col-auto">
 
-        <select @onchange="UpdateDropdown">
-            @foreach (var option in options)
-            {
-                <option value="@option">@option</option>
-            }
-        </select>
 
-    </div>
+    <label class="col-auto" for="maindropdown">Base/Radix:</label>
+    <select class="col-auto" id="maindropdown" @onchange="UpdateDropdown">
+        @foreach (var option in options)
+        {
+            <option value="@option">@option</option>
+        }
+    </select>
+
+
 
 
     @***INPUT BOX***@
@@ -44,25 +84,36 @@
 
         <EditForm Model="@formData" OnValidSubmit="HandleSubmit" class="row">
             @* input  box *@
-            <div class="col-auto"><InputText id="firstinput" onclick="selectTextBox" @bind-Value="formData.input" style="font-size:26" maxlength="16" /></div>
+            <div class="col-auto"><InputText id="firstinput" onclick="selectTextBox" @bind-Value="formData.input" style="font-size:26; text-transform: uppercase" maxlength="16" /></div>
 
             @* submit button*@
             <div class="col-auto"><button type="submit" class="edit-button">Submit</button></div>
 
         </EditForm>
 
-    </div>  
+    </div>
+
+    <div class="col-auto">
+        <button @onclick="GenerateRand" class="edit-button">Random Number</button>
+
+    </div>
 
     <div class="col-auto">
 
         <p style="color: red"> @errorMessage </p>
     </div>
 
+
+
+
 </div>
+
 <!-- End INPUT SELECTION ROW-->
 <div class="col-auto">
-    <pre>Input (max @numOfColumns characters) - Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted  <br /></pre>
+    <p>Input (max @numOfColumns characters) - Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted  <br /></p>
 </div>
+
+<p>@inputDecimal</p>
 
 
 <!-- Begin body of page -->
@@ -89,38 +140,28 @@
                     readonly="@(!isQuizzing[i])"
                     class="form-control text-center mx-1 @GetColorClass(i, j)"
                     maxlength="1"
-                    style="width: 50px; display: inline-block;" />
+                    style="width: 50px; display: inline-block" />
 
-                    <pre>  &#215;@rowRadix[i]<sup>@(numOfColumns-1 -j)  </sup> @(j!=numOfColumns-1? "+":"") </pre>
+                    <p>  &nbsp;&nbsp;&#215; @rowRadix[i]<sup>@(numOfColumns - 1 - j)  </sup> &nbsp; @(j != numOfColumns - 1 ? "+" : "") </p>
                 </td>
 
             }
 
             @{
                 int k = row;
-                <td class="col-auto">
+                <td class="col-auto" style="gap: 10px">
                     <select @bind:get="GetDropdownValue(k)" @bind:set="newValue => RowCalculation(k, newValue)">
                         @foreach (var option in options)
                         {
                             <option value="@option">@option</option>
                         }
                     </select>
-                    <p>Selected Base: @rowRadix[k]</p>
-                </td>
-
-                <td>
 
                     <button @onclick="() => TwosComp(k)" class="@(isTwosComp[k]==1 ? "toggle-on" : "toggle-off")">2's Complement</button>
-                </td>
 
-                <td>
                     <button @onclick="() => ToggleQuiz(k)" class="@(isQuizzing[k] ? "quiz-on" : "quiz-off")">@(isQuizzing[k] ? "QUIZ ON" : "QUIZ OFF")</button>
                 </td>
 
-                <td>@(new string(numAns[0][inputRadix]))</td>
-                <td>@(new string(savedValues[0]))</td>
-                <td>@(new string(textValues[0]))</td>
-                <td>@inputDecimal</td>
             }
 
 
@@ -159,7 +200,7 @@
     private ElementReference[] textBoxRefs = new ElementReference[totalBoxes]; // Array to store references - for more UI/interface control
     private char[][] textValues = new char[numOfRows][]; // Text values displayed in grid
     private char[][] savedValues = new char[numOfRows][]; // Saved input from user
-    private char[][][] numAns = { new char[36][], new char[36][] }; // stores correct answers, including 2's Complement
+    private char[][][] numAns = { new char[37][], new char[37][] }; // stores correct answers, including 2's Complement
 
 
     private bool[] isQuizzing = new bool[numOfRows];
@@ -194,10 +235,16 @@
             boxColor[i] = new int[numOfColumns];
         }
 
-        for (int n = 0; n < 36; n++) // numAns has 2 layers
+        for (int n = 0; n < 37; n++) // numAns has 2 layers
         {
             numAns[0][n] = new char[numOfColumns]; // Initialize rows
             numAns[1][n] = new char[numOfColumns]; //includes twos comp
+
+            for(int i= 0; i < numOfColumns; i++)
+            {
+                numAns[0][n][i] = '0';
+                numAns[1][n][i] = '0';
+            }
         }
 
         // Now set values to zero
@@ -207,10 +254,9 @@
             {
 
                 savedValues[i][j] = '0';
-                numAns[0][i][j] = '0';
-                numAns[1][i][j] = '0';
             }
         }
+
 
 
         // initialize row radices
@@ -267,6 +313,8 @@
     {
         errorMessage = "";
         inputString = formData.input.ToUpper();
+
+
         inputString = inputString.PadLeft(numOfColumns, '0');
 
         // Check if input is valid
@@ -277,20 +325,37 @@
             //if valid character, plug char into dictionary to compare to radix value
             if (!char.IsLetterOrDigit(ch) || charDict[ch] >= inputRadix)
             {
-                errorMessage = "Input out of bounds of radix";
+                errorMessage = "Input has character unfamiliar to the selected base system";
                 return;
             }
         }
 
 
         // Calculate conversions; update decimal value
-        ToDecimal(); 
+        //Use "inputRadix" and "inputString" to calculate decimal value "inputDecimal"
+        inputDecimal = 0; //reset inputDecimal
+        char[] inputArray = inputString.ToCharArray();
+        inputArray = inputArray.Reverse().ToArray();
 
-        if(inputDecimal > ((int)Math.Pow(2, numOfColumns)-1))
+        for (int i = 0; i < inputArray.Length; i++)
         {
-            errorMessage = "Value too large for 16-digit binary representation";
-            return;
+            inputDecimal += charDict[inputArray[i]] * (int)Math.Pow(inputRadix, i);
+
+            if (inputDecimal > ((int)Math.Pow(2, numOfColumns) - 1))
+            {
+                errorMessage = "Value too large for " + numOfColumns + "-digit binary representation";
+                inputDecimal = 0;
+                return;
+            }
         }
+        // Determine positive decimal value to represent twos complement
+        twosCompDecimal = 0; //reset twosCompDecimal
+        if (inputDecimal != 0)
+            twosCompDecimal = Math.Abs((int)Math.Pow(2, numOfColumns) - inputDecimal);
+        else
+            twosCompDecimal = 0;
+
+
 
 
         // Loop through rowRadix[] array to get radix number for each row
@@ -306,29 +371,6 @@
         {
             errorMessage = "Value treated as negative (i.e. -" + ((int)Math.Pow(2, numOfColumns) - inputDecimal) + ") for " + numOfColumns +"-digit signed binary";
         }
-
-    }
-
-    // CALCULATES DECIMAL FROM MAIN INPUT
-    private void ToDecimal()
-    {
-        //Use "inputRadix" and "inputString" to calculate decimal value "inputDecimal"
-        inputDecimal = 0; //reset inputDecimal
-        char[] inputArray = inputString.ToCharArray();
-        inputArray = inputArray.Reverse().ToArray();
-
-        for (int i = 0; i < inputArray.Length; i++)
-        {
-            inputDecimal += charDict[inputArray[i]] * (int)Math.Pow(inputRadix, i);
-        }
-
-        // Determin positive decimal value to represent twos complement
-        twosCompDecimal = 0; //reset twosCompDecimal
-        if (inputDecimal != 0)
-            twosCompDecimal = Math.Abs((int)Math.Pow(2, numOfColumns) - inputDecimal);
-        else
-            twosCompDecimal = 0;
-
 
     }
 
@@ -386,6 +428,11 @@
     // Increase input by 1 and recalculate
     private void Increment()
     {
+        //Reset if error
+        errorMessage = "";
+
+
+        //Increment
         int num = inputDecimal + 1;
 
         const string digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -404,7 +451,7 @@
 
 
         formData.input = new string(numAns[0][inputRadix]);
-
+        StateHasChanged();
         HandleSubmit();
 
     }
@@ -412,9 +459,15 @@
     // Decrease input by 1 and recalculate
     private void Decrement()
     {
-        if (inputDecimal == 0) //exit if minimum value
-            return;
+        // Reset if error
+        errorMessage = "";
 
+
+        //handle minimum value
+        if (inputDecimal == 0)
+            inputDecimal = 1;
+
+        // Decrement
         int num = inputDecimal - 1;
 
         const string digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -565,7 +618,7 @@
     private async Task MoveNext(ChangeEventArgs e, int row, int col, int index)
     {
 
-        string input = e.Value?.ToString() ?? "";
+        string input = e.Value?.ToString()?.ToUpper() ?? "";
         if (input != "")
         {
             char inChar = char.Parse(input);

@@ -19,6 +19,17 @@ function setInputToZeroIfEmpty(inputElement) {
     }
 }
 
+// used for Tooltip for Bootstrap (recognizing html superscript in strings)
+window.initializeHtmlTooltips = () => {
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.forEach((el) => {
+        new bootstrap.Tooltip(el, {
+            html: true
+        });
+    });
+};
+
+
 
 
 // focusElement used for autotab - current example in Counter.razor
