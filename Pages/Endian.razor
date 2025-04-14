@@ -15,13 +15,12 @@
 <body>
 	<img hidden="@hideStatus" src="images/testCat.png" alt="Cat" width="200" height="200" style="margin:auto;display:block">
 	<h3 style="text-align:center;" hidden="@hideStatus"> @characterName: @dialogue[arrayPosition]</h3>
+	<h3 style="text-align:center;" hidden="@(!hideStatus)"> Go more in depth about binary here!</h3>
 
 	<div class="sideBySideDiv">
 		<button style="margin:auto;display:block" class="btn btn-primary" @onclick="Advance">@buttonText</button>
 		<h3 @onload="getDialogueLength">@dialoguePosition/@dialogueLength</h3>
 	</div>
-
-	<h3 style="text-align:center;" hidden="@(!hideStatus)"> Go more in depth about binary here!</h3>
 
 </body>
 </html>
