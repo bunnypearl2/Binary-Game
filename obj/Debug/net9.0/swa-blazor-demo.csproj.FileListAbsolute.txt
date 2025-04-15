@@ -1092,10 +1092,10 @@ C:\Users\violi\Source\Repos\Binary-Game\obj\Debug\net9.0\swa-blazor-demo.dll
 C:\Users\violi\Source\Repos\Binary-Game\obj\Debug\net9.0\refint\swa-blazor-demo.dll
 C:\Users\violi\Source\Repos\Binary-Game\obj\Debug\net9.0\swa-blazor-demo.pdb
 C:\Users\violi\Source\Repos\Binary-Game\obj\Debug\net9.0\ref\swa-blazor-demo.dll
-C:\Users\violi\Source\Repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.bc5ykjxpgc.pdb
-C:\Users\violi\Source\Repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.abmz1rpybw.wasm
-C:\Users\violi\Source\Repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.abmz1rpybw.wasm.gz
-C:\Users\violi\Source\Repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.bc5ykjxpgc.pdb.gz
-C:\Users\violi\Source\Repos\Binary-Game\obj\Debug\net9.0\compressed\5jzn1haw5d-abmz1rpybw.gz
-C:\Users\violi\Source\Repos\Binary-Game\obj\Debug\net9.0\compressed\iay1k4q5dj-bc5ykjxpgc.gz
-C:\Users\violi\Source\Repos\Binary-Game\obj\Debug\net9.0\compressed\cxfcz4e37m-5q6d7lw6we.gz
+C:\Users\violi\Source\Repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.m81y52wfur.pdb
+C:\Users\violi\Source\Repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.dm5tsc4qcb.wasm
+C:\Users\violi\Source\Repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.dm5tsc4qcb.wasm.gz
+C:\Users\violi\Source\Repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.m81y52wfur.pdb.gz
+C:\Users\violi\Source\Repos\Binary-Game\obj\Debug\net9.0\compressed\5jzn1haw5d-dm5tsc4qcb.gz
+C:\Users\violi\Source\Repos\Binary-Game\obj\Debug\net9.0\compressed\iay1k4q5dj-m81y52wfur.gz
+C:\Users\violi\Source\Repos\Binary-Game\obj\Debug\net9.0\compressed\cxfcz4e37m-ug2du1ntoy.gz

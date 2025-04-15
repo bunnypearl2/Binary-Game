@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XFg+mmxcrDs5ijr9v7i/mvfXYmfYMwVlOw3UNLy4vpY=",
+  "Hash": "+eEeKqqg1oXwRwF8O64NAHOHu2KAMNaK0fkSlZi332o=",
   "Source": "swa-blazor-demo",
   "BasePath": "/",
   "Mode": "Root",
@@ -220,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "5q6d7lw6we",
-      "Integrity": "Tb7b+XXgDSwDMXjP/iu3YCFGGUuRCa5GMZB4svr+ieE=",
+      "Fingerprint": "ug2du1ntoy",
+      "Integrity": "vn/s4yD73TV8SzjR5PRVHgfcedABaUEaCydic6NlG6Y=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -1081,8 +1081,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "bc5ykjxpgc",
-      "Integrity": "daDHbIcDkxLbeELpY1WaCjzCuETVJqS4cT4cH05Al5M=",
+      "Fingerprint": "m81y52wfur",
+      "Integrity": "xmd/CjYkWXd1IhyQb/BWR5Kdne2/3UrByxx0dTdGznE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\swa-blazor-demo.pdb"
@@ -1102,8 +1102,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "abmz1rpybw",
-      "Integrity": "tliqpZWuEPptGT6m26Ai2diVYtESAWPecr0QffG0ASo=",
+      "Fingerprint": "dm5tsc4qcb",
+      "Integrity": "SzLHRwftTyGkF4yKKOSFjGJqBa+toEcpoGWwyLXt+pM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\webcil\\swa-blazor-demo.wasm"
@@ -5288,12 +5288,12 @@
       "OriginalItemSpec": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Net.WebClient.wasm"
     },
     {
-      "Identity": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-abmz1rpybw.gz",
+      "Identity": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-dm5tsc4qcb.gz",
       "SourceId": "swa-blazor-demo",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/swa-blazor-demo#[.{fingerprint=abmz1rpybw}]!.wasm.gz",
+      "RelativePath": "_framework/swa-blazor-demo#[.{fingerprint=dm5tsc4qcb}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5302,8 +5302,8 @@
       "RelatedAsset": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\swa-blazor-demo.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "5c2sqsyhwd",
-      "Integrity": "1aTe97C+t5pVlT/0vPBqTgJqmxcOjAuHSRXYHYD5/t4=",
+      "Fingerprint": "b3myvuf7le",
+      "Integrity": "qfS6rOPCjo++/ZyIge0JJD+XS+iBkCIY4O+aqAQ4tIw=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\swa-blazor-demo.wasm"
@@ -6359,7 +6359,7 @@
       "OriginalItemSpec": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\cxfcz4e37m-5q6d7lw6we.gz",
+      "Identity": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\cxfcz4e37m-ug2du1ntoy.gz",
       "SourceId": "swa-blazor-demo",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\",
@@ -6373,8 +6373,8 @@
       "RelatedAsset": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "iqwems1pal",
-      "Integrity": "OrMpz51vqHdqs7dWoaF2ynoBv1h9St0QVyPfR3BLMBk=",
+      "Fingerprint": "1l2m78dw0e",
+      "Integrity": "lQ2MxSfydNleKSZYh0JW2jK3Dod448XhIMeyQpgbZqg=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -7094,12 +7094,12 @@
       "OriginalItemSpec": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Text.RegularExpressions.wasm"
     },
     {
-      "Identity": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-bc5ykjxpgc.gz",
+      "Identity": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-m81y52wfur.gz",
       "SourceId": "swa-blazor-demo",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/swa-blazor-demo#[.{fingerprint=bc5ykjxpgc}]!.pdb.gz",
+      "RelativePath": "_framework/swa-blazor-demo#[.{fingerprint=m81y52wfur}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7108,8 +7108,8 @@
       "RelatedAsset": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\swa-blazor-demo.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "646rqi599m",
-      "Integrity": "Sja2ee24KvOUZhZrCVxB8YRlxj2YfGz2415ZeyzhvKU=",
+      "Fingerprint": "qwzvblns3x",
+      "Integrity": "dmkP0g7QCFyxdvOhhi4jhURyhJuuB6HCRbc7o0d51lM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\swa-blazor-demo.pdb"
@@ -12747,11 +12747,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Tb7b+XXgDSwDMXjP/iu3YCFGGUuRCa5GMZB4svr+ieE=\""
+          "Value": "\"vn/s4yD73TV8SzjR5PRVHgfcedABaUEaCydic6NlG6Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:52 GMT"
+          "Value": "Tue, 15 Apr 2025 01:09:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12761,18 +12761,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Tb7b+XXgDSwDMXjP/iu3YCFGGUuRCa5GMZB4svr+ieE="
+          "Value": "sha256-vn/s4yD73TV8SzjR5PRVHgfcedABaUEaCydic6NlG6Y="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\cxfcz4e37m-5q6d7lw6we.gz",
+      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\cxfcz4e37m-ug2du1ntoy.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000080521781"
+          "Quality": "0.000080502335"
         }
       ],
       "ResponseHeaders": [
@@ -12782,15 +12782,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12418"
+          "Value": "12421"
         },
         {
           "Name": "ETag",
-          "Value": "\"OrMpz51vqHdqs7dWoaF2ynoBv1h9St0QVyPfR3BLMBk=\""
+          "Value": "\"lQ2MxSfydNleKSZYh0JW2jK3Dod448XhIMeyQpgbZqg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:53 GMT"
+          "Value": "Tue, 15 Apr 2025 01:04:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12810,19 +12810,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Tb7b+XXgDSwDMXjP/iu3YCFGGUuRCa5GMZB4svr+ieE=\""
+          "Value": "W/\"vn/s4yD73TV8SzjR5PRVHgfcedABaUEaCydic6NlG6Y=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Tb7b+XXgDSwDMXjP/iu3YCFGGUuRCa5GMZB4svr+ieE="
+          "Value": "sha256-vn/s4yD73TV8SzjR5PRVHgfcedABaUEaCydic6NlG6Y="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\cxfcz4e37m-5q6d7lw6we.gz",
+      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\cxfcz4e37m-ug2du1ntoy.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12831,7 +12831,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12418"
+          "Value": "12421"
         },
         {
           "Name": "Content-Type",
@@ -12839,11 +12839,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OrMpz51vqHdqs7dWoaF2ynoBv1h9St0QVyPfR3BLMBk=\""
+          "Value": "\"lQ2MxSfydNleKSZYh0JW2jK3Dod448XhIMeyQpgbZqg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:53 GMT"
+          "Value": "Tue, 15 Apr 2025 01:04:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12861,7 +12861,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-OrMpz51vqHdqs7dWoaF2ynoBv1h9St0QVyPfR3BLMBk="
+          "Value": "sha256-lQ2MxSfydNleKSZYh0JW2jK3Dod448XhIMeyQpgbZqg="
         }
       ]
     },
@@ -12927,7 +12927,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:52 GMT"
+          "Value": "Tue, 29 Oct 2024 13:25:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12980,7 +12980,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:52 GMT"
+          "Value": "Tue, 29 Oct 2024 13:25:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13370,7 +13370,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:53 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13431,7 +13431,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:53 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13523,7 +13523,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:53 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13623,7 +13623,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:53 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13684,7 +13684,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:53 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13737,7 +13737,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:53 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13821,7 +13821,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:53 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13874,7 +13874,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:53 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14691,7 +14691,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:52 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14744,7 +14744,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:52 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14836,7 +14836,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:52 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14897,7 +14897,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:52 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24625,7 +24625,7 @@
       ]
     },
     {
-      "Route": "_framework/swa-blazor-demo.abmz1rpybw.wasm",
+      "Route": "_framework/swa-blazor-demo.dm5tsc4qcb.wasm",
       "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\swa-blazor-demo.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -24635,7 +24635,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "84757"
+          "Value": "85269"
         },
         {
           "Name": "Content-Type",
@@ -24643,11 +24643,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tliqpZWuEPptGT6m26Ai2diVYtESAWPecr0QffG0ASo=\""
+          "Value": "\"SzLHRwftTyGkF4yKKOSFjGJqBa+toEcpoGWwyLXt+pM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:51 GMT"
+          "Value": "Tue, 15 Apr 2025 01:09:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24657,7 +24657,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "abmz1rpybw"
+          "Value": "dm5tsc4qcb"
         },
         {
           "Name": "label",
@@ -24665,18 +24665,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-tliqpZWuEPptGT6m26Ai2diVYtESAWPecr0QffG0ASo="
+          "Value": "sha256-SzLHRwftTyGkF4yKKOSFjGJqBa+toEcpoGWwyLXt+pM="
         }
       ]
     },
     {
-      "Route": "_framework/swa-blazor-demo.abmz1rpybw.wasm",
-      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-abmz1rpybw.gz",
+      "Route": "_framework/swa-blazor-demo.dm5tsc4qcb.wasm",
+      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-dm5tsc4qcb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000036032141"
+          "Quality": "0.000035977694"
         }
       ],
       "ResponseHeaders": [
@@ -24686,15 +24686,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27752"
+          "Value": "27794"
         },
         {
           "Name": "ETag",
-          "Value": "\"1aTe97C+t5pVlT/0vPBqTgJqmxcOjAuHSRXYHYD5/t4=\""
+          "Value": "\"qfS6rOPCjo++/ZyIge0JJD+XS+iBkCIY4O+aqAQ4tIw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:52 GMT"
+          "Value": "Tue, 15 Apr 2025 01:09:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24714,13 +24714,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"tliqpZWuEPptGT6m26Ai2diVYtESAWPecr0QffG0ASo=\""
+          "Value": "W/\"SzLHRwftTyGkF4yKKOSFjGJqBa+toEcpoGWwyLXt+pM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "abmz1rpybw"
+          "Value": "dm5tsc4qcb"
         },
         {
           "Name": "label",
@@ -24728,13 +24728,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-tliqpZWuEPptGT6m26Ai2diVYtESAWPecr0QffG0ASo="
+          "Value": "sha256-SzLHRwftTyGkF4yKKOSFjGJqBa+toEcpoGWwyLXt+pM="
         }
       ]
     },
     {
-      "Route": "_framework/swa-blazor-demo.abmz1rpybw.wasm.gz",
-      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-abmz1rpybw.gz",
+      "Route": "_framework/swa-blazor-demo.dm5tsc4qcb.wasm.gz",
+      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-dm5tsc4qcb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -24743,7 +24743,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27752"
+          "Value": "27794"
         },
         {
           "Name": "Content-Type",
@@ -24751,11 +24751,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1aTe97C+t5pVlT/0vPBqTgJqmxcOjAuHSRXYHYD5/t4=\""
+          "Value": "\"qfS6rOPCjo++/ZyIge0JJD+XS+iBkCIY4O+aqAQ4tIw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:52 GMT"
+          "Value": "Tue, 15 Apr 2025 01:09:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24773,7 +24773,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "abmz1rpybw"
+          "Value": "dm5tsc4qcb"
         },
         {
           "Name": "label",
@@ -24781,12 +24781,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1aTe97C+t5pVlT/0vPBqTgJqmxcOjAuHSRXYHYD5/t4="
+          "Value": "sha256-qfS6rOPCjo++/ZyIge0JJD+XS+iBkCIY4O+aqAQ4tIw="
         }
       ]
     },
     {
-      "Route": "_framework/swa-blazor-demo.bc5ykjxpgc.pdb",
+      "Route": "_framework/swa-blazor-demo.m81y52wfur.pdb",
       "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\bin\\Debug\\net9.0\\wwwroot\\_framework\\swa-blazor-demo.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -24796,7 +24796,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "59572"
+          "Value": "59652"
         },
         {
           "Name": "Content-Type",
@@ -24804,11 +24804,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"daDHbIcDkxLbeELpY1WaCjzCuETVJqS4cT4cH05Al5M=\""
+          "Value": "\"xmd/CjYkWXd1IhyQb/BWR5Kdne2/3UrByxx0dTdGznE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:50 GMT"
+          "Value": "Tue, 15 Apr 2025 01:09:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24818,7 +24818,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "bc5ykjxpgc"
+          "Value": "m81y52wfur"
         },
         {
           "Name": "label",
@@ -24826,18 +24826,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-daDHbIcDkxLbeELpY1WaCjzCuETVJqS4cT4cH05Al5M="
+          "Value": "sha256-xmd/CjYkWXd1IhyQb/BWR5Kdne2/3UrByxx0dTdGznE="
         }
       ]
     },
     {
-      "Route": "_framework/swa-blazor-demo.bc5ykjxpgc.pdb",
-      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-bc5ykjxpgc.gz",
+      "Route": "_framework/swa-blazor-demo.m81y52wfur.pdb",
+      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-m81y52wfur.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000022331897"
+          "Quality": "0.000022301019"
         }
       ],
       "ResponseHeaders": [
@@ -24847,15 +24847,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "44778"
+          "Value": "44840"
         },
         {
           "Name": "ETag",
-          "Value": "\"Sja2ee24KvOUZhZrCVxB8YRlxj2YfGz2415ZeyzhvKU=\""
+          "Value": "\"dmkP0g7QCFyxdvOhhi4jhURyhJuuB6HCRbc7o0d51lM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:53 GMT"
+          "Value": "Tue, 15 Apr 2025 01:09:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24875,13 +24875,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"daDHbIcDkxLbeELpY1WaCjzCuETVJqS4cT4cH05Al5M=\""
+          "Value": "W/\"xmd/CjYkWXd1IhyQb/BWR5Kdne2/3UrByxx0dTdGznE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "bc5ykjxpgc"
+          "Value": "m81y52wfur"
         },
         {
           "Name": "label",
@@ -24889,13 +24889,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-daDHbIcDkxLbeELpY1WaCjzCuETVJqS4cT4cH05Al5M="
+          "Value": "sha256-xmd/CjYkWXd1IhyQb/BWR5Kdne2/3UrByxx0dTdGznE="
         }
       ]
     },
     {
-      "Route": "_framework/swa-blazor-demo.bc5ykjxpgc.pdb.gz",
-      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-bc5ykjxpgc.gz",
+      "Route": "_framework/swa-blazor-demo.m81y52wfur.pdb.gz",
+      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-m81y52wfur.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -24904,7 +24904,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "44778"
+          "Value": "44840"
         },
         {
           "Name": "Content-Type",
@@ -24912,11 +24912,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Sja2ee24KvOUZhZrCVxB8YRlxj2YfGz2415ZeyzhvKU=\""
+          "Value": "\"dmkP0g7QCFyxdvOhhi4jhURyhJuuB6HCRbc7o0d51lM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:53 GMT"
+          "Value": "Tue, 15 Apr 2025 01:09:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24934,7 +24934,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "bc5ykjxpgc"
+          "Value": "m81y52wfur"
         },
         {
           "Name": "label",
@@ -24942,7 +24942,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Sja2ee24KvOUZhZrCVxB8YRlxj2YfGz2415ZeyzhvKU="
+          "Value": "sha256-dmkP0g7QCFyxdvOhhi4jhURyhJuuB6HCRbc7o0d51lM="
         }
       ]
     },
@@ -24957,7 +24957,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "59572"
+          "Value": "59652"
         },
         {
           "Name": "Content-Type",
@@ -24965,11 +24965,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"daDHbIcDkxLbeELpY1WaCjzCuETVJqS4cT4cH05Al5M=\""
+          "Value": "\"xmd/CjYkWXd1IhyQb/BWR5Kdne2/3UrByxx0dTdGznE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:50 GMT"
+          "Value": "Tue, 15 Apr 2025 01:09:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24979,18 +24979,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-daDHbIcDkxLbeELpY1WaCjzCuETVJqS4cT4cH05Al5M="
+          "Value": "sha256-xmd/CjYkWXd1IhyQb/BWR5Kdne2/3UrByxx0dTdGznE="
         }
       ]
     },
     {
       "Route": "_framework/swa-blazor-demo.pdb",
-      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-bc5ykjxpgc.gz",
+      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-m81y52wfur.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000022331897"
+          "Quality": "0.000022301019"
         }
       ],
       "ResponseHeaders": [
@@ -25000,15 +25000,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "44778"
+          "Value": "44840"
         },
         {
           "Name": "ETag",
-          "Value": "\"Sja2ee24KvOUZhZrCVxB8YRlxj2YfGz2415ZeyzhvKU=\""
+          "Value": "\"dmkP0g7QCFyxdvOhhi4jhURyhJuuB6HCRbc7o0d51lM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:53 GMT"
+          "Value": "Tue, 15 Apr 2025 01:09:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25028,19 +25028,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"daDHbIcDkxLbeELpY1WaCjzCuETVJqS4cT4cH05Al5M=\""
+          "Value": "W/\"xmd/CjYkWXd1IhyQb/BWR5Kdne2/3UrByxx0dTdGznE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-daDHbIcDkxLbeELpY1WaCjzCuETVJqS4cT4cH05Al5M="
+          "Value": "sha256-xmd/CjYkWXd1IhyQb/BWR5Kdne2/3UrByxx0dTdGznE="
         }
       ]
     },
     {
       "Route": "_framework/swa-blazor-demo.pdb.gz",
-      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-bc5ykjxpgc.gz",
+      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\iay1k4q5dj-m81y52wfur.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -25049,7 +25049,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "44778"
+          "Value": "44840"
         },
         {
           "Name": "Content-Type",
@@ -25057,11 +25057,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Sja2ee24KvOUZhZrCVxB8YRlxj2YfGz2415ZeyzhvKU=\""
+          "Value": "\"dmkP0g7QCFyxdvOhhi4jhURyhJuuB6HCRbc7o0d51lM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:53 GMT"
+          "Value": "Tue, 15 Apr 2025 01:09:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25079,7 +25079,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Sja2ee24KvOUZhZrCVxB8YRlxj2YfGz2415ZeyzhvKU="
+          "Value": "sha256-dmkP0g7QCFyxdvOhhi4jhURyhJuuB6HCRbc7o0d51lM="
         }
       ]
     },
@@ -25094,7 +25094,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "84757"
+          "Value": "85269"
         },
         {
           "Name": "Content-Type",
@@ -25102,11 +25102,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tliqpZWuEPptGT6m26Ai2diVYtESAWPecr0QffG0ASo=\""
+          "Value": "\"SzLHRwftTyGkF4yKKOSFjGJqBa+toEcpoGWwyLXt+pM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:51 GMT"
+          "Value": "Tue, 15 Apr 2025 01:09:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25116,18 +25116,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tliqpZWuEPptGT6m26Ai2diVYtESAWPecr0QffG0ASo="
+          "Value": "sha256-SzLHRwftTyGkF4yKKOSFjGJqBa+toEcpoGWwyLXt+pM="
         }
       ]
     },
     {
       "Route": "_framework/swa-blazor-demo.wasm",
-      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-abmz1rpybw.gz",
+      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-dm5tsc4qcb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000036032141"
+          "Quality": "0.000035977694"
         }
       ],
       "ResponseHeaders": [
@@ -25137,15 +25137,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27752"
+          "Value": "27794"
         },
         {
           "Name": "ETag",
-          "Value": "\"1aTe97C+t5pVlT/0vPBqTgJqmxcOjAuHSRXYHYD5/t4=\""
+          "Value": "\"qfS6rOPCjo++/ZyIge0JJD+XS+iBkCIY4O+aqAQ4tIw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:52 GMT"
+          "Value": "Tue, 15 Apr 2025 01:09:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25165,19 +25165,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"tliqpZWuEPptGT6m26Ai2diVYtESAWPecr0QffG0ASo=\""
+          "Value": "W/\"SzLHRwftTyGkF4yKKOSFjGJqBa+toEcpoGWwyLXt+pM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tliqpZWuEPptGT6m26Ai2diVYtESAWPecr0QffG0ASo="
+          "Value": "sha256-SzLHRwftTyGkF4yKKOSFjGJqBa+toEcpoGWwyLXt+pM="
         }
       ]
     },
     {
       "Route": "_framework/swa-blazor-demo.wasm.gz",
-      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-abmz1rpybw.gz",
+      "AssetFile": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\obj\\Debug\\net9.0\\compressed\\5jzn1haw5d-dm5tsc4qcb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -25186,7 +25186,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27752"
+          "Value": "27794"
         },
         {
           "Name": "Content-Type",
@@ -25194,11 +25194,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1aTe97C+t5pVlT/0vPBqTgJqmxcOjAuHSRXYHYD5/t4=\""
+          "Value": "\"qfS6rOPCjo++/ZyIge0JJD+XS+iBkCIY4O+aqAQ4tIw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 00:41:52 GMT"
+          "Value": "Tue, 15 Apr 2025 01:09:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -25216,7 +25216,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1aTe97C+t5pVlT/0vPBqTgJqmxcOjAuHSRXYHYD5/t4="
+          "Value": "sha256-qfS6rOPCjo++/ZyIge0JJD+XS+iBkCIY4O+aqAQ4tIw="
         }
       ]
     },

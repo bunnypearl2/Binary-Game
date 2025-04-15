@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\violi\\source\\repos\\Binary-Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\violi\\source\\repos\\binary-game\\pages\\binaryintro.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\binaryintro.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\violi\\source\\repos\\binary-game\\pages\\binarytutorial.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\binarytutorial.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\violi\\source\\repos\\binary-game\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\violi\\source\\repos\\binary-game\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\violi\\source\\repos\\binary-game\\pages\\cheatsheet.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\cheatsheet.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\violi\\source\\repos\\binary-game\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\violi\\source\\repos\\binary-game\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\violi\\source\\repos\\binary-game\\pages\\binaryintro.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\binaryintro.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|c:\\users\\violi\\source\\repos\\binary-game\\pages\\binarytutorial.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1629BE70-1DAE-49BB-AEC5-DAFC55E9B035}|swa-blazor-demo.csproj|solutionrelative:pages\\binarytutorial.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -60,14 +60,14 @@
               "RelativeDocumentMoniker": "Layout\\NavMenu.razor",
               "ToolTip": "C:\\Users\\violi\\source\\repos\\Binary-Game\\Layout\\NavMenu.razor",
               "RelativeToolTip": "Layout\\NavMenu.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-14T22:25:58.658Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "BinaryTutorial.razor",
               "DocumentMoniker": "C:\\Users\\violi\\source\\repos\\Binary-Game\\Pages\\BinaryTutorial.razor",
               "RelativeDocumentMoniker": "Pages\\BinaryTutorial.razor",
@@ -80,20 +80,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "BinaryIntro.razor",
               "DocumentMoniker": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\Pages\\BinaryIntro.razor",
               "RelativeDocumentMoniker": "Pages\\BinaryIntro.razor",
               "ToolTip": "C:\\Users\\violi\\Source\\Repos\\Binary-Game\\Pages\\BinaryIntro.razor",
               "RelativeToolTip": "Pages\\BinaryIntro.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-03T17:18:05.652Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "CheatSheet.razor",
               "DocumentMoniker": "C:\\Users\\violi\\source\\repos\\Binary-Game\\Pages\\CheatSheet.razor",
               "RelativeDocumentMoniker": "Pages\\CheatSheet.razor",
@@ -106,13 +106,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\violi\\source\\repos\\Binary-Game\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\violi\\source\\repos\\Binary-Game\\Pages\\Home.razor",
-              "RelativeToolTip": "Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAHAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\violi\\source\\repos\\Binary-Game\\Pages\\Home.razor*",
+              "RelativeToolTip": "Pages\\Home.razor*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-16T21:32:45.98Z",
               "EditorCaption": ""
