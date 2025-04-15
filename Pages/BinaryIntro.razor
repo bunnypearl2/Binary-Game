@@ -1,0 +1,112 @@
+﻿@page "/binaryintro"
+
+@inject NavigationManager NavigationManager
+
+<!DOCTYPE html>
+
+<html>
+<body>
+	<img src="images/testCat.png" alt="Cat" width="200" height="200" style="margin:auto;display:block">
+	<h3 style="text-align:center;"> @characterName: @dialogue[arrayPosition]</h3>
+	<div class="input-row">
+		<button hidden="@hideStatus" disabled="@disabledStatus" class="btn btn-primary" @onclick="goBack">Back`</button>
+		<button hidden="@hideStatus" class="btn btn-primary" @onclick="Advance">@buttonText</button>
+	</div>
+	<h3 style="text-align:center;" @onload="getDialogueLength">@dialoguePosition/@dialogueLength</h3>
+	<div class="input-row">
+		<button class="btn btn-primary" @onclick="skipNav">@buttonText2</button>
+
+	</div>
+
+</body>
+</html>
+
+
+@code {
+	int arrayPosition = 0;
+	int dialoguePosition = 1;
+	int dialogueLength = 0;
+	String buttonText = "Next";
+	String buttonText2 = "Skip";
+	String characterName = "??????";
+	bool hideStatus = false;
+	bool disabledStatus = true;
+	string[] dialogue = {"Hello!", 
+						"My name is Nibble!", 
+						"Welcome to MyConversionTutor!", 
+						"This is a super cool website that will help you understand the fundamentals of binary and binary conversion!", 
+						"You may be asking yourself, what is binary?",
+						"Binary is a base-2 number system that uses only two digits: 0 and 1.",
+						"In binary, each digit represents a power of 2, typically starting from the rightmost digit.",
+						"For example, the binary number 1011 represents the decimal number 11.",
+						"With these two digits, you can represent any number you want regardless of how big or small it is!",
+						"Pretty neat huh? Now try it for yourself!"};
+
+
+	private void Advance()
+	{
+		arrayPosition++;
+		dialoguePosition++;
+
+		dialogueLength = dialogue.Length;
+
+		if (arrayPosition == 0)
+		{
+			disabledStatus = true;
+		}
+
+		if (arrayPosition == 1)
+		{
+			disabledStatus = false;
+			characterName = "Nibble";
+		}
+
+		if (arrayPosition == dialogueLength - 1)
+		{
+			buttonText = "Repeat";
+			buttonText2 = "Check it out!";
+		}
+		if (arrayPosition == dialogueLength)
+		{
+			arrayPosition = 0;
+			dialoguePosition = 1;
+			buttonText = "Next";
+			buttonText2 = "Skip";
+			disabledStatus = true;
+		}
+	}
+
+	private void goBack()
+	{
+		arrayPosition--;
+		dialoguePosition--;
+
+		if (arrayPosition == 0)
+		{
+			disabledStatus = true;
+		}
+		if (arrayPosition == dialogueLength - 2)
+		{
+			buttonText = "Next";
+			buttonText2 = "Skip";
+		}
+		
+	}
+
+	private void skipNav()
+	{
+		NavigationManager.NavigateTo("/binarytut");
+	}
+
+	Task getDialogueLength()
+	{
+		dialogueLength = dialogue.Length;
+		return Task.CompletedTask;
+	}
+
+	protected override async Task OnInitializedAsync()
+	{
+		getDialogueLength();
+		await getDialogueLength();
+	}
+}
