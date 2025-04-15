@@ -2,6 +2,8 @@
 
 @inject NavigationManager NavigationManager
 
+<PageTitle>Intro to Binary</PageTitle>
+
 <!DOCTYPE html>
 
 <html>
@@ -9,7 +11,7 @@
 	<img src="images/testCat.png" alt="Cat" width="200" height="200" style="margin:auto;display:block">
 	<h3 style="text-align:center;"> @characterName: @dialogue[arrayPosition]</h3>
 	<div class="input-row">
-		<button hidden="@hideStatus" disabled="@disabledStatus" class="btn btn-primary" @onclick="goBack">Back`</button>
+		<button hidden="@hideStatus" disabled="@disabledStatus" class="btn btn-primary" @onclick="goBack">Back</button>
 		<button hidden="@hideStatus" class="btn btn-primary" @onclick="Advance">@buttonText</button>
 	</div>
 	<h3 style="text-align:center;" @onload="getDialogueLength">@dialoguePosition/@dialogueLength</h3>

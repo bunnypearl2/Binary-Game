@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qn7cce37yd</Fingerprint>
-      <Integrity>xiWYwhv0GFc4ELxptng/dw5XWkIkN+qC5VziBH0cfuI=</Integrity>
+      <Fingerprint>pbtypwe3jn</Fingerprint>
+      <Integrity>C15lPJ/e4RnVao4hcB0A9xTeZNotJJfwM4Ku3aUhAZY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))</OriginalItemSpec>
