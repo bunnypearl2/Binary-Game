@@ -6,6 +6,7 @@
     display: flex; /* Keeps all elements in a single row */
     align-items: center; /* Align items vertically */
     justify-content: space-between; /* Spacing between items */
+    width: 100vw;
 }
 
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("swa-blazor-demo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e90014418a525943b5837ab4ab702753f931c80")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5aca423680fb449ee396fad6ef1347a723cb1cd5")]
 [assembly: System.Reflection.AssemblyProductAttribute("swa-blazor-demo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("swa-blazor-demo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

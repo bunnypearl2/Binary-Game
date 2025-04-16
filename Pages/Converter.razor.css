@@ -1,15 +1,36 @@
-﻿/* For begininngin paragraph text*/
-.paragraph {
+﻿
+
+/* Container that allows zooming and horizontal scrolling */
+/*.zoom-scroll-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    touch-action: pan-x pinch-zoom;
+    -ms-touch-action: pan-x pinch-zoom;
+}*/
+
+.zoom-scroll-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    touch-action: pan-x pinch-zoom;
+    -ms-touch-action: pan-x pinch-zoom;
+    padding: 1rem;
+    gap: 1rem;
     width: 100%;
-    background-color: #f0f0f0;
-    padding: 10px;
-    box-sizing: border-box; /* makes padding not affect total width */
+    /* Optional: hide scrollbar */
+    scrollbar-width: none; /* Firefox */
 }
 
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
+    .zoom-scroll-container::-webkit-scrollbar {
+        display: none; /* Chrome, Safari */
+    }
+
+    .zoom-scroll-container > div {
+        min-width: 150px;
+        text-align: center;
+        flex: 0 0 auto;
+    }
 
 /* for labels*/
 .form-label {
@@ -22,6 +43,7 @@ p {
 /* For main input box*/
 .row {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     gap: 5px;
 }

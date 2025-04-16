@@ -1,4 +1,4 @@
-@page "/binarytut"
+@page "/binarytutorial"
 
 @inject IJSRuntime JS
 
@@ -7,9 +7,9 @@
 
 <h4>Unsigned Decimal: @num.base10</h4>
 <h4>Signed Decimal: @num.twosCompliment</h4>
+<h4>Hexadecimal: @num.base16</h4>
 
-<h3>Hexadecimal: @num.base16</h3>
-
+<p>
 <div class="input-row">
 
     <Tooltip Class="d-inline-block" Title="@fifteenVal" role="button">
@@ -129,7 +129,7 @@
     <button class="btn btn-primary ms-4" @onclick="Clear">Clear</button>
 
 </div>
-
+</p>
 
 
 
