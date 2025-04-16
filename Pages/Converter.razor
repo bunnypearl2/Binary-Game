@@ -20,6 +20,9 @@
     
 </div>
 
+@* Make body shrinkable - able to scroll if elements go off screen *@
+<div style="display: flex;">
+<div style="flex-shrink: 1; overflow: auto;">
 
 
 @*INPUT SELECTION ROW*@
@@ -108,7 +111,7 @@
 
 <!-- Begin body of page -->
 
-<table>
+<table >
     @for (int row = 0; row < numOfRows; row++)
     {
 
@@ -159,6 +162,9 @@
         </tr>
     }
 </table>
+</div>
+
+</div>
 
 @*@onblur="(e) => FillWhitespace(i, j, index)"*@
 
