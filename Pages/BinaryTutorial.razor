@@ -1,4 +1,4 @@
-@page "/binarytut"
+@page "/binarytutorial"
 
 @inject IJSRuntime JS
 
@@ -7,7 +7,10 @@
 
 <h4>Unsigned Decimal: @num.base10</h4>
 <h4>Signed Decimal: @num.twosCompliment</h4>
+<h4>Hexadecimal: @num.base16</h4>
 
+<div style="display: flex;">
+ <div style="flex-shrink: 1; overflow: auto;">
 <div class="input-row">
 
     <Tooltip Class="d-inline-block" Title="@fifteenVal" role="button">
@@ -127,7 +130,8 @@
     <button class="btn btn-primary ms-4" @onclick="Clear">Clear</button>
 
 </div>
-
+</div>
+</div>
 
 
 
@@ -141,17 +145,17 @@
     greater value to progressive digit places - 1,10,100,1000,10000... (10<sup>0</sup>, 10<sup>1</sup>,10<sup>2</sup>,
     10<sup>3</sup>,10<sup>4</sup>...),  Binary (base 2) can be regarded the same way - 1,2,4,8,16... (2<sup>0</sup>, 2<sup>1</sup>,2<sup>2</sup>,2<sup>3</sup>,2<sup>4</sup>).</p>
 <p> One special thing about binary representation is how it can be used to represent both positive and negative numbers.  With 16 digits, we can represent numbers 0 - 665535 (unsigned decimal)
-    or -32768 - 32767 (signed decimal).  
-    <p><u>Signed Decimal</u>: When the 2<sup>15</sup> bit is set to 1, every other bit set is added to the negative value of -32768. So the absolute value of the number goes down instead
-    of up.</p>
+    or -32768 - 32767 (signed decimal).
 </p>
+<p><u>Signed Decimal</u>: When the 2<sup>15</sup> bit is set to 1, every other bit set is added to the negative value of -32768. So the absolute value of the number goes down instead
+    of up.</p>
+
 <p>EXAMPLE:  If you have bits 2<sup>12</sup>, 2<sup>6</sup>, and 2<sup>4</sup> each set to "1", the decimal representation would be (1)*2<sup>12</sup> + (1)*2<sup>6</sup> + (1)*2<sup>4</sup> = 
     4096 + 64 + 16 = 4176</p>
 <p> Can you remember the powers of 2?  Feel free to reference the <a href="/cheatsheet">Cheat Sheet</a>!</p>
 
 
-<!--
-<h3>Hexadecimal: @num.base16</h3>-->
+
 
 
 

@@ -1,5 +1,5 @@
 @inject IJSRuntime JS
-@page "/converter"
+@page "/learnyourbases"
 
 
 <PageTitle>Converter</PageTitle>
@@ -7,51 +7,28 @@
 <h3></h3>
 
 
-<div class="paragraph" style="display: flex; align-items: flex-start; justify-content: space-between;">
-    <p style="font-size: 24px; margin: 0; white-space: nowrap"> "Cover all the Bases!"</p>
-    <span style="font-size: 14px; margin-left: 40px;">
+<div class="row">
+    
+    <p style="font-size: 14px;">
+        <span style="font-size: 24px; text-decoration: underline;">
+            Learn Your Bases! 
+        </span><br />
         Enter a number in the first input box.  Indicate which base system you are using in the dropdown. <br />
-        Customize QUIZ ON/QUIZ OFF toggles for each row to test your knowledge converting between different base systems. <br /> 
+        Customize QUIZ ON/QUIZ OFF toggles for each row to test your knowledge converting between different base systems. <br />
         When quizzing for a given row, fill in the appropriate digits to clear the <span style="color: red;">red</span>!
-    </span>
-    <div class="col-auto" style="gap: 30px; margin-left: auto; padding-right: 60px; background-color: lightcoral; box-sizing: border-box;">
-
-
-        <div>
-            <label class="form-label" for="digits"># of digits:</label>
-            <select id="digits" @onchange="UpdateDropdown">
-                @foreach (var option in options)
-                {
-                    <option value="@option">@option</option>
-                }
-            </select>
-        </div>
-
-        <div>
-            <label class="form-label" for="rows"># of rows:</label>
-            <select class="col-auto" id="rows" @onchange="UpdateDropdown">
-                @foreach (var option in options)
-                {
-                    <option value="@option">@option</option>
-                }
-            </select>
-        </div>
-
-    </div>
+    </p>
+    
 </div>
 
+@* Make body shrinkable - able to scroll if elements go off screen *@
+<div style="display: flex;">
+<div style="flex-shrink: 1; overflow: auto;">
 
-<!--
-<div class="paragraph">
-<p style="font-size: 24px">  "Cover all the Bases!"    </p>
-<p>Enter, increment, or generate a random number in the first input box.  Indicate which base system you are using in the dropdown.  </p>
-Customize each row to test your knowledge converting to different base systems.  When quizzing for a given row, fill in the appropriate digits to clear the red!
-</div>-->
 
 @*INPUT SELECTION ROW*@
 
 
-<div class="row" style="height: 115px" >
+<div class="row" style="height: 100px" >
 
 
     @***MAIN DROPDOWN***@
@@ -98,27 +75,43 @@ Customize each row to test your knowledge converting to different base systems. 
 
     </div>
 
-    <div class="col-auto">
+    <div class="col-auto" style="gap: 30px;">
 
-        <p style="color: red"> @errorMessage </p>
+
+        <div>
+            <label class="form-label" for="digits"># of digits:</label>
+            <select id="digits" @onchange="UpdateDropdown">
+                @foreach (var option in options)
+                {
+                    <option value="@option">@option</option>
+                }
+            </select>
+        </div>
+
+        <div>
+            <label class="form-label" for="rows"># of rows:</label>
+            <select class="col-auto" id="rows" @onchange="UpdateDropdown">
+                @foreach (var option in options)
+                {
+                    <option value="@option">@option</option>
+                }
+            </select>
+        </div>
+
     </div>
-
-
-
 
 </div>
 
 <!-- End INPUT SELECTION ROW-->
 <div class="col-auto">
-    <p>Input (max @numOfColumns characters) - Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted  <br /></p>
+    <p>Input (max @numOfColumns characters) - Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted  <span style="color: red"> @errorMessage </span></p>
 </div>
 
-<p>@inputDecimal</p>
 
 
 <!-- Begin body of page -->
 
-<table>
+<table >
     @for (int row = 0; row < numOfRows; row++)
     {
 
@@ -142,7 +135,7 @@ Customize each row to test your knowledge converting to different base systems. 
                     maxlength="1"
                     style="width: 50px; display: inline-block" />
 
-                    <p>  &nbsp;&nbsp;&#215; @rowRadix[i]<sup>@(numOfColumns - 1 - j)  </sup> &nbsp; @(j != numOfColumns - 1 ? "+" : "") </p>
+                    <p> &nbsp;&nbsp;&nbsp;@rowRadix[i]<sup>@(numOfColumns - 1 - j)  </sup> </p>
                 </td>
 
             }
@@ -169,6 +162,9 @@ Customize each row to test your knowledge converting to different base systems. 
         </tr>
     }
 </table>
+</div>
+
+</div>
 
 @*@onblur="(e) => FillWhitespace(i, j, index)"*@
 

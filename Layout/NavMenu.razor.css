@@ -4,8 +4,10 @@
     background-color: #333;
     padding: 10px 20px;
     display: flex; /* Keeps all elements in a single row */
+    flex-wrap: nowrap;
     align-items: center; /* Align items vertically */
     justify-content: space-between; /* Spacing between items */
+    width: 100vw;
 }
 
 
