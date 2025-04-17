@@ -42,6 +42,30 @@
 
 
 
+<<<<<<< HEAD
+=======
+<nav class="nav-container">
+    <ul class="nav-list">
+        <li class="nav-item dropdown">
+            <!--<a href="#">☰ My Conversion Tutor ▼</a>-->
+            <a style="font-size: 20px" ref="#">☰  <span style="color: orange"> MyConversionTutor.</span> </a>
+            <ul class="dropdown-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/learnyourbases">Learn Your Bases!</a></li>
+                <li><a href="/binarytutorial">Binary Tutorial</a></li>
+                <li><a href="/cheatsheet">Cheat Sheet</a></li>
+                
+            </ul>
+        </li>
+    </ul>
+    <label class="toggle-container">
+        Dark Mode
+        <input type="checkbox" value="@IsDarkMode" @onchange="ToggleTheme">
+        <span class="slider"></span>
+        <span class="toggle-label">@(IsDarkMode? "Dark Mode": "Light Mode")</span>
+    </label>
+</nav>
+>>>>>>> 9bfa1b11b31dd2c64e11b0b36d13b7fa1e5b4a60
 
 @code {
     private bool IsDarkMode = false;

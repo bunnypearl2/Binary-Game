@@ -8,7 +8,7 @@
 
 
 <div class="row">
-    
+
     <p style="font-size: 14px;">
         <span style="font-size: 24px; text-decoration: underline;">
             Learn Your Bases! 
@@ -17,152 +17,153 @@
         Customize QUIZ ON/QUIZ OFF toggles for each row to test your knowledge converting between different base systems. <br />
         When quizzing for a given row, fill in the appropriate digits to clear the <span style="color: red;">red</span>!
     </p>
-    
+
 </div>
 
 @* Make body shrinkable - able to scroll if elements go off screen *@
 <div style="display: flex;">
-<div style="flex-shrink: 1; overflow: auto;">
+    <div style="flex-shrink: 1; overflow: auto;">
 
 
-@*INPUT SELECTION ROW*@
+        @*INPUT SELECTION ROW*@
 
 
-<div class="row" style="height: 100px" >
+        <div class="row" style="height: 100px" >
 
 
-    @***MAIN DROPDOWN***@
-
-
-
-    <label class="col-auto" for="maindropdown">Base/Radix:</label>
-    <select class="col-auto" id="maindropdown" @onchange="UpdateDropdown">
-        @foreach (var option in options)
-        {
-            <option value="@option">@option</option>
-        }
-    </select>
+            @***MAIN DROPDOWN***@
 
 
 
+            <label class="col-auto" for="maindropdown">Base/Radix:</label>
+            <select class="col-auto" id="maindropdown" @onchange="UpdateDropdown">
+                @foreach (var option in options)
+                {
+                    <option value="@option">@option</option>
+                }
+            </select>
 
-    @***INPUT BOX***@
-    <div class="col-auto">
 
-        @** increment/decrement buttons *@
-        <div class="col-auto">
-            <div class="vertical-container" style="gap: 10px">
 
-                <button class="trianglebutton" @onclick="Increment">&#9650; </button> <!-- Up triangle -->
-                <button class="trianglebutton" @onclick="Decrement">&#9660; </button> <!-- Down triangle -->
+
+            @***INPUT BOX***@
+            <div class="col-auto">
+
+                @** increment/decrement buttons *@
+                <div class="col-auto">
+                    <div class="vertical-container" style="gap: 10px">
+
+                        <button class="trianglebutton" @onclick="Increment">&#9650; </button> <!-- Up triangle -->
+                        <button class="trianglebutton" @onclick="Decrement">&#9660; </button> <!-- Down triangle -->
+
+                    </div>
+                </div>
+
+                <EditForm Model="@formData" OnValidSubmit="HandleSubmit" class="row">
+                    @* input  box *@
+                    <div class="col-auto"><InputText id="firstinput" onclick="selectTextBox" @bind-Value="formData.input" style="font-size:26; text-transform: uppercase" maxlength="16" /></div>
+
+                    @* submit button*@
+                    <div class="col-auto"><button type="submit" class="edit-button">Submit</button></div>
+
+                </EditForm>
 
             </div>
-        </div>
 
-        <EditForm Model="@formData" OnValidSubmit="HandleSubmit" class="row">
-            @* input  box *@
-            <div class="col-auto"><InputText id="firstinput" onclick="selectTextBox" @bind-Value="formData.input" style="font-size:26; text-transform: uppercase" maxlength="16" /></div>
+            <div class="col-auto">
+                <button @onclick="GenerateRand" class="edit-button">Random Number</button>
 
-            @* submit button*@
-            <div class="col-auto"><button type="submit" class="edit-button">Submit</button></div>
+            </div>
 
-        </EditForm>
-
-    </div>
-
-    <div class="col-auto">
-        <button @onclick="GenerateRand" class="edit-button">Random Number</button>
-
-    </div>
-
-    <div class="col-auto" style="gap: 30px;">
+            @*
+            <div class="col-auto" style="gap: 30px;">
 
 
-        <div>
-            <label class="form-label" for="digits"># of digits:</label>
-            <select id="digits" @onchange="UpdateDropdown">
-                @foreach (var option in options)
-                {
-                    <option value="@option">@option</option>
-                }
-            </select>
-        </div>
-
-        <div>
-            <label class="form-label" for="rows"># of rows:</label>
-            <select class="col-auto" id="rows" @onchange="UpdateDropdown">
-                @foreach (var option in options)
-                {
-                    <option value="@option">@option</option>
-                }
-            </select>
-        </div>
-
-    </div>
-
-</div>
-
-<!-- End INPUT SELECTION ROW-->
-<div class="col-auto">
-    <p>Input (max @numOfColumns characters) - Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted  <span style="color: red"> @errorMessage </span></p>
-</div>
-
-
-
-<!-- Begin body of page -->
-
-<table >
-    @for (int row = 0; row < numOfRows; row++)
-    {
-
-
-        <tr>
-            @for (int col = 0; col < numOfColumns; col++)
-            {
-                int i = row;
-                int j = col;
-                int index = i * numOfColumns + j; // Calculate the index based on row and column
-                <td>
-
-                    <input @ref="textBoxRefs[index]"
-                    value="@textValues[i][j]"
-                    @onclick="(e) => HandleInputClick(e, index)"
-                    @oninput="(e) => MoveNext(e, i , j, index)"
-                    @onkeyup="(e) => HandleKeyNavigation(e, i, j, index)"
-
-                    readonly="@(!isQuizzing[i])"
-                    class="form-control text-center mx-1 @GetColorClass(i, j)"
-                    maxlength="1"
-                    style="width: 50px; display: inline-block" />
-
-                    <p> &nbsp;&nbsp;&nbsp;@rowRadix[i]<sup>@(numOfColumns - 1 - j)  </sup> </p>
-                </td>
-
-            }
-
-            @{
-                int k = row;
-                <td class="col-auto" style="gap: 10px">
-                    <select @bind:get="GetDropdownValue(k)" @bind:set="newValue => RowCalculation(k, newValue)">
+                <div>
+                    <label class="form-label" for="digits"># of digits:</label>
+                    <select id="digits" @onchange="UpdateDropdown">
                         @foreach (var option in options)
                         {
                             <option value="@option">@option</option>
                         }
                     </select>
+                </div>
 
-                    <button @onclick="() => TwosComp(k)" class="@(isTwosComp[k]==1 ? "toggle-on" : "toggle-off")">2's Complement</button>
+                <div>
+                    <label class="form-label" for="rows"># of rows:</label>
+                    <select class="col-auto" id="rows" @onchange="UpdateDropdown">
+                        @foreach (var option in options)
+                        {
+                            <option value="@option">@option</option>
+                        }
+                    </select>
+                </div>
 
-                    <button @onclick="() => ToggleQuiz(k)" class="@(isQuizzing[k] ? "quiz-on" : "quiz-off")">@(isQuizzing[k] ? "QUIZ ON" : "QUIZ OFF")</button>
-                </td>
+            </div>*@
 
+        </div>
+
+        <!-- End INPUT SELECTION ROW-->
+        <div class="col-auto">
+            <p>Input (max @numOfColumns characters) - Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted  <span style="color: red"> &nbsp;@errorMessage </span></p>
+        </div>
+
+
+
+        <!-- Begin body of page -->
+
+        <table >
+            @for (int row = 0; row < numOfRows; row++)
+            {
+
+
+                <tr>
+                    @for (int col = 0; col < numOfColumns; col++)
+                    {
+                        int i = row;
+                        int j = col;
+                        int index = i * numOfColumns + j; // Calculate the index based on row and column
+                        <td>
+
+                            <input @ref="textBoxRefs[index]"
+                            value="@textValues[i][j]"
+                            @onclick="(e) => HandleInputClick(e, index)"
+                            @oninput="(e) => MoveNext(e, i , j, index)"
+                            @onkeyup="(e) => HandleKeyNavigation(e, i, j, index)"
+
+                            readonly="@(!isQuizzing[i])"
+                            class="form-control text-center mx-1 @GetColorClass(i, j)"
+                            maxlength="1"
+                            style="width: 50px; display: inline-block" />
+
+                            <p> &nbsp;&nbsp;&nbsp;@rowRadix[i]<sup>@(numOfColumns - 1 - j)  </sup> </p>
+                        </td>
+
+                    }
+
+                    @{
+                        int k = row;
+                        <td class="col-auto" style="gap: 10px">
+                            <select @bind:get="GetDropdownValue(k)" @bind:set="newValue => RowCalculation(k, newValue)">
+                                @foreach (var option in options)
+                                {
+                                    <option value="@option">@option</option>
+                                }
+                            </select>
+
+                            <button @onclick="() => TwosComp(k)" class="@(isTwosComp[k]==1 ? "toggle-on" : "toggle-off")">2's Complement</button>
+
+                            <button @onclick="() => ToggleQuiz(k)" class="@(isQuizzing[k] ? "quiz-on" : "quiz-off")">@(isQuizzing[k] ? "QUIZ ON" : "QUIZ OFF")</button>
+                        </td>
+
+                    }
+
+
+
+                </tr>
             }
-
-
-
-        </tr>
-    }
-</table>
-</div>
+        </table>
+    </div>
 
 </div>
 
@@ -180,8 +181,8 @@
     private FormModel formData = new FormModel();
 
     // FOR INDIVIDUAL INPUT BOXES
-    public const int numOfColumns = 8; // Number of columns per row
-    public const int numOfRows = 2;    // Number of rows
+    public const int numOfColumns = 16; // Number of columns per row
+    public const int numOfRows = 3;    // Number of rows
     public const int totalBoxes = numOfRows * numOfColumns; // Total boxes
 
     // FOR TWOS COMP BUTTONS
@@ -200,6 +201,7 @@
 
 
     private bool[] isQuizzing = new bool[numOfRows];
+    private char startChar = ' ';
 
     private int[][] boxColor = new int[numOfRows][]; //set to either 0, 1, or 2 (default, green, red)
     private string[] colorClass = { "", "green-box", "red-box" };
@@ -284,7 +286,22 @@
 
 
     }
+    /*
+    // FOR # OF ROWS DROPDOWN
+        private void SetRows(ChangeEventArgs e)
+    {
+    numOfRows = Convert.ToInt32(e.Value);
 
+
+    }
+
+    // FOR # OF DIGITS DROPDOWN
+    private void Upda(ChangeEventArgs e)
+        {
+        numOfColumns = Convert.ToInt32(e.Value);
+
+        }
+    */
 
     // FOR MAIN INPUT SUBMIT FORM - so submits on enter key
     private class FormModel
@@ -404,11 +421,11 @@
         }     
         else
         {
-            // reset values in row for user to change
+            // reset values in row for user to change?
             for (int j = 0; j < numOfColumns; j++)
             {
-                savedValues[row][j] = '0';
-                textValues[row][j] = '0';
+                //savedValues[row][j] = startChar;
+                //textValues[row][j] = startChar;
             }
 
             // Set colors of boxes for row
@@ -484,6 +501,31 @@
         HandleSubmit();
     }
 
+
+    // FROM GENERATE RANDOM BUTTON
+    private void GenerateRand()
+    {
+        Random randNum = new Random();
+        int num = randNum.Next(1, (int)Math.Pow(2, numOfColumns - 1) - 1);
+
+        const string digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        for (int i = numOfColumns - 1; i >= 0; i--)
+        {
+            if (num > 0)
+            {
+                int remainder = num % inputRadix;
+                numAns[0][inputRadix][i] = digits[remainder];
+                num /= inputRadix;
+            }
+            else
+                numAns[0][inputRadix][i] = '0';
+        }
+
+        formData.input = new string(numAns[0][inputRadix]);
+        HandleSubmit();
+    }
+
     // TWOS COMPLEMENT TOGGLE/BUTTON
     private void TwosComp(int row)
     {
@@ -531,7 +573,7 @@
             // set values to zero
             for(int i =0; i < numOfColumns; i++)
             {
-                savedValues[rowNum][i] = '0';
+                savedValues[rowNum][i] = startChar;
             }
 
             //  assign values in savedValues[] to textValues[]
@@ -585,10 +627,6 @@
     }
 
 
-    private void GenerateRand()
-    {
-
-    }
 
 
 

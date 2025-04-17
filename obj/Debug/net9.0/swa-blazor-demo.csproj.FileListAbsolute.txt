@@ -1091,6 +1091,7 @@ C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\ref\swa-blazor
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\rmj57bnd73-s59cinwkzt.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\o8sylcbn1l-5w1xaqmxo8.gz
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\1dhw9fxden-1nzl3x2fhl.gz
+<<<<<<< HEAD
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.0pipb1ztkg.pdb
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.2nkzhubcka.wasm
 C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.2nkzhubcka.wasm.gz
@@ -2200,3 +2201,13 @@ C:\Users\violi\Source\Repos\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-
 C:\Users\violi\Source\Repos\Binary-Game\obj\Debug\net9.0\compressed\5jzn1haw5d-tj90mt0ah8.gz
 C:\Users\violi\Source\Repos\Binary-Game\obj\Debug\net9.0\compressed\iay1k4q5dj-x4pfdssezf.gz
 C:\Users\violi\Source\Repos\Binary-Game\obj\Debug\net9.0\compressed\cxfcz4e37m-mv8fuuxxxj.gz
+=======
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\ovd11rbmvz-8iz93aq1qc.gz
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.69h5rdow4y.pdb
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.lubgk7ar3m.wasm
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.lubgk7ar3m.wasm.gz
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\bin\Debug\net9.0\wwwroot\_framework\swa-blazor-demo.69h5rdow4y.pdb.gz
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\5jzn1haw5d-lubgk7ar3m.gz
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\iay1k4q5dj-69h5rdow4y.gz
+C:\Users\Ed\source\repos\bunnypearl2\Binary-Game\obj\Debug\net9.0\compressed\cxfcz4e37m-ku8risc9yj.gz
+>>>>>>> 9bfa1b11b31dd2c64e11b0b36d13b7fa1e5b4a60
