@@ -1,27 +1,47 @@
 @inject IJSRuntime JSRuntime
 
+<html>
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-<nav class="nav-container">
-    <ul class="nav-list">
-        <li class="nav-item dropdown">
-            <!--<a href="#">☰ My Conversion Tutor ▼</a>-->
-            <a style="font-size: 20px" ref="#">☰  <span style="color: orange"> MyConversionTutor.</span> </a>
-            <ul class="dropdown-menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/learnyourbases">Learn Your Bases!</a></li>
-                <li><a href="/binarytutorial">Binary Tutorial</a></li>
-                <li><a href="/cheatsheet">Cheat Sheet</a></li>
-                
-            </ul>
-        </li>
-    </ul>
-    <label class="toggle-container">
-        div class=""
-        <input type="checkbox" value="@IsDarkMode" @onchange="ToggleTheme">
-        <span class="slider"></span>
-        <span class="toggle-label">@(IsDarkMode? "Dark Mode": "Light Mode")</span>
-    </label>
-</nav>
+    <style>
+        .bebas-neue-regular {
+            font-family: "Bebas Neue", sans-serif;
+        }
+    </style>
+    </head>
+<body>
+    <nav class="nav-container">
+        <ul class="nav-list">
+            <li class="nav-item dropdown">
+                <!--<a href="#">☰ My Conversion Tutor ▼</a>-->
+                <a class="bebas-neue-regular" style="font-size: 30px" ref="#">☰ <span style="color: orange"> MyConversionTutor.</span> </a>
+               
+                <ul class="dropdown-menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/learnyourbases">Learn Your Bases!</a></li>
+                    <li><a href="/binarytutorial">Binary Tutorial</a></li>
+                    <li><a href="/cheatsheet">Cheat Sheet</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSePMbz9bPIlSvajb0_66p7J9V5TsYOv3YgarbE47V_eSyDdjA/viewform?usp=dialog">Feedback</a></li>
+
+                </ul>
+            </li>
+        </ul>
+        <label class="toggle-container">
+            div class=""
+            <input type="checkbox" value="@IsDarkMode" @onchange="ToggleTheme">
+            <span class="slider"></span>
+            <span class="toggle-label">@(IsDarkMode ? "Dark Mode" : "Light Mode")</span>
+        </label>
+    </nav>
+
+</body>
+</html>
+
+
+
 
 @code {
     private bool IsDarkMode = false;

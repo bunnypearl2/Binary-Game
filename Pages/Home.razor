@@ -1,11 +1,40 @@
 ﻿<h3>Home</h3>
 @page "/"
 
-<img src="favicon.png" alt="Cat" width="200" height="200" style="margin:auto;display:block">
-<a href="/">Converter</a>
-<a href="/binaryintro">Introduction</a>
-<a href="/binarytut">Binary Tutorial</a>
-<a href="/cheatsheet">Cheat Sheet</a>
+<PageTitle>Home</PageTitle>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style>
+        .bebas-neue-regular {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+    </style>
+
+    <body>
+        <img src="images/MyConversionTutorGraphicSquare.png" width="150" height="150" style="margin:auto;display:block">
+        <img src="images/MyConversionTutorGraphicLong.png" style="margin:auto;display:block">
+        <h1 class="bebas-neue-regular">MyConversionTutor</h1>
+        <ul style="list-style-type:none; font-size:60px; text-decoration:underline; text-align:center;">
+            <li><a href="/learnyourbases">Learn Your Bases!</a></li>
+            <li><a href="/binaryintro">Introduction</a></li>
+            <li><a href="/binarytutorial">Binary Tutorial</a></li>
+            <li><a href="/cheatsheet">Cheat Sheet</a></li>
+        </ul>
+    </body>
+</head>
+
+
+
+
+
+
 
 @code {
 
