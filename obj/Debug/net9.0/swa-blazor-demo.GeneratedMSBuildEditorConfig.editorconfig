@@ -32,7 +32,11 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQVNDSUlHYW1lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/BinaryQuiz.razor]
+=======
 [C:/Users/violi/Source/Repos/Binary-Game/Pages/BinaryQuiz.razor]
+>>>>>>> 9758822708d30fa8c122d9de59b764b9457abbfe
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmluYXJ5UXVpei5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -52,11 +56,19 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/Introduction.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW50cm9kdWN0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/TwoCompTutorial.razor]
+=======
 [C:/Users/violi/Source/Repos/Binary-Game/Pages/Introduction.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW50cm9kdWN0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/violi/Source/Repos/Binary-Game/Pages/TwoCompTutorial.razor]
+>>>>>>> 9758822708d30fa8c122d9de59b764b9457abbfe
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHdvQ29tcFR1dG9yaWFsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 

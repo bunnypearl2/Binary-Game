@@ -8,7 +8,7 @@
 
 
 <div class="row">
-
+    <div class="top-container">
     <p style="font-size: 14px;">
         <span style="font-size: 24px; text-decoration: underline;">
             Learn Your Bases! 
@@ -17,17 +17,18 @@
         Customize QUIZ ON/QUIZ OFF toggles for each row to test your knowledge converting between different base systems. <br />
         When quizzing for a given row, fill in the appropriate digits to clear the <span style="color: red;">red</span>!
     </p>
-
+    </div>
 </div>
 
 @* Make body shrinkable - able to scroll if elements go off screen *@
+@*
 <div style="display: flex;">
-    <div style="flex-shrink: 1; overflow: auto;">
-
+    <div style="flex-shrink: 1; overflow: auto;">*@
+<div class="container">
 
         @*INPUT SELECTION ROW*@
 
-
+    <div class="col-12 col-sm-6 col-md-4"></div>
         <div class="row" style="height: 100px" >
 
 
@@ -35,8 +36,8 @@
 
 
 
-            <label class="col-auto" for="maindropdown">Base/Radix:</label>
-            <select class="col-auto" id="maindropdown" @onchange="UpdateDropdown">
+        <label class="col-auto" for="maindropdown">Base/Radix:</label>
+        <select class="col-auto" id="maindropdown" @onchange="UpdateDropdown">
                 @foreach (var option in options)
                 {
                     <option value="@option">@option</option>
@@ -47,7 +48,7 @@
 
 
             @***INPUT BOX***@
-            <div class="col-auto">
+        <div class="col-auto">
 
                 @** increment/decrement buttons *@
                 <div class="col-auto">
@@ -70,7 +71,7 @@
 
             </div>
 
-            <div class="col-auto">
+             <div class="col-auto">
                 <button @onclick="GenerateRand" class="edit-button">Random Number</button>
 
             </div>
@@ -104,15 +105,15 @@
         </div>
 
         <!-- End INPUT SELECTION ROW-->
-        <div class="col-auto">
+    <div class="col-auto">
             <p>Input (max @numOfColumns characters) - Values above @(Math.Pow(2, numOfColumns) - 1) will not be accepted  <span style="color: red"> &nbsp;@errorMessage </span></p>
         </div>
-
+        
 
 
         <!-- Begin body of page -->
-
-        <table >
+        <div class="table-responsive"><!--bootstrap class-->
+        <table class="table">
             @for (int row = 0; row < numOfRows; row++)
             {
 
@@ -163,9 +164,10 @@
                 </tr>
             }
         </table>
-    </div>
+        </div>
+    
+        </div>
 
-</div>
 
 @*@onblur="(e) => FillWhitespace(i, j, index)"*@
 
@@ -181,8 +183,8 @@
     private FormModel formData = new FormModel();
 
     // FOR INDIVIDUAL INPUT BOXES
-    public const int numOfColumns = 16; // Number of columns per row
-    public const int numOfRows = 3;    // Number of rows
+    public const int numOfColumns = 8; // Number of columns per row
+    public const int numOfRows = 2;    // Number of rows
     public const int totalBoxes = numOfRows * numOfColumns; // Total boxes
 
     // FOR TWOS COMP BUTTONS
