@@ -4,11 +4,12 @@
 
 <PageTitle>Learn Your Bases!</PageTitle>
 
-<h3></h3>
+
+
 
 
 <div class="row">
-    <div class="top-container">
+    
     <p style="font-size: 14px;">
         <span style="font-size: 24px; text-decoration: underline;">
             Learn Your Bases! 
@@ -17,18 +18,19 @@
         Customize QUIZ ON/QUIZ OFF toggles for each row to test your knowledge converting between different base systems. <br />
         When quizzing for a given row, fill in the appropriate digits to clear the <span style="color: red;">red</span>!
     </p>
-    </div>
+  
 </div>
 
 @* Make body shrinkable - able to scroll if elements go off screen *@
 @*
 <div style="display: flex;">
     <div style="flex-shrink: 1; overflow: auto;">*@
-<div class="container">
+
 
         @*INPUT SELECTION ROW*@
-
-    <div class="col-12 col-sm-6 col-md-4"></div>
+    <div style="width: 100%; overflow: auto;">
+        <div style="width: 1200px; transform: scale(0.5); transform-origin: top left;">
+   
         <div class="row" style="height: 100px" >
 
 
@@ -113,7 +115,7 @@
 
         <!-- Begin body of page -->
         <div class="table-responsive"><!--bootstrap class-->
-        <table class="table">
+        <table>
             @for (int row = 0; row < numOfRows; row++)
             {
 
@@ -167,6 +169,8 @@
         </div>
     
         </div>
+
+</div>
 
 
 @*@onblur="(e) => FillWhitespace(i, j, index)"*@
