@@ -1,4 +1,4 @@
-﻿@page "/binaryintro"
+﻿@page "/Introduction"
 
 @inject NavigationManager NavigationManager
 
@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 
 <html>
-<body>
+
 	<img src="images/testCat.png" alt="Cat" width="200" height="200" style="margin:auto;display:block">
 	<h3 style="text-align:center;"> @characterName: @dialogue[arrayPosition]</h3>
 	<div class="input-row">
@@ -20,7 +20,7 @@
 
 	</div>
 
-</body>
+
 </html>
 
 
@@ -97,7 +97,7 @@
 
 	private void skipNav()
 	{
-		NavigationManager.NavigateTo("/binarytutorial");
+		NavigationManager.NavigateTo("/BinaryTutorial");
 	}
 
 	Task getDialogueLength()
