@@ -5,13 +5,18 @@
 <PageTitle>Binary Tutorial</PageTitle>
 
 
+       
+
 <h4>Unsigned Decimal: @num.base10</h4>
 <h4>Signed Decimal: @num.twosCompliment</h4>
-<h4>Hexadecimal: @num.base16</h4>
+<h4 style="padding-bottom: 15px;">Hexadecimal: @num.base16</h4>
 
-<div style="display: flex;">
- <div style="flex-shrink: 1; overflow: auto;">
+<!--handles fitting for mobile-->
+<div style="width: 100%; overflow: auto">
+    <div class="zoom-container">
+<!--start toggle row-->
 <div class="input-row">
+   
 
     <Tooltip Class="d-inline-block" Title="@fifteenVal" role="button">
         <button style="background-color:@bgcolor15" @onclick=ToggleB15>@num.b15</button>
@@ -130,10 +135,10 @@
     <button class="btn btn-primary ms-4" @onclick="Clear">Clear</button>
 
 </div>
-</div>
-</div>
 
 
+    </div>
+</div>
 
 
 <br>

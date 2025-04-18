@@ -121,7 +121,7 @@ code {
 .input-row {
     font-size: 150%;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*//*doesn't work well for mobile*/
 }
 
 
@@ -141,4 +141,21 @@ body {
 /* Keep clean borders */
 *, *::before, *::after {
     box-sizing: border-box;
+}
+
+/*handle mobile*/
+@media (max-width: 768px) {
+    .zoom-container {
+        width: 1200px;
+        transform: scale(0.5);
+        transform-origin: top left
+    }
+}
+
+@media (min-width: 1200px) {
+    .zoom-container {
+        width: 100%; /* Let it grow on big screens */
+        transform: none;
+        justify-content: center;
+    }
 }
