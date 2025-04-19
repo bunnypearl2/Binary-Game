@@ -48,10 +48,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/Introduction.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW50cm9kdWN0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -75,3 +71,7 @@ build_metadata.AdditionalFiles.CssScope = b-5tifzdovup
 [C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/Converter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udmVydGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-3zehk61zsz
+
+[C:/Users/Ed/source/repos/bunnypearl2/Binary-Game/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-3e47vsc4gh

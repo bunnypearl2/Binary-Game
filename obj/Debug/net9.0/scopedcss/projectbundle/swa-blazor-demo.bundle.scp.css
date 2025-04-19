@@ -6,7 +6,7 @@
 
 .nav-container[b-5tifzdovup] {
     background-color: #333;
-    padding: 10px 20px;
+    padding: 10px 10px;
     display: flex; /* Keeps all elements in a single row */
     flex-wrap: nowrap;
     align-items: center; /* Align items vertically */
@@ -80,59 +80,7 @@
     display: block;
 }
 
-/* Container for the toggle switch and label */
-.toggle-container[b-5tifzdovup] {
-    display: flex;
-    align-items: center; /* Aligns the text and toggle switch vertically */
-    gap: 10px; /* Space between the toggle switch and the label */
-    cursor: pointer;
-}
 
-    /* Hide default checkbox */
-    .toggle-container input[b-5tifzdovup] {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
-
-/* Slider styling */
-.slider[b-5tifzdovup] {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 25px;
-    background-color: #ccc;
-    border-radius: 25px;
-    transition: 0.4s;
-}
-
-    .slider[b-5tifzdovup]:before {
-        content: "";
-        position: absolute;
-        height: 18px;
-        width: 18px;
-        left: 4px;
-        bottom: 3px;
-        background-color: white;
-        border-radius: 50%;
-        transition: 0.4s;
-    }
-
-/* Checked state (when toggle is on) */
-input:checked + .slider[b-5tifzdovup] {
-    background-color: #4CAF50;
-}
-
-    input:checked + .slider[b-5tifzdovup]:before {
-        transform: translateX(25px);
-    }
-
-/* Label styling */
-.toggle-label[b-5tifzdovup] {
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-}
 /* /Pages/Converter.razor.rz.scp.css */
 
 
@@ -250,3 +198,11 @@ input:checked + .slider[b-5tifzdovup] {
     color: white;
 }
 
+/* /Pages/Home.razor.rz.scp.css */
+
+
+.bebas-neue-regular[b-3e47vsc4gh] {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

@@ -8,14 +8,15 @@
 
 <html>
 
-	<img src="images/testCat.png" alt="Cat" width="200" height="200" style="margin:auto;display:block">
-	<h3 style="text-align:center;"> @characterName: @dialogue[arrayPosition]</h3>
-	<div class="input-row">
+<h1 class="bebas-neue-regular title-font" style=" font-weight:bold; color:#E7731D; text-align:center">MyConversionTutor.</h1>
+<img src="images/testCat.png" alt="Cat" width="200" height="200" style="margin:auto; display:block; transform: translateX(15px)">
+	<h4 style="text-align:center;"> @characterName: @dialogue[arrayPosition]</h4>
+<div style="display: flex; justify-content: center;">
 		<button hidden="@hideStatus" disabled="@disabledStatus" class="btn btn-primary" @onclick="goBack">Back</button>
 		<button hidden="@hideStatus" class="btn btn-primary" @onclick="Advance">@buttonText</button>
 	</div>
-	<h3 style="text-align:center;" @onload="getDialogueLength">@dialoguePosition/@dialogueLength</h3>
-	<div class="input-row">
+	<h4 style="text-align:center;" @onload="getDialogueLength">@dialoguePosition/@dialogueLength</h4>
+<div style="display: flex; justify-content: center;">
 		<button class="btn btn-primary" @onclick="skipNav">@buttonText2</button>
 
 	</div>
@@ -29,7 +30,7 @@
 	int dialoguePosition = 1;
 	int dialogueLength = 0;
 	String buttonText = "Next";
-	String buttonText2 = "Skip";
+	String buttonText2 = "Skip to Tutorial";
 	String characterName = "??????";
 	bool hideStatus = false;
 	bool disabledStatus = true;

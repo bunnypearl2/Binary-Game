@@ -21,20 +21,21 @@
                
                 <ul class="dropdown-menu">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/LearnYourBases">Learn Your Bases!</a></li>
                     <li><a href="/BinaryTutorial">Binary Tutorial</a></li>
+                    <li><a href="/LearnYourBases">Learn Your Bases!</a></li>
                     <li><a href="/CheatSheet">Cheat Sheet</a></li>
                     <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSePMbz9bPIlSvajb0_66p7J9V5TsYOv3YgarbE47V_eSyDdjA/viewform?usp=dialog">Feedback</a></li>
 
                 </ul>
             </li>
         </ul>
-        <label class="toggle-container">
-            <!--div class=""-->
-            <input type="checkbox" value="@IsDarkMode" @onchange="ToggleTheme">
-            <span class="slider"></span>
-            <span class="toggle-label">@(IsDarkMode ? "Dark Mode" : "Light Mode")</span>
-        </label>
+
+    
+    <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" value="@IsDarkMode" @onchange="ToggleTheme">
+            <label style="color: white" class="form-check-label" for="toggle1">@(IsDarkMode ? "Dark On" : "Dark Off")</label>
+        </div>
+       
     </nav>
 
 </body>

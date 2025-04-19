@@ -118,11 +118,6 @@ code {
     height: 60px;
 }
 
-.input-row {
-    font-size: 150%;
-    display: flex;
-    /*justify-content: center;*//*doesn't work well for mobile*/
-}
 
 
 /* Light mode (Default) */
@@ -143,12 +138,35 @@ body {
     box-sizing: border-box;
 }
 
-/*handle mobile*/
+/*handle mobile for tutorial*/
+@media (max-width: 768px) {
+    .tutorial-container {
+        width: 100%;
+        transform: scale(0.7);
+        transform-origin: top left;
+        display: flex;
+        justify-content: left;
+        font-size: 150%
+    }
+}
+
+@media (min-width: 1200px) {
+    .tutorial-container {
+        width: 100%; /* Let it grow on big screens */
+        transform: none;
+        justify-content: center;
+        display: flex;
+        font-size: 150%
+    }
+}
+
+/*handle mobile for learn your bases converter*/
 @media (max-width: 768px) {
     .zoom-container {
-        width: 1200px;
+        width: 800px;
         transform: scale(0.5);
-        transform-origin: top left
+        transform-origin: top left;
+
     }
 }
 
@@ -156,6 +174,30 @@ body {
     .zoom-container {
         width: 100%; /* Let it grow on big screens */
         transform: none;
-        justify-content: center;
+        overflow: hidden;
     }
+}
+
+/* making home title fit for mobile*/
+@media (max-width: 768px) {
+
+    .title-font {
+        font-size: 20px;
+        transform: translateX(15px);
+        padding-top: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .title-font {
+        font-size: 120px;
+        padding-top: 40px;
+    }
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
