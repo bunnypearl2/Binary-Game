@@ -5,18 +5,12 @@
 <PageTitle>Binary Tutorial</PageTitle>
 
 
-       
-
-<h4>Unsigned Decimal: @num.base10</h4>
-<h4>Signed Decimal: @num.twosCompliment</h4>
-<h4 style="padding-bottom: 15px;">Hexadecimal: @num.base16</h4>
 
 <!--handles fitting for mobile-->
-<div style="width: 100%; overflow: auto">
-    <div class="zoom-container">
+<div style="width: 100%; overflow: auto; padding-top: 30px">
+    <div class="zoom-container" style="font-size: 150%">
 <!--start toggle row-->
-<div class="input-row">
-   
+
 
     <Tooltip Class="d-inline-block" Title="@fifteenVal" role="button">
         <button style="background-color:@bgcolor15" @onclick=ToggleB15>@num.b15</button>
@@ -134,32 +128,39 @@
     <button class="btn btn-primary" @onclick="Calculate">Submit</button>-->
     <button class="btn btn-primary ms-4" @onclick="Clear">Clear</button>
 
-</div>
 
 
     </div>
 </div>
 
 
-<br>
+
 <p> <strong>Introduction to Binary:</strong></p>
 <p> 0's and 1's are commonly used to represent the ON or OFF state of switches or transistors in computers.  In binary, these digits are referred to as bits. 
+    In this example, there are 16 digit/bit places, so there are 2<sup>16</sup> = 65536 possible combinations to make!
     <strong>Try switching the bits above!</strong>
 </p>
-<p> In this example, there are 16 digit/bit places.  So there are 2<sup>16</sup> = 65536 possible combinations of 0's and 1's we can make. Similar to how Decimal (base 10) assigns 
-    greater value to progressive digit places - 1,10,100,1000,10000... (10<sup>0</sup>, 10<sup>1</sup>,10<sup>2</sup>,
-    10<sup>3</sup>,10<sup>4</sup>...),  Binary (base 2) can be regarded the same way - 1,2,4,8,16... (2<sup>0</sup>, 2<sup>1</sup>,2<sup>2</sup>,2<sup>3</sup>,2<sup>4</sup>).</p>
-<p> One special thing about binary representation is how it can be used to represent both positive and negative numbers.  With 16 digits, we can represent numbers 0 - 665535 (unsigned decimal)
-    or -32768 - 32767 (signed decimal).
-</p>
-<p><u>Signed Decimal</u>: When the 2<sup>15</sup> bit is set to 1, every other bit set is added to the negative value of -32768. So the absolute value of the number goes down instead
-    of up.</p>
+
+<p>
+    <u>Unsigned Decimal:</u> <strong>@num.base10</strong> <br />
+    With 16 digits, we can represent numbers 0 - 665535</p>
+
+<p>
+    <u>Signed Decimal:</u> <strong>@num.twosCompliment</strong> <br />
+        With 16 digits, we can represent numbers -32768 - 32767. When the 2<sup>15</sup> bit is set to 1, that indicates a negative number </p>
+
+<p>
+    <u>Hexadecimal:</u> <strong>@num.base16</strong> <br />
+        Hexadecimal is a base 16 number system.  It uses the digits 0-9 and letters A-F to represent values.  The letters A-F represent the decimal values 10-15.
+     Therefore, it only takes 4 digit places of hexadecimal to represent the 65536 combinations (i.e. 16<sup>4</sup> = 2<sup>16</sup>= 65536 .</p>
 
 <p>EXAMPLE:  If you have bits 2<sup>12</sup>, 2<sup>6</sup>, and 2<sup>4</sup> each set to "1", the decimal representation would be (1)*2<sup>12</sup> + (1)*2<sup>6</sup> + (1)*2<sup>4</sup> = 
     4096 + 64 + 16 = 4176</p>
-<p> Can you remember the powers of 2?  Feel free to reference the <a href="/cheatsheet">Cheat Sheet</a>!</p>
+<p> Can you remember the powers of 2?  Reference the <a href="/cheatsheet">Cheat Sheet</a>!</p>
 
-
+<!--<p>Similar to how Decimal (base 10) assigns
+    greater value to progressive digit places - 1,10,100,1000,10000... (10<sup>0</sup>, 10<sup>1</sup>,10<sup>2</sup>,
+    10<sup>3</sup>,10<sup>4</sup>...),  Binary (base 2) can be regarded the same way - 1,2,4,8,16... (2<sup>0</sup>, 2<sup>1</sup>,2<sup>2</sup>,2<sup>3</sup>,2<sup>4</sup>).</p>-->
 
 
 
