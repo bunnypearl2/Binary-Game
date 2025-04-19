@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\swa-blazor-demo.csproj": {}
+    "C:\\Users\\orbit\\Source\\Repos\\Binary-Game\\swa-blazor-demo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\swa-blazor-demo.csproj": {
+    "C:\\Users\\orbit\\Source\\Repos\\Binary-Game\\swa-blazor-demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\swa-blazor-demo.csproj",
+        "projectUniqueName": "C:\\Users\\orbit\\Source\\Repos\\Binary-Game\\swa-blazor-demo.csproj",
         "projectName": "swa-blazor-demo",
-        "projectPath": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\swa-blazor-demo.csproj",
-        "packagesPath": "C:\\Users\\Ed\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ed\\source\\repos\\bunnypearl2\\Binary-Game\\obj\\",
+        "projectPath": "C:\\Users\\orbit\\Source\\Repos\\Binary-Game\\swa-blazor-demo.csproj",
+        "packagesPath": "C:\\Users\\orbit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\orbit\\Source\\Repos\\Binary-Game\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\orbit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -71,13 +70,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.0, )",
+              "version": "[9.0.4, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.3, )",
+              "version": "[9.0.4, )",
               "autoReferenced": true
             }
           },
@@ -94,8 +93,8 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.3, 9.0.3]"
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[9.0.4, 9.0.4]"
             }
           ],
           "frameworkReferences": {
@@ -103,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

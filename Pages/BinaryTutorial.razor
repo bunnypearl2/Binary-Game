@@ -2,7 +2,7 @@
 
 @inject IJSRuntime JS
 
-<PageTitle>Binary Tutorial</PageTitle>
+<PageTitle>Binary Tutorial: Conversion, Arithmetic, and Hexadecimals</PageTitle>
 
 
        
@@ -140,29 +140,120 @@
     </div>
 </div>
 
-
+<p> <strong>Help Sections</strong></p>
+<p>
+    The text below will introduce you to binary, converting to and from it, basic arithmetic, and how it's related to decimal and hexadecimal. Use the helper tool above to visualize as you follow along!
+</p>
+<hr>
+<p> <strong>Introduction to Binary</strong></p>
+<p> 0's and 1's are commonly used to represent the ON or OFF state of switches or transistors in computers.  In binary, these digits are referred to as "bits". 
+    <i>Try switching the bits above!</i>
+</p>
+<p> In this example, there are 16 places for digits/bits. So, there are 2<sup>16</sup> = 65536 possible combinations of 0's and 1's we can make. 
+    Think of how decimal notation (base 10) assigns greater value to progressive digit places - 1,10,100,1000,10000... (10<sup>0</sup>, 10<sup>1</sup>,10<sup>2</sup>,
+    10<sup>3</sup>,10<sup>4</sup>...). Binary (base 2) works the same way: 1,2,4,8,16... (2<sup>0</sup>, 2<sup>1</sup>,2<sup>2</sup>,2<sup>3</sup>,2<sup>4</sup>).</p>
+<hr>
+<p><strong>Converting Between Binary & Decimal Numbers</strong></p>
+<p>Binary and decimal are different ways of expressing the same number in a different base. There are different methods of converting between the two. Here are some useful ones if all you have is mental math or pen and paper to work with.
+</p>
+<p>
+    <i>Decimal to Binary by Long Division</i>
+    <br>You can use repeated long division by 2 to convert a decimal number to binary. For example, take 102.
+    <br>Divide it by 2: you get 51, with a remainder of <strong>0</strong>. Write down that remainder: this will be your <i>least significant</i> (rightmost) bit.
+    <br>Now divide 51 by 2 again: you get 25, with a remainder of <strong>1</strong>. This'll be your next bit, to the left (more significant) of the last one.
+    <br>Again: 25/2 = 12, remainder <strong>1</strong>.
+    <br>12/2 = 6, remainder <strong>0</strong>.
+    <br>6/2 = 3, remainder <strong>0</strong>.
+    <br>3/2 = 1, remainder <strong>1</strong>.
+    <br>1/2 = 0, remainder <strong>1</strong>. <i>Now that you've reached a quotient of 0, stop here!</i> This is your <i>most significant</i> (leftmost) bit.
+    <br>Now, just write the remainders in order of significance (most to least): <strong>1100110</strong>. Remember: you found the least-significant bits first, so this'll be in "reverse order".
+</p>
 <br>
-<p> <strong>Introduction to Binary:</strong></p>
-<p> 0's and 1's are commonly used to represent the ON or OFF state of switches or transistors in computers.  In binary, these digits are referred to as bits. 
-    <strong>Try switching the bits above!</strong>
+<p>
+    <i>Decimal to Binary by Descending Powers of Two</i>
+    <br>If you remember your powers of 2, you can use these to find the binary value of a decimal a little faster than by repetitive division. We've got just such a <a href="/cheatsheet">Cheat Sheet</a> table available for you!
+    <br>Let's convert decimal 102 to binary again.
+    <br>Start by looking for the <i>greatest</i> power of 2 that still fits into the number. In this case, that's 64. Subtract that from our number (102-64 = 38).
+    <br>Now, look for the power of 2 that'll fit into the subtraction. 32 is the biggest power of 2 that'll fit into 38. Once again, subtract it! (38-32 - 6).
+    <br>Same story: 4 is the biggest power of 2 that fits into 6. (6-4 = 2).
+    <br>(2-2 = 0). Once again, stop when you reach 0!
+    <br>Now, line up all of the powers of 2, from the greatest one you used all the way down to 0:
+    <br><strong>64, 32, 16, 8, 4, 2, 1</strong>
+    <br>For every one of these that you used, write 1. For every one you didn't, mark 0:
+    <br><strong>1, 1, 0, 0, 1, 1, 0</strong>.... i.e. 1100110. Look familiar?
 </p>
-<p> In this example, there are 16 digit/bit places.  So there are 2<sup>16</sup> = 65536 possible combinations of 0's and 1's we can make. Similar to how Decimal (base 10) assigns 
-    greater value to progressive digit places - 1,10,100,1000,10000... (10<sup>0</sup>, 10<sup>1</sup>,10<sup>2</sup>,
-    10<sup>3</sup>,10<sup>4</sup>...),  Binary (base 2) can be regarded the same way - 1,2,4,8,16... (2<sup>0</sup>, 2<sup>1</sup>,2<sup>2</sup>,2<sup>3</sup>,2<sup>4</sup>).</p>
-<p> One special thing about binary representation is how it can be used to represent both positive and negative numbers.  With 16 digits, we can represent numbers 0 - 665535 (unsigned decimal)
-    or -32768 - 32767 (signed decimal).
+<br>
+<p>
+    <i>Binary to Decimal by Powers</i>
+    <br>This is even easier than converting decimal to binary. Let's say we want to convert 11011011 to decimal.
+    <br>First, write out each of the bits' place values:
+    <br>2<sup>7</sup>, 2<sup>6</sup>, 2<sup>5</sup>, 2<sup>4</sup>, 2<sup>3</sup>, 2<sup>2</sup>, 2<sup>1</sup>, 2<sup>0</sup>
+    <br>= 128, 64, 32, 16, 8, 4, 2, 1
+    <br>Now, multiply each place by its bit (0 or 1):
+    <br>128, 64, 0, 16, 8, 0, 2, 1
+    <br>Add these to get your result: <strong>219</strong>.
 </p>
-<p><u>Signed Decimal</u>: When the 2<sup>15</sup> bit is set to 1, every other bit set is added to the negative value of -32768. So the absolute value of the number goes down instead
-    of up.</p>
-
-<p>EXAMPLE:  If you have bits 2<sup>12</sup>, 2<sup>6</sup>, and 2<sup>4</sup> each set to "1", the decimal representation would be (1)*2<sup>12</sup> + (1)*2<sup>6</sup> + (1)*2<sup>4</sup> = 
-    4096 + 64 + 16 = 4176</p>
-<p> Can you remember the powers of 2?  Feel free to reference the <a href="/cheatsheet">Cheat Sheet</a>!</p>
-
-
-
-
-
+<br>
+<p>
+    <i>Binary to Decimal by Doubling</i>
+    <br>If you're converting a number in your head, this method is a lot easier. We'll convert 11011011 again.
+    <br>[<strong>1</strong>1011011] Starting from the most significant (leftmost) bit, double your running total and add the current digit. (Your running total is 0, since you haven't started yet!)
+    <br>Doing it the first time, you double 0 (i.e. you get 0) and add 1, the current digit (running total <strong>1</strong>).
+    <br>[1<strong>1</strong>011011] Now do it to the next (less significant) digit. Double your total (1*2 = 2) and add the current digit (2+1 = <strong>3</strong>).
+    <br>[11<strong>0</strong>11011] Repeat this over and over... (3*2 = 6, + 0 = <strong>6</strong>)
+    <br>[110<strong>1</strong>1011] 6*2 = 12, + 1 = <strong>13</strong>
+    <br>[1101<strong>1</strong>011] 13*2 = 26, + 1 = <strong>27</strong>
+    <br>[11011<strong>0</strong>11] 27*2 = 54, + 0 = <strong>54</strong>
+    <br>[110110<strong>1</strong>1] 54*2 = 108, + 1 = <strong>109</strong>
+    <br>[1101101<strong>1</strong>] 109*2 = 218, + 1 = <strong>219</strong>...your final result, now that you have no more digits!
+</p>
+<hr>
+<p><strong>Signing and Two's Complement</strong></p> 
+<p>
+    Negative numbers are usually represented with a "-" sign. Most computers, though, represent negatives through <i>signed</i> binary values. In a nutshell, one of the bits is used as a "flag", marking if the number is positive or negative. 
+    With 16 digits, we can represent numbers 0 to 65535 (unsigned decimal) or -32768 to 32767 (signed decimal). When the 2<sup>15</sup> bit is set to 1, every other bit that's set to 1 is <i>added</i> to -32768. So, the absolute value of the number goes down instead of up.
+</p>
+<p>
+    You can convert a binary number to its negative counterpart via two's complement. Suppose we have 11110010 (242, in decimal), and we'd like to make this a negative value.
+    <br>First, pad it out to 16 bits (or however many you're using): 0000 0000 1111 0010. (Notice that, for clarity's sake, we can group the digits into fours. This will be handy for hexadecimals, lower on this page.)
+    <br>Simply flip every bit in place (1111 1111 0000 1101)...
+    <br>...and add 1. (1111 1111 0000 1110). This is -242!
+</p>
+<hr>
+<p><strong>Binary Addition and Subtraction</strong></p>
+<p>
+    Binary addition and subtraction is just like decimal, by and large. The only thing you have to remember is that you carry 2s, not 10s.
+    <br>Let's look at the last four digits in the example above: 1101 + 1.
+    <br>1+1 = 2. Remember that 2 in binary is 10 (2<sup>1</sup> * 1, + 2<sup>0</sup> * 0)!
+    <br>So, write 0 in the 2<sup>1</sup> place (the rightmost, i.e. least significant, bit), and carry over the 1 into the next bit to the left to get 1110.
+</p>
+<p>
+    Subtraction is easy: all it is just adding a negative number. Convert the value you're subtracting into a negative, via two's complement, and add it!
+</p>
+<br>
+<p><strong>Binary Multiplication and Division</strong></p>
+<p>
+    Again: think of binary multiplication as the exact same process as decimal, just working with base 2 (i.e. carried 2s) in mind instead of base 10.
+    <br>At the end of the day, the <i>underlying logic is the same!</i> This can't be stressed hard enough: the only thing that's different is the bases.
+    <br>The same goes for long division!
+</p>
+<p>
+    Go ahead and try multiplying and dividing a few small binary numbers on your own. If you'd like to check your work, you can practice converting your values to and from decimal. Use the pop-out decimal calculator at the top right of the page to help you.
+</p>
+<hr>
+<p><strong>Hexadecimal Values</strong></p>
+<p>
+    Computers may ultimately work in binary, but (as you may already be discovering) it can be pretty long-winded. For example, decimal 2500 is 100111000100!
+    <br>Hexadecimal numbers are base <i>16</i>, but you can really think of them as a way of easily representing base 2 values.
+    <br>Here's the trick: all binary numbers from 0 to decimal 16 fit into four bits! (0000 to 1111).
+    <br>If we divide 2500's binary representation into fours, i.e. 1001 1100 0100, we could assign each of these a hexadecimal digit.
+    <br>Hexadecimal digits run from 0-9, just like decimal digits, but then fill the remaining 6 spaces with letters (A-F). For example, "13" in decimal is "D" in hexadecimal; "3" in decimal is "3" in hexadecimal.
+    <br>2500 in hexadecimal (aka 1001 1100 0100) is <strong>9C4</strong>. That's a whole lot less of a mouthful. You can also easily convert it back to binary: again, each hex digit represents 4 bits (any combination from 0000 - 1111)!
+</p>
+<p>
+    When grouping a binary number into four-bit pieces, do it from the least significant (rightmost) side first. If your last group doesn't cleanly fit, pad with zeroes.
+    <br>For example, take decimal 582 (binary 1001000110). Grouping that, you get 10 0100 0110. Pad the leftmost group with zeroes to get 0010 0100 0110 (hexadecimal 246).
+</p>
 
 @code {
 
